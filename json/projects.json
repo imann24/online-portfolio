@@ -1,0 +1,174 @@
+{
+  "Projects" : [
+    {
+      "Key" : "glowlime",
+      "Title" : "GlowLime Games",
+      "Roles" : [
+        "Executive Director",
+        "Technical Director"
+      ],
+      "Organization" : "GlowLime Games",
+      "TeamSize" : 12,
+      "Description" : "A student game development organization",
+      "Contributions" : [
+        "Co-founded the organization",
+        "Created the organizational structure",
+        "Provided development opportunities for 50 students per semester"
+      ],
+      "StartDate" : "2015-10-01T07:00:00.000Z",
+      "IsOngoing" : false,
+      "EndDate" : "2017-05-01T07:00:00.000Z",
+      "Pictures" : [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video" : "https://www.youtube.com/watch?v=FXEoPLax5MA",
+      "Website" : "http://glowlime.com/",
+      "Facebook" : "https://www.facebook.com/GlowLime/",
+      "Twitter" : "https://twitter.com/GlowLimeGames",
+      "GitHub" : "https://github.com/GlowLimeGames/",
+      "AppStore" : "https://itunes.apple.com/us/developer/isaiah-mann/id1189781963",
+      "GooglePlay" : "https://play.google.com/store/apps/developer?id=GlowLime+Games",
+      "itch.io" : "https://glowlime-games.itch.io/",
+      "ShouldDisplay" : true,
+      "Platforms" : [
+        "N/A"
+      ],
+      "Languages" : [
+        "N/A"
+      ],
+      "SortPriority" : 1
+    },
+    {
+      "Key" : "word-snack",
+      "Title" : "Word Snack",
+      "Roles" : [
+        "Gameplay Programmer"
+      ],
+      "Organization" : "Hampshire College",
+      "TeamSize" : 32,
+      "Description" : "A word game set in space.",
+      "Contributions" : [
+        "Programmed major segments of gameplay logic",
+        "Worked on a team of 11 programmers",
+        "Published game within a semester"
+      ],
+      "StartDate" : "2014-09-01T07:00:00.000Z",
+      "IsOngoing" : false,
+      "EndDate" : "2014-12-01T08:00:00.000Z",
+      "Pictures" : [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video" : "https://www.youtube.com/watch?v=DcpZ1Ph1ugo",
+      "Website" : "http://wordsnack.net/",
+      "Facebook" : "",
+      "Twitter" : "",
+      "GitHub" : "https://github.com/HampshireCollegeCompSci/WordSnack",
+      "AppStore" : "https://itunes.apple.com/us/app/word-snack-hd/id950400461",
+      "GooglePlay" : "https://play.google.com/store/apps/details?id=net.wordsnack.wordsnack",
+      "itch.io" : "",
+      "ShouldDisplay" : true,
+      "Platforms" : [
+        "iOS",
+        "Android"
+      ],
+      "Languages" : [
+        "C#"
+      ],
+      "SortPriority" : 2
+    },
+    {
+      "Key" : "defenders-light",
+      "Title" : "Defender's Light",
+      "Roles" : [
+        "Creative Director",
+        "Lead Programmer"
+      ],
+      "Organization" : "GlowLime Games",
+      "TeamSize" : 14,
+      "Description" : "A tower defense title where illumination is key",
+      "Contributions" : [
+        "Designed game from concept to execution",
+        "Programmed core gameplay systems",
+        "Lead team of developers"
+      ],
+      "StartDate" : "2016-05-01T07:00:00.000Z",
+      "IsOngoing" : false,
+      "EndDate" : "2016-12-01T08:00:00.000Z",
+      "Pictures" : [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video" : "https://www.youtube.com/watch?v=ckg6HLtkhIA",
+      "Website" : "http://glowlime.com/games/defenders-light/",
+      "Facebook" : "https://www.facebook.com/DefendersLight",
+      "Twitter" : "https://twitter.com/Defenders_Light",
+      "GitHub" : "https://github.com/GlowLimeGames/DefendersLight",
+      "AppStore" : "https://itunes.apple.com/us/app/defenders-light/id1189781964?mt=8",
+      "GooglePlay" : "https://play.google.com/store/apps/details?id=com.glowlime.defenders",
+      "itch.io" : "https://glowlime-games.itch.io/defenders-light",
+      "ShouldDisplay" : true,
+      "Platforms" : [
+        "iOS",
+        "Android",
+        "Mac",
+        "Windows",
+        "Linux",
+        "Web"
+      ],
+      "Languages" : [
+        "C#"
+      ],
+      "SortPriority" : 1
+    },
+    {
+      "Key" : "fusion-galaxy",
+      "Title" : "Fusion Galaxy",
+      "Roles" : [
+        "Producer",
+        "Gameplay Programmer"
+      ],
+      "Organization" : "MassDiGI",
+      "TeamSize" : 8,
+      "Description" : "A game which combines crafting and gathering elements into new combinations",
+      "Contributions" : [
+        "Lead development team",
+        "Programmed core game logic",
+        "Implemented crafting user interface"
+      ],
+      "StartDate" : "2015-05-01T07:00:00.000Z",
+      "IsOngoing" : false,
+      "EndDate" : "2016-07-01T07:00:00.000Z",
+      "Pictures" : [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video" : "https://www.youtube.com/watch?v=JhS2W1aMUxM",
+      "Website" : "http://games.massdigi.org/fusiongalaxy/",
+      "Facebook" : "https://www.facebook.com/FusionGalaxyTheGame/",
+      "Twitter" : "https://twitter.com/fusiongalaxy_",
+      "GitHub" : "https://github.com/imann24/fusion-galaxy",
+      "AppStore" : "https://itunes.apple.com/us/app/fusion-galaxy/id999077925?ls=1&mt=8",
+      "GooglePlay" : "https://play.google.com/store/apps/details?id=com.massdigi.crafting",
+      "itch.io" : "",
+      "ShouldDisplay" : true,
+      "Platforms" : [
+        "iOS",
+        "Android"
+      ],
+      "Languages" : [
+        "C#"
+      ],
+      "SortPriority" : 1
+    }
+  ]
+}
