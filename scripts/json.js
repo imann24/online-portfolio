@@ -5,14 +5,23 @@
  */
 
 var projects;
+var projLoadCallback;
 
 function loadProjects()
 {
      $.getJSON("../json/projects.json", function(json)
      {
           projects = json["Projects"];
-          console.log(projects[0]);
+          if(projLoadCallback != null)
+          {
+               projLoadCallback();
+          }
      });
+}
+
+function setLoadCallback(callback)
+{
+     projLoadCallback = callback;
 }
 
 function allProjects()

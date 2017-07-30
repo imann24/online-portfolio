@@ -2,13 +2,17 @@
      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src = "../scripts/json.js"></script>
      <script>
-          loadProjects();
-          projs = allProjects();
-          for(var i = 0; i < projs.length; i++)
+          function listProjects()
           {
-               $("#projects").append("<div id = 'proj" + i + "'></div>");
-               $("proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
+               projs = allProjects();
+               for(var i = 0; i < projs.length; i++)
+               {
+                    $("#projects").append("<div id = 'proj" + i + "'></div>");
+                    $("proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
+               }
           }
+          setLoadCallback(listProjects);
+          loadProjects();
      </script>
 </head>
 <body>
