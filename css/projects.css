@@ -1,7 +1,9 @@
-body {
+body
+{
      overflow: visible;
 }
 
-.proj-cell {
+.proj-cell
+{
      padding: 2em;
 }

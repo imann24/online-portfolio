@@ -8,6 +8,7 @@ function listProjects()
           $("#proj" + i).append("<img src = '" + projs[i]["Key"] + "/icon.png' >");
      }
 }
+
 function createProjects(columnCount)
 {
      $("#projects").append("<center><table id = 'proj-table'></table></center>");
@@ -29,8 +30,10 @@ function createProjects(columnCount)
           rowIndex++;
      }
 }
+
 setLoadCallback(function()
 {
-     createProjects(4);
+     var rowCount = isMobile() ? 4 : 6;
+     createProjects();
 });
 loadProjects();
