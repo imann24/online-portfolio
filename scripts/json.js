@@ -4,10 +4,13 @@
  @requires: jQuery
  */
 
+var projects;
+
 function loadProjects()
 {
-     var jsonProjects = $.getJSON("../json/projects.json", function(json)
+     $.getJSON("../json/projects.json", function(json)
      {
-               console.log(jsonProjects);
+          projects = json["projects"];
+          console.log(projects[0]);
      });
 }
