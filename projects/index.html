@@ -24,8 +24,7 @@
                     $("#proj-table").append("<tr id ='project-table-row" + rowIndex + "'></tr>");
                     for(var i = 0; i < columnCount && remainingCellCount > 0; i++)
                     {
-                         console.log("project-table-row" + rowIndex);
-                         $("project-table-row" + rowIndex).append("<td><img src ='" + projs[projIndex]["Key"] + "/index.png' ></td>");
+                         $("#project-table-row" + rowIndex).append("<td><img src ='" + projs[projIndex]["Key"] + "/index.png' ></td>");
                          remainingCellCount--;
                          projIndex++;
                     }
