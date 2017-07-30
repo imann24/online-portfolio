@@ -34,6 +34,6 @@ function createProjects(columnCount)
 setLoadCallback(function()
 {
      var rowCount = isMobile() ? 4 : 6;
-     createProjects();
+     createProjects(rowCount);
 });
 loadProjects();
