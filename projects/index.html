@@ -9,6 +9,7 @@
                {
                     $("#projects").append("<div id = 'proj" + i + "'></div>");
                     $("#proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
+                    $("#proj" + i).append("<img src = '" + projs[i]["Key"] + "/icon.png' >");
                }
           }
           setLoadCallback(listProjects);
