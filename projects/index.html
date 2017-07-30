@@ -8,7 +8,7 @@
                for(var i = 0; i < projs.length; i++)
                {
                     $("#projects").append("<div id = 'proj" + i + "'></div>");
-                    $("proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
+                    $("#proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
                }
           }
           setLoadCallback(listProjects);
