@@ -1,41 +1,52 @@
-body {
+body
+{
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-h1 {
+h1
+{
     font-family: ralewayLight;
+    font-size: 5em;
 }
 
-h2 {
+h2
+{
     font-family: ralewayLight;
     border: 1px solid white;
 }
 
-h2:hover {
+h2:hover
+{
     color: #7a8af4;
 }
 
-h3 {
+h3
+{
     font-family: ralewayLight;
     font-size: 1em;
 }
 
-p {
+p
+{
     font-family: avenir;
     color: black;
 }
 
-a {
+a
+{
     color: white;
     text-decoration: none;
 }
 
-ul {
+ul
+{
     list-style: none;
 }
-.LinkButton {
+
+.LinkButton
+{
 
 	color: white;
 	background-color: #5D68BB;
@@ -43,26 +54,23 @@ ul {
 	width: 25%;
 	height: 25%;
 	padding: 1.25em;
-        font-size: 2vw;
-        overflow: hidden;
+     font-size: 2vw;
+     overflow: hidden;
 	text-align: center;
         -webkit-transition: height 0.5s;
         transition: height 0.5s;
-
 }
 
-.LinkButton:hover {
+.LinkButton:hover
+{
     background-color: #394284;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
     height: 30%;
 }
 
-.LinkButton h1 {
-
-}
-
-.Navbar img {
+.Navbar img
+{
     -webkit-transition: width 0.5s, float 0.5s;
     transition: width 0.5s, float 0.5s;
     width: 5vw;
@@ -70,37 +78,44 @@ ul {
     margin-left: 0.5em;
 }
 
-.Navbar img:hover {
+.Navbar img:hover
+{
     width: 6vw;
     -webkit-transition: width 0.5s;
     transition: width 0.5s;
 }
 
-.ProjectIcon {
+.ProjectIcon
+{
     width: 3em;
 }
 
-.PDF {
+.PDF
+{
     text-align: center;
 }
 
-.PDF img {
+.PDF img
+{
     margin-top: 5em;
     width: 15em;
 }
 
-.PDF img:hover {
+.PDF img:hover
+{
     -webkit-filter: grayscale(25%);
     filter: grayscale(25%);
 }
 
-#Resume {
+#Resume
+{
     top: 0;
     left: 0;
     border-radius: 0 0 5em 0;
 }
 
-#SocialLinks {
+#SocialLinks
+{
     height: 25%;
     top: 0;
     right: 0;
@@ -108,19 +123,22 @@ ul {
     background-color: #5D68BB;
 }
 
-#AllProjects {
+#AllProjects
+{
     bottom: 0;
     left: 0;
     border-radius: 0 5em 0 0;
 }
 
-#Coursework {
+#Coursework
+{
     bottom: 0;
     right: 0;
     border-radius: 5em 0 0 0;
 }
 
-#TopCenterPanel {
+#TopCenterPanel
+{
     margin: -10em auto 0 auto;
     width: 20em;
     height: 10em;
@@ -131,55 +149,67 @@ ul {
     padding-top: 2em;
 }
 
-#Content {
+#Content
+{
 	margin: 5em;
 	padding: 2em;
 }
 
-#PageTitle {
+#PageTitle
+{
     text-align: center;
     font-family: avenir;
 }
 
 
-@media screen and (min-width: 581px) and (max-width: 1440px){
-    #PageTitle {
+@media screen and (min-width: 581px) and (max-width: 1440px)
+{
+    #PageTitle
+    {
         padding-top: 1.5em;
         font-size: 7vw;
     }
 }
 
-@media screen and (min-width: 1440px){
-    #PageTitle {
+@media screen and (min-width: 1440px)
+{
+    #PageTitle
+    {
         padding-top: 2em;
         font-size: 4vw;
     }
 }
 
-@media screen and (max-width: 580px){
-    #PageTitle {
+@media screen and (max-width: 580px)
+{
+    #PageTitle
+    {
         padding-top: 2em;
         font-size: 4vw;
     }
 }
 
-#ProjectList {
+#ProjectList
+{
     overflow: scroll;
     height: 35em;
     overflow-y: scroll;
 
 }
 
-#ProjectList a:visited {
+#ProjectList a:visited
+{
     color: black;
 }
 
-@font-face {
+@font-face
+{
     font-family: ralewayLight;
     src: url(../fonts/Raleway-Light.ttf);
 }
 
-@font-face {
+@font-face
+{
     font-family: avenir;
     src: url(../fonts/Avenir.ttc);
 }
