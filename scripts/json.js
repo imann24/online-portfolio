@@ -10,7 +10,7 @@ function loadProjects()
 {
      $.getJSON("../json/projects.json", function(json)
      {
-          projects = json["projects"];
+          projects = json["Projects"];
           console.log(projects[0]);
      });
 }
