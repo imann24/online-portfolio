@@ -3,8 +3,15 @@
      <script src = "../scripts/json.js"></script>
      <script>
           loadProjects();
+          projs = allProjects();
+          for(var i = 0; i < projs.length; i++)
+          {
+               $.("#projects").append("<div id = 'proj" + i + "'></div>");
+               $.("proj" + i).append("<p>" + projs[i]["Title"] + "</p>");
+          }
      </script>
 </head>
 <body>
-
+     <div id = "projects">
+     </div>
 </body>

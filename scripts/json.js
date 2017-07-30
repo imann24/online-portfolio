@@ -14,3 +14,33 @@ function loadProjects()
           console.log(projects[0]);
      });
 }
+
+function allProjects()
+{
+     return projects;
+}
+
+function getProject(projectName)
+{
+     return findProjects("Key", projectName, false);
+}
+
+function findProjects(key, value, findMultiple)
+{
+     matches = [];
+     for(var i = 0; i < projects.length; i++)
+     {
+          if(projects[i][key] == value)
+          {
+               if(findMultiple)
+               {
+                    matches.push(projects[i]);
+               }
+               else
+               {
+                    return projects[i];
+               }
+          }
+     }
+     return matches;
+}
