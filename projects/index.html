@@ -22,9 +22,9 @@
                while(remainingCellCount > 0)
                {
                     $("#proj-table").append("<tr id ='project-table-row" + rowIndex + "'></tr>");
-                    console.log("project-table-row" + rowIndex)
                     for(var i = 0; i < columnCount && remainingCellCount > 0; i++)
                     {
+                         console.log("project-table-row" + rowIndex);
                          $("project-table-row" + rowIndex).append("<td><img src ='" + projs[projIndex]["Key"] + "/index.png' ></td>");
                          remainingCellCount--;
                          projIndex++;
