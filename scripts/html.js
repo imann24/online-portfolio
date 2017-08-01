@@ -1,4 +1,4 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -15,7 +15,6 @@ function HTMLElement (className, idName) {
     this.initialize(className, idName);
 }
 
-
 /**
  * @description Called as the constructor so this class can easily be subclassed
  * @param {String} className
@@ -23,42 +22,41 @@ function HTMLElement (className, idName) {
  * @returns {undefined}
  */
 HTMLElement.prototype.initialize = function (className, idName) {
-    
+
     // Should be an array of Attributes
     this.attributes = [];
-    
+
     // Should be an array of HTMLElements
     this.innerContent = [];
-    
-    this.className = 
+
+    this.className =
             typeof className === "undefined" ?
                 "" : className;
-     
-    this.idName = 
+
+    this.idName =
             typeof idName === "undefined" ?
                 "" : idName;
-                
+
     if (typeof className !== "undefined") {
         this.addAttribute(
             new Attribute(
-                "class", className        
+                "class", className
             )
         );
     }
-    
+
     if (typeof idName !== "undefined") {
         this.addAttribute(
             new Attribute(
-                "id", idName        
+                "id", idName
             )
         );
     }
-            
+
     this.type = null;
-    
+
     this.text = "";
 };
-
 
 /**
  * @description Used if you want the tags to be something other than div
@@ -94,11 +92,11 @@ HTMLElement.prototype.getHTML = function () {
 HTMLElement.prototype.getInnerContent = function () {
     if (this.innerContent !== null) {
         var html = this.text;
-        
+
         for (var i = 0; i < this.innerContent.length; i++) {
             html += this.innerContent[i].getHTML();
         }
-        
+
         return html;
     } else {
         return "";
@@ -111,7 +109,7 @@ HTMLElement.prototype.getInnerContent = function () {
  * @returns {String}
  */
 HTMLElement.prototype.openingTag = function (htmlElement) {
-    return "<" + 
+    return "<" +
             htmlElement.getType() +
             " " + htmlElement.getAttributes() +
             ">";
@@ -153,13 +151,13 @@ HTMLElement.prototype.getAttributes = function (htmlElement) {
     if (typeof htmlElement === "undefined") {
         htmlElement = this;
     }
-    
+
     var attributes = "";
-    
+
     for (var i = 0; i < htmlElement.attributes.length; i++) {
         attributes += htmlElement.attributes[i].getHTML();
     }
-    
+
     return attributes;
 };
 
@@ -213,7 +211,7 @@ LinkableElement.prototype = new HTMLElement();
  */
 LinkableElement.prototype.initialize = function (className, idName, link, newTab) {
     HTMLElement.prototype.initialize.call(this, className, idName);
-    
+
     this.link = null;
     this.newTab = newTab;
     if (typeof link !== "undefined") {
@@ -242,11 +240,11 @@ LinkableElement.prototype.setOpenNewTab = function () {
  * @param {HTMLElement} htmlElement
  * @returns {String}
  */
-LinkableElement.prototype.getHTML = function (htmlElement) {    
+LinkableElement.prototype.getHTML = function (htmlElement) {
     if (typeof htmlElement === "undefined") {
         htmlElement = this;
     }
-    
+
     var html = HTMLElement.prototype.getHTML.call(htmlElement);
     if (this.link !== null) {
         var linkElement = new HTMLElement ();
@@ -256,7 +254,7 @@ LinkableElement.prototype.getHTML = function (htmlElement) {
                 "href",
                 htmlElement.link
             )
-        ); 
+        );
 
         if (this.newTab === true) {
             linkElement.addAttribute(
@@ -264,7 +262,7 @@ LinkableElement.prototype.getHTML = function (htmlElement) {
                             "target",
                             "blank"
                         )
-                    );   
+                    );
         }
         html = this.openingTag(linkElement) + html + this.closingTag(linkElement);
     }
@@ -306,7 +304,7 @@ ImageElement.prototype = new LinkableElement();
  * @returns {undefined}
  */
 ImageElement.prototype.initialize = function (imageURL, className, idName) {
-    LinkableElement.prototype.initialize(this, className, idName, true);    
+    LinkableElement.prototype.initialize(this, className, idName, true);
     this.imageURL = imageURL;
 };
 
@@ -355,7 +353,7 @@ ImageGroup.prototype.initialize = function (imageURLs, className, idName) {
  */
 ImageGroup.prototype.createImages = function (imageURLs) {
     var images = [];
-   
+
     for (var i = 0; i < imageURLs.length; i++) {
         images.push (
             new ImageElement (
@@ -377,9 +375,9 @@ ImageGroup.prototype.getHTML = function () {
     for (var i = 0; i < this.images.length; i++) {
         html += this.images[i].getHTML();
     }
-    
+
     html += this.closingTag(this);
-    
+
     return html;
 };
 
@@ -390,11 +388,11 @@ ImageGroup.prototype.getHTML = function () {
  */
 ImageGroup.prototype.addLinkToAll = function (links) {
     var isArray = Array.isArray(links);
-    
+
     for (var i = 0; i < this.images.length; i++) {
         this.images[i].setLink(isArray ? links[i] : links, true);
     }
-  
+
 };
 
 /**
@@ -428,11 +426,11 @@ Attribute.prototype.getHTML = function () {
 };
 
 /**
- * @description A collection of HTML Elements 
+ * @description A collection of HTML Elements
  * @param {String} innerClassName
  * @param {String[]} idNames
  * @param {String} outerClassName
- * @param {String} outerIdName 
+ * @param {String} outerIdName
  * @returns {HTMLGroup}
  * @constructor
  */
@@ -440,12 +438,12 @@ function HTMLGroup (innerClassName, idNames, outerClassName, outerIdName) {
 
     HTMLElement.prototype.initialize.call(this, outerClassName, outerIdName);
 
-    this.innerClasName = 
+    this.innerClasName =
             typeof innerClassName === "undefined" ?
                 "" : innerClassName;
-                
+
     this.idNames = idNames;
-    
+
     this.innerContent = this.generateInnerHTMLElements();
 }
 
@@ -457,7 +455,7 @@ HTMLGroup.prototype = new HTMLElement();
  */
 HTMLGroup.prototype.generateInnerHTMLElements = function () {
     var innerElements = [];
-    
+
     for (var i = 0; i < this.idNames.length; i++) {
         innerElements.push(
             new LinkableElement (
@@ -466,7 +464,7 @@ HTMLGroup.prototype.generateInnerHTMLElements = function () {
             )
         );
     }
-    
+
     return innerElements;
 };
 
@@ -501,10 +499,10 @@ HTMLGroup.prototype.addInnerContentToAll = function (type, content, className, i
                 className,
                 idName
             );
-        
+
         element.setStype(type);
         element.setText(content[i]);
-        
+
         this.innerContent[i].addInnerElement (element);
     }
 };
@@ -541,7 +539,7 @@ HTMLGroup.prototype.addInnerContentToElement = function (index, htmlElements) {
     } else {
         this.innerContent[index].addInnerElement(
             htmlElements
-        );   
+        );
     }
 };
 
@@ -560,7 +558,7 @@ function LinkFormatter () {}
  */
 LinkFormatter.prototype.setDirectoryLevel = function (level, links) {
     var directoryLevel = new StringFormatter().repeat("../", level);
-    
+
     if (typeof links === "string") {
         return directoryLevel + links;
     } else if (Array.isArray(links)) {
@@ -581,7 +579,7 @@ LinkFormatter.prototype.setDirectoryLevel = function (level, links) {
  */
 LinkFormatter.prototype.addDirectory = function (directory, links) {
     directory += "/";
-    
+
     if (typeof links === "string") {
         return directory + links;
     } else if (Array.isArray(links)) {

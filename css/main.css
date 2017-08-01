@@ -47,26 +47,37 @@ ul
 
 .LinkButton
 {
-
 	color: white;
 	background-color: #5D68BB;
-	position: absolute;
 	width: 25%;
-	height: 25%;
-	padding: 1.25em;
-     font-size: 2vw;
+	height: 5em;
+     font-size: 0.75vw;
      overflow: hidden;
-	text-align: center;
-        -webkit-transition: height 0.5s;
-        transition: height 0.5s;
+     border-radius: 1em;
+     float: left;
+     margin: 0.95em;
+     text-align: center;
+     padding-bottom: 2em;
 }
 
 .LinkButton:hover
 {
     background-color: #394284;
     -webkit-transition: height 0.5s;
-    transition: height 0.5s;
-    height: 30%;
+}
+
+.LinkButton h1
+{
+     margin: 0;
+     padding: 0.1em;
+}
+
+.Navbar
+{
+     width: 90%;
+     margin: 0 auto;
+     padding-left: 14%;
+     height: 5em;
 }
 
 .Navbar img
@@ -92,13 +103,16 @@ ul
 
 .PDF
 {
+    margin-top: -14.5em;
+    width: 100%;
     text-align: center;
+    float: left;
 }
 
 .PDF img
 {
     margin-top: 5em;
-    width: 15em;
+    width: 4em;
 }
 
 .PDF img:hover
@@ -111,7 +125,6 @@ ul
 {
     top: 0;
     left: 0;
-    border-radius: 0 0 5em 0;
 }
 
 #SocialLinks
@@ -119,7 +132,6 @@ ul
     height: 25%;
     top: 0;
     right: 0;
-    border-radius: 0 0 0 5em;
     background-color: #5D68BB;
 }
 
@@ -127,14 +139,12 @@ ul
 {
     bottom: 0;
     left: 0;
-    border-radius: 0 5em 0 0;
 }
 
 #Coursework
 {
     bottom: 0;
     right: 0;
-    border-radius: 5em 0 0 0;
 }
 
 #TopCenterPanel

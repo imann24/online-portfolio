@@ -1,40 +1,60 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-function initialize () {
-    generateNavBar(PAGE_LEVEL);
-} 
+function initialize ()
+{
+    navBar(PAGE_LEVEL);
+}
 
-function generateNavBar(pageLevel) {
-    var navBar = new HTMLGroup(
+function navBar(pageLevel)
+{
+     var bar = new HTMLGroup
+     (
         "LinkButton",
-        ["Resume", "SocialLinks", "AllProjects", "Coursework"],
+        ["Resume", "Projects", "Contact"],
         "Navbar"
     );
-    
-    navBar.addInnerContentToAll (
+    bar.addInnerContentToAll
+    (
         "h1",
-        ["Resume", "", "All Projects", "Coursework"]
+        ["Resume", "Projects", "Contact"]
     );
-    
-    var links = ["resume", "social", "projects", "coursework"];
-    
+    var links = ["resume", "projects", "contact"];
     var formatter = new LinkFormatter();
-    
     links = formatter.setDirectoryLevel(
             pageLevel,
             links);
-            
-    navBar.addLinkToAll(
+    bar.addLinkToAll(
         links
     );
-    
-    addSocialLinks(navBar, pageLevel);
-    
-    $('body').append(navBar.getHTML());
+    $('#navbar-wrapper').append(bar.getHTML());
+}
+
+function generateNavBar(pageLevel)
+{
+    var bar = new HTMLGroup(
+        "LinkButton",
+        ["Resume", "Projects", "Contact"],
+        "Navbar"
+    );
+
+    bar.addInnerContentToAll (
+        "h1",
+        ["Resume", "", "All Projects", "Coursework"]
+    );
+    var links = ["resume", "social", "projects", "coursework"];
+    var formatter = new LinkFormatter();
+    links = formatter.setDirectoryLevel(
+            pageLevel,
+            links);
+    bar.addLinkToAll(
+        links
+    );
+    addSocialLinks(bar, pageLevel);
+    $('body').append(bar.getHTML());
 }
 
 function addSocialLinks (navBar, pageLevel) {
@@ -45,11 +65,11 @@ function addSocialLinks (navBar, pageLevel) {
         "https://twitter.com/isaiah_the_mann",
         "http://isaiahmann.com/blog"
     ];
-    
-    var formatter = new LinkFormatter();
-    
 
-    
+    var formatter = new LinkFormatter();
+
+
+
     socialImages = formatter.setDirectoryLevel(
             pageLevel,
             formatter.addDirectory(
@@ -57,18 +77,18 @@ function addSocialLinks (navBar, pageLevel) {
                 formatter.addDirectory(
                     "social-icons",
                     socialImages)));
-            
-    
+
+
     var images = new ImageGroup(
         socialImages,
         "social-icon"
     );
-    
+
     images.addLinkToAll(links);
     navBar.addInnerContentToElement(1, images);
-    
+
 }
-window.onload = initialize;
 
 /** * Apply a class to each child * Required for IE8- */
 $('.circle-container').children().each(function() {  $(this).addClass('item'+($(this).index() + 1));});
+window.onload = initialize;
