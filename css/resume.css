@@ -1,0 +1,34 @@
+h1
+{
+     margin-bottom: 0;
+}
+
+#pdf-img
+{
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+#pdf-img img
+{
+    width: 4em;
+}
+
+#pdf-img img:hover
+{
+    -webkit-filter: grayscale(25%);
+    filter: grayscale(25%);
+}
+
+#pdf-embed
+{
+     width: 70%;
+}
+
+#pdf-embed iframe
+{
+     width: 100%;
+     height: 75vh;
+     view: fit;
+}

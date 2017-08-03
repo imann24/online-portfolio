@@ -5,5 +5,11 @@ body
 
 .proj-cell
 {
-     padding: 2em
+     padding: 2.25em;
+     width: 10em;
+}
+
+img.proj-cell
+{
+     border-radius: 3em;
 }
