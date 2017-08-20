@@ -1,0 +1,32 @@
+#about-me
+{
+     font-size: 1.75em;
+     text-align: justify;
+     padding-left: 15vw;
+     padding-right: 18vw;
+}
+
+#about-me a
+{
+     color: #5D68BB;
+}
+
+#about-me a:hover
+{
+     color: #1b2679;
+}
+
+#profile-pic img
+{
+     position: absolute;
+     left: 2vw;
+     top: 2vw;
+     border-radius: 10em;
+     border: 0.85vw solid #1b2679;
+     width: 10vw;
+}
+
+h2
+{
+     color: gainsboro;
+}

@@ -2,7 +2,6 @@ body
 {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 h1
@@ -15,11 +14,6 @@ h2
 {
     font-family: ralewayLight;
     border: 1px solid white;
-}
-
-h2:hover
-{
-    color: #7a8af4;
 }
 
 h3
@@ -49,8 +43,8 @@ ul
 {
 	color: white;
 	background-color: #5D68BB;
-	width: 25%;
-	height: 5em;
+	width: 20%;
+	height: 7em;
      font-size: 0.75vw;
      overflow: hidden;
      border-radius: 1em;
@@ -58,6 +52,11 @@ ul
      margin: 0.95em;
      text-align: center;
      padding-bottom: 2em;
+}
+
+.ActivePage
+{
+     background-color: #1b2679;
 }
 
 .LinkButton:hover
@@ -74,7 +73,7 @@ ul
 
 #navbar-wrapper
 {
-     height: 10em;
+     height: 7.5vw;
      display: block;
 }
 
@@ -85,15 +84,15 @@ ul
      display: block;
 }
 
-.Navbar
+.navbar
 {
      width: 90%;
      margin: 0 auto;
-     padding-left: 14%;
+     padding-left: 9%;
      height: 5em;
 }
 
-.Navbar img
+.navbar img
 {
     -webkit-transition: width 0.5s, float 0.5s;
     transition: width 0.5s, float 0.5s;
@@ -102,7 +101,7 @@ ul
     margin-left: 0.5em;
 }
 
-.Navbar img:hover
+.navbar img:hover
 {
     width: 6vw;
     -webkit-transition: width 0.5s;
@@ -203,6 +202,19 @@ ul
 #ProjectList a:visited
 {
     color: black;
+}
+
+#social-icons
+{
+     position: absolute;
+     right: 2vw;
+     top: 2vh;
+}
+
+#social-icons img
+{
+     margin: 0.25em;
+     width: 5em;
 }
 
 @font-face

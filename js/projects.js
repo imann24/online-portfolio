@@ -11,19 +11,23 @@ function listProjects()
 
 function createProjects(columnCount)
 {
-     $("#projects").append("<center><table id = 'proj-table'></table></center>");
+     $("#projects").append("<center><div id = 'proj-table'></div></center>");
      var projs = allProjects();
      var remainingCellCount = projs.length;
      var projIndex = 0;
      var rowIndex = 0;
      while(remainingCellCount > 0)
      {
-          $("#proj-table").append("<tr id ='project-table-row" + rowIndex + "'></tr>");
+          // $("#proj-table").append("<div class = 'row'" +
+          // "id ='project-table-row" + rowIndex + "'></div>");
           for(var i = 0; i < columnCount && remainingCellCount > 0; i++)
           {
-               $("#project-table-row" + rowIndex).append("<td><img class = 'proj-cell' src ='" +
+               // $("#project-table-row" + rowIndex).append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
+               // projs[projIndex]["Key"] +
+               // "/icon.png' ></div>");
+               $("#proj-table").append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
                projs[projIndex]["Key"] +
-               "/icon.png' ></td>");
+               "/icon.png' ></div>");
                remainingCellCount--;
                projIndex++;
           }

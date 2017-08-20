@@ -3,18 +3,19 @@ body
      overflow: visible;
 }
 
+#proj-table
+{
+     max-width: 75%;
+     margin: auto;
+}
+
 .proj-cell
 {
-     padding: 2.25em;
+     padding: 1.75em;
      width: 10em;
 }
 
 img.proj-cell
 {
      border-radius: 3em;
-}
-
-#projects-title
-{
-     margin-top: 0.67em;
 }
