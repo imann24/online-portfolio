@@ -13,26 +13,27 @@ function createProjects(columnCount)
 {
      $("#projects").append("<center><div id = 'proj-table'></div></center>");
      var projs = allProjects();
-     var remainingCellCount = projs.length;
-     var projIndex = 0;
-     var rowIndex = 0;
-     while(remainingCellCount > 0)
+     for(var i = 0; i < projs.length > 0; i += 2)
      {
-          // $("#proj-table").append("<div class = 'row'" +
-          // "id ='project-table-row" + rowIndex + "'></div>");
-          for(var i = 0; i < columnCount && remainingCellCount > 0; i++)
+          // $("#project-table-row" + rowIndex).append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
+          // projs[projIndex]["Key"] +
+          // "/icon.png' ></div>");
+          var html = "<div class = 'col-sm-2'>";
+          html += getCell(projs[i]);
+          if(i + 1 < projs.length)
           {
-               // $("#project-table-row" + rowIndex).append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
-               // projs[projIndex]["Key"] +
-               // "/icon.png' ></div>");
-               $("#proj-table").append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
-               projs[projIndex]["Key"] +
-               "/icon.png' ></div>");
-               remainingCellCount--;
-               projIndex++;
+               html += getCell(projs[i + 1]);
           }
-          rowIndex++;
+          html += "</div>"
+          $("#proj-table").append(html);
      }
+}
+
+function getCell(project)
+{
+     return "<div><img class = 'proj-cell' src ='" +
+     project["Key"] +
+     "/icon.png' ></div>"
 }
 
 setLoadCallback(function()

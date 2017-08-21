@@ -108,6 +108,16 @@ ul
     transition: width 0.5s;
 }
 
+.title
+{
+     font-size: 7.5vw;
+}
+
+.subtitle
+{
+     font-size: 3vw;
+}
+
 .ProjectIcon
 {
     width: 3em;
@@ -214,7 +224,7 @@ ul
 #social-icons img
 {
      margin: 0.25em;
-     width: 5em;
+     width: 5vw;
 }
 
 @font-face

@@ -11,11 +11,12 @@ body
 
 .proj-cell
 {
-     padding: 1.75em;
-     width: 10em;
+     float: left;
+     padding: 1em;
+     margin: 2em;
 }
 
 img.proj-cell
 {
-     border-radius: 3em;
+     border-radius: 2em;
 }
