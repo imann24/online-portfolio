@@ -10,6 +10,14 @@ h1
     float: left;
 }
 
+#pdf-img a
+{
+     margin-left: -1.5vw;
+     height: 4em;
+     width: 4em;
+     z-index: 100;
+}
+
 #pdf-img img
 {
     width: 4em;
@@ -31,4 +39,68 @@ h1
      width: 100%;
      height: 75vh;
      view: fit;
+}
+
+#Resume
+{
+     background: #1b2679; /* fallback */
+     background:
+          linear-gradient(135deg, transparent 1vw, #1b2679 0) top left,
+          linear-gradient(225deg, transparent 1vw, #1b2679 0) top right,
+          linear-gradient(315deg, transparent 1vw, #1b2679 0) bottom right,
+          linear-gradient(45deg,  transparent 1vw, #1b2679 0) bottom left;
+     background-size: 55% 55%;
+     background-repeat: no-repeat;
+     background-image:
+		radial-gradient(circle at 0 0, rgba(27, 38, 121, 0) 0px, #1b2679 0px),
+		radial-gradient(circle at 100% 0, rgba(27, 38, 121, 0) 2vw, #1b2679 2vw),
+		radial-gradient(circle at 100% 100%, rgba(27, 38, 121, 0) 0px, #1b2679 0px),
+		radial-gradient(circle at 0 100%, rgba(27, 38, 121, 0) 0px, #1b2679 0px);
+}
+
+#Projects
+{
+     background: #5D68BB; /* fallback */
+     background:
+          linear-gradient(135deg, transparent 1vw, #5D68BB 0) top left,
+          linear-gradient(225deg, transparent 1vw, #5D68BB 0) top right,
+          linear-gradient(315deg, transparent 1vw, #5D68BB 0) bottom right,
+          linear-gradient(45deg,  transparent 1vw, #5D68BB 0) bottom left;
+     background-size: 55% 55%;
+     background-repeat: no-repeat;
+     background-image:
+          radial-gradient(circle at 0 0, rgba(93, 104, 187, 0) 2vw, #5D68BB 2vw),
+          radial-gradient(circle at 100% 0, rgba(93, 104, 187, 0) 0px, #5D68BB 0px),
+          radial-gradient(circle at 100% 100%, rgba(93, 104, 187, 0) 0px, #5D68BB 0px),
+          radial-gradient(circle at 0 100%, rgba(93, 104, 187, 0) 0px, #5D68BB 0px);
+}
+
+#Resume:hover, #Projects:hover
+{
+     background: #394284; /* fallback */
+     background:
+          linear-gradient(135deg, transparent 1vw, #394284 0) top left,
+          linear-gradient(225deg, transparent 1vw, #394284 0) top right,
+          linear-gradient(315deg, transparent 1vw, #394284 0) bottom right,
+          linear-gradient(45deg,  transparent 1vw, #394284 0) bottom left;
+     background-size: 55% 55%;
+     background-repeat: no-repeat;
+}
+
+#Resume:hover
+{
+     background-image:
+		radial-gradient(circle at 0 0, rgba(27, 38, 121, 0) 0px, #394284 0px),
+		radial-gradient(circle at 100% 0, rgba(27, 38, 121, 0) 2vw, #394284 2vw),
+		radial-gradient(circle at 100% 100%, rgba(27, 38, 121, 0) 0px, #394284 0px),
+		radial-gradient(circle at 0 100%, rgba(27, 38, 121, 0) 0px, #394284 0px);
+}
+
+#Projects:hover
+{
+     background-image:
+		radial-gradient(circle at 0 0, rgba(27, 38, 121, 0) 2vw, #394284 2vw),
+		radial-gradient(circle at 100% 0, rgba(27, 38, 121, 0) 0px, #394284 0px),
+		radial-gradient(circle at 100% 100%, rgba(27, 38, 121, 0) 0px, #394284 0px),
+		radial-gradient(circle at 0 100%, rgba(27, 38, 121, 0) 0px, #394284 0px);
 }

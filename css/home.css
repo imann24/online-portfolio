@@ -1,9 +1,17 @@
 #about-me
 {
      font-size: 1.75em;
-     text-align: left;
+     text-align: justify;
      padding-left: 15vw;
      padding-right: 18vw;
+}
+
+@media (max-width: 800px)
+{
+     #about-me
+     {
+          text-align: left;
+     }
 }
 
 #about-me a
@@ -33,5 +41,5 @@
 
 h2
 {
-     color: gainsboro;
+     color: #696969;
 }
