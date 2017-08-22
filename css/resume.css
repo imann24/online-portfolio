@@ -3,6 +3,11 @@ h1
      margin-bottom: 0;
 }
 
+#pdf-canvas
+{
+     width: 200%;
+}
+
 #pdf-img
 {
     width: 100%;
