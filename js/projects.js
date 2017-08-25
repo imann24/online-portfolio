@@ -15,9 +15,6 @@ function createProjects(columnCount)
      var projs = allProjects();
      for(var i = 0; i < projs.length > 0; i += 2)
      {
-          // $("#project-table-row" + rowIndex).append("<div class = 'col-sm-2'><img class = 'proj-cell' src ='" +
-          // projs[projIndex]["Key"] +
-          // "/icon.png' ></div>");
           var html = "<div class = 'col-sm-2'>";
           html += getCell(projs[i]);
           if(i + 1 < projs.length)
@@ -31,9 +28,11 @@ function createProjects(columnCount)
 
 function getCell(project)
 {
-     return "<div><img class = 'proj-cell' src ='" +
+     return "<div><a href = '" +
      project["Key"] +
-     "/icon.png' ></div>"
+     "'><img class = 'proj-cell' src ='" +
+     project["Key"] +
+     "/icon.png' ></a></div>"
 }
 
 setLoadCallback(function()
