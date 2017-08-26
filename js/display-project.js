@@ -14,8 +14,13 @@ function displayProject()
      var project = getProjectFromURL();
      document.title = project.Title;
      $(".title").html(project.Title);
-     $("#project-summary").html(project.Description);
+     $("#project-summary").append(project.Description);
      appendList("#project-contributions", project.Contributions);
+     appendImageList("#project-pictures", project.Pictures);
+     if(project.Video)
+     {
+          appendYouTubeVideo("#project-video", project.Video);
+     }
 }
 
 function fetchProject()
