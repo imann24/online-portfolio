@@ -10,6 +10,7 @@
     <link type = "text/css" href="../../css/main.css" rel="stylesheet">
     <link type = "text/css" href="../../css/home.css" rel="stylesheet">
     <link type = "text/css" href="../../css/apps.css" rel="stylesheet">
+    <link type = "text/css" href="../../css/display-project.css" rel="stylesheet">
 
     <!-- SCRIPTS -->
     <script>
@@ -17,7 +18,9 @@
          PAGE_ID = "Projects";
     </script>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "../../js/constants.js"></script>
     <script src = "../../js/util.js"></script>
+    <script src = "../../js/date.js"></script>
     <script src = "../../js/html.js"></script>
     <script src = "../../js/main.js"></script>
     <script src = "../../js/json.js"></script>
@@ -31,14 +34,23 @@
                <h1 class = "title">Project</h1>
                <div id = "navbar-wrapper"></div>
                <div id = "project-display">
-                    <p id = "project-summary">
+                    <div id = "project-role"></div>
+                    <div id = "project-org"></div>
+                    <div id = "project-team-size"></div>
+                    <div id = "project-timeline"></div>
+                    <div id = "project-plat"></div>
+                    <div id = "project-lang"></div>
+                    <p id = "project-description">
+                         <b>Description:</b>
                     </p>
                     <div id = "project-contributions">
+                         <b>Contributions:</b>
                     </div>
-                    <div id = "project-pictures">
-                    </div>
-                    <div id = "project-video">
-                    </div>
+                    <center>
+                         <div id = "project-links"></div>
+                    </center>
+                    <div id = "project-pictures"></div>
+                    <div id = "project-video"></div>
                </div>
           </div>
      </center>

@@ -28,6 +28,11 @@ p
     color: black;
 }
 
+b
+{
+     font-family: avenirBold;
+}
+
 a
 {
     color: white;
@@ -253,4 +258,10 @@ ul
 {
     font-family: avenir;
     src: url(../fonts/Avenir.ttc);
+}
+
+@font-face
+{
+    font-family: avenirBold;
+    src: url(../fonts/AvenirNext.ttc);
 }

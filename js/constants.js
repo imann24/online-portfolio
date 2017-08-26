@@ -1,0 +1,1 @@
+var NOT_APPLICABLE = "N/A";

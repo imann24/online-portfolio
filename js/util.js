@@ -1,4 +1,4 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -9,7 +9,7 @@
  * @returns {StringFormatter}
  * @constructor
  */
-function StringFormatter () {}
+function StringFormatter() {}
 
 /**
  * @description Repeats the string a set amount of times
@@ -17,10 +17,17 @@ function StringFormatter () {}
  * @param {int} count
  * @returns {String}
  */
-StringFormatter.prototype.repeat = function (string, count) {
+StringFormatter.prototype.repeat = function(string, count)
+{
     var stringToReturn = "";
-    for (var i = 0; i < count; i++) {
+    for(var i = 0; i < count; i++)
+    {
         stringToReturn += string;
     }
     return stringToReturn;
+};
+
+StringFormatter.prototype.formatList = function(array)
+{
+    return array.join(", ");
 };
