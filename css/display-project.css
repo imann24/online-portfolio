@@ -18,6 +18,15 @@
      margin: 2vw;
 }
 
+#project-icon img
+{
+     position: absolute;
+     left: 0.75vw;
+     top: 0.75vw;
+     border-radius: 1.5vw;
+     width: 10vw;
+}
+
 #project-video
 {
      width: 100%;

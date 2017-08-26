@@ -25,6 +25,7 @@ function displayProject()
      var project = getProjectFromURL();
      document.title = project.Title;
      $(".title").html(project.Title);
+     appendImage("#project-icon", "icon.png")
      appendListInline("#project-role", project.Roles, "Role");
      appendInline("#project-org", project.Organization, "Organization");
      appendInline("#project-team-size", project.TeamSize, "Team Size");
