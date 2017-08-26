@@ -9,7 +9,8 @@ var projLoadCallback;
 
 function loadProjects()
 {
-     $.getJSON("../json/projects.json", function(json)
+     var subDirectory = new StringFormatter().repeat("../", PAGE_LEVEL);
+     $.getJSON(subDirectory + "json/projects.json", function(json)
      {
           projects = json["Projects"];
           if(projLoadCallback != null)
