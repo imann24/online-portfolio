@@ -1,0 +1,13 @@
+#contact-info
+{
+     width: 100%;
+     display: block;
+     text-align: left;
+     font-size: 2em;
+     padding-left: 14%;
+}
+
+#contact-info a
+{
+     color: #5D68BB;
+}

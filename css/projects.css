@@ -1,0 +1,22 @@
+body
+{
+     overflow: visible;
+}
+
+#proj-table
+{
+     max-width: 75%;
+     margin: auto;
+}
+
+.proj-cell
+{
+     float: left;
+     padding: 1em;
+     margin: 2em;
+}
+
+img.proj-cell
+{
+     border-radius: 2em;
+}

@@ -1,0 +1,51 @@
+#project-display
+{
+     text-align: left;
+     max-width: 70vw;
+     margin: auto;
+     font-size: 1.5em;
+}
+
+#project-display ul
+{
+     list-style-type: circle;
+     font-family: avenir;
+}
+
+#project-display img
+{
+     width: 30vw;
+     margin: 2vw;
+}
+
+#project-icon img
+{
+     position: absolute;
+     left: 0.75vw;
+     top: 0.75vw;
+     border-radius: 1.5vw;
+     width: 10vw;
+}
+
+#project-video
+{
+     width: 100%;
+}
+
+#project-video iframe
+{
+     width: 90%;
+     height: 40vw;
+     margin-left: 4%;
+}
+
+#project-links
+{
+     max-width: 70vw;
+     margin: auto;
+}
+
+#project-links img
+{
+     width: 5vw;
+}
