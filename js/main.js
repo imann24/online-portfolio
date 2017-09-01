@@ -61,7 +61,10 @@ function addSocialLinks(pageLevel)
 function initialize ()
 {
     navBar(PAGE_LEVEL);
-    highlightActivePage(PAGE_ID);
+    if(typeof(PAGE_ID) != "undefined")
+    {
+         highlightActivePage(PAGE_ID);
+    }
     addSocialLinks(PAGE_LEVEL);
 }
 

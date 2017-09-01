@@ -1,0 +1,11 @@
+#not-found-message
+{
+     font-size: 2em;
+     text-align: left;
+     max-width: 70vw;
+}
+
+#not-found-message a
+{
+     color: #5D68BB;
+}
