@@ -4,6 +4,7 @@
      max-width: 70vw;
      margin: auto;
      font-size: 1.5em;
+     display: none;
 }
 
 #project-display ul

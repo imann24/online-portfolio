@@ -24,6 +24,8 @@ function createProjects(columnCount)
           html += "</div>"
           $("#proj-table").append(html);
      }
+     $("#projects").css("display", "block");
+     $(".loader").css("display", "none");
 }
 
 function getCell(project)

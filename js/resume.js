@@ -18,7 +18,6 @@ loadingTask.promise.then(function(pdf) {
   // Fetch the first page
   var pageNumber = 1;
   pdf.getPage(pageNumber).then(function(page) {
-
     var scale = 5;
     var viewport = page.getViewport(scale);
 
@@ -35,6 +34,7 @@ loadingTask.promise.then(function(pdf) {
     };
     var renderTask = page.render(renderContext);
     renderTask.then(function () {
+         $(".loader").css("display", "none");
     });
   });
 }, function (reason) {

@@ -45,6 +45,8 @@ function displayProject()
      {
           appendYouTubeVideo("#project-video", project.Video);
      }
+     $("#project-display").css("display", "block");
+     $(".loader").css("display", "none");
 }
 
 function fetchProject()
