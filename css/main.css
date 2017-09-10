@@ -6,31 +6,36 @@ body
 
 h1
 {
-    font-family: ralewayLight;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 300;
     font-size: 5em;
 }
 
 h2
 {
-    font-family: ralewayLight;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 300;
     border: 1px solid white;
 }
 
 h3
 {
-    font-family: ralewayLight;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 300;
     font-size: 1em;
 }
 
 p
 {
-    font-family: avenir;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 300;
     color: black;
 }
 
 b
 {
-     font-family: avenirBold;
+     font-family: 'Encode Sans Condensed', sans-serif;
+     font-weight: 700;
 }
 
 a
@@ -183,7 +188,7 @@ ul
 #PageTitle
 {
     text-align: center;
-    font-family: avenir;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -246,22 +251,4 @@ ul
      {
           width: 10vw;
      }
-}
-
-@font-face
-{
-    font-family: ralewayLight;
-    src: url(../fonts/Raleway-Light.ttf);
-}
-
-@font-face
-{
-    font-family: avenir;
-    src: url(../fonts/Avenir.ttc);
-}
-
-@font-face
-{
-    font-family: avenirBold;
-    src: url(../fonts/AvenirNext.ttc);
 }

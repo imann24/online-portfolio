@@ -9,7 +9,8 @@
 #project-display ul
 {
      list-style-type: circle;
-     font-family: avenir;
+     font-family: 'Encode Sans Condensed', sans-serif;
+     font-weight: 300;
 }
 
 #project-display img
