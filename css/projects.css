@@ -3,6 +3,11 @@ body
      overflow: visible;
 }
 
+#projects
+{
+     display: none;
+}
+
 #proj-table
 {
      max-width: 75%;

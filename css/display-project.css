@@ -1,9 +1,15 @@
+#project-title
+{
+     display: none;
+}
+
 #project-display
 {
      text-align: left;
      max-width: 70vw;
      margin: auto;
      font-size: 1.5em;
+     display: none;
 }
 
 #project-display ul

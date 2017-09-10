@@ -68,4 +68,4 @@ function initialize ()
     addSocialLinks(PAGE_LEVEL);
 }
 
-window.onload = initialize;
+$(document).ready(initialize);
