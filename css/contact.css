@@ -1,9 +1,10 @@
 #contact-info
 {
+     padding-top: 1em;
      width: 100%;
      display: block;
      text-align: left;
-     font-size: 2em;
+     font-size: 5vw;
      padding-left: 14%;
 }
 
