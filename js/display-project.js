@@ -52,8 +52,7 @@ function displayProject()
 
 function fetchProject()
 {
-     setLoadCallback(displayProject);
-     loadProjects();
+     addLoadCallback(displayProject);
 }
 
 $(document).ready(fetchProject);
