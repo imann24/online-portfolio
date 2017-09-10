@@ -25,7 +25,34 @@ function navBar(pageLevel)
     bar.addLinkToAll(
         links
     );
+    addProjectDropdown(pageLevel, bar.getInnerElement(2));
     $('#navbar-wrapper').append(bar.getHTML());
+}
+
+function addProjectDropdown(pageLevel, projectButton)
+{
+     loadProjectsWithCallback(function()
+     {
+          var keys = projects.map(function(project) {return project.Key;});
+          var titles = projects.map(function(project) {return project.Title;});
+          var projectDropdown = new HTMLGroup(
+               "project-listing", keys, "project-dropdown");
+          projectDropdown.addInnerContentToAll("p", titles);
+          var formatter = new LinkFormatter();
+          var links = formatter.addDirectory("projects", keys);
+          lins = formatter.setDirectoryLevel(pageLevel, links);
+          projectDropdown.addLinkToAll(links);
+          projectButton.addInnerElement(projectDropdown);
+          $("#" + projectButton.getId()).append(projectDropdown.getHTML());
+          $("#Projects").hover(
+               function() {
+                    $(".project-dropdown").css("display", "block");
+               },
+               function() {
+                    $(".project-dropdown").css("display", "none");
+               });
+          console.log("RUNNING");
+     });
 }
 
 function highlightActivePage(pageId)

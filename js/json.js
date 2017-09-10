@@ -5,24 +5,41 @@
  */
 
 var projects;
-var projLoadCallback;
+var projLoadCallbacks = [];
+var projectLoadingInitialized = false;
 
 function loadProjects()
 {
+     if(projectLoadingInitialized)
+     {
+          return;
+     }
+     projectLoadingInitialized = true;
      var subDirectory = new StringFormatter().repeat("../", PAGE_LEVEL);
      $.getJSON(subDirectory + "json/projects.json", function(json)
      {
           projects = json["Projects"];
-          if(projLoadCallback != null)
-          {
-               projLoadCallback();
-          }
+          triggerCallbacks();
      });
 }
 
-function setLoadCallback(callback)
+function loadProjectsWithCallback(callback)
 {
-     projLoadCallback = callback;
+     addLoadCallback(callback);
+     loadProjects();
+}
+
+function addLoadCallback(callback)
+{
+     projLoadCallbacks.push(callback);
+}
+
+function triggerCallbacks()
+{
+     for(var i = 0; i < projLoadCallbacks.length; i++)
+     {
+          projLoadCallbacks[i]();
+     }
 }
 
 function allProjects()

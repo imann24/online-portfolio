@@ -37,9 +37,8 @@ function getCell(project)
      "/icon.png' ></a></div>"
 }
 
-setLoadCallback(function()
+addLoadCallback(function()
 {
      var columnCount = isMobile() ? 4 : 6;
      createProjects(columnCount);
 });
-loadProjects();

@@ -75,6 +75,10 @@ HTMLElement.prototype.getType = function () {
     return this.type === null ? "div" : this.type;
 };
 
+HTMLElement.prototype.getId = function () {
+    return this.idName;
+}
+
 /**
  * @description Fetches the HTML code needed to generate page text
  * @returns {String}
@@ -131,6 +135,10 @@ HTMLElement.prototype.closingTag = function (htmlElement) {
  */
 HTMLElement.prototype.addInnerElement = function (htmlElement) {
     this.innerContent.push(htmlElement);
+};
+
+HTMLElement.prototype.getInnerElement = function (index) {
+    return this.innerContent[index];
 };
 
 /**
