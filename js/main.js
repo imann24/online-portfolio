@@ -44,14 +44,19 @@ function addProjectDropdown(pageLevel, projectButton)
           projectDropdown.addLinkToAll(links);
           projectButton.addInnerElement(projectDropdown);
           $("#" + projectButton.getId()).append(projectDropdown.getHTML());
-          $("#Projects").hover(
-               function() {
-                    $(".project-dropdown").css("display", "block");
-               },
-               function() {
-                    $(".project-dropdown").css("display", "none");
-               });
-          console.log("RUNNING");
+          if(!isMobile())
+          {
+               $("#Projects").hover(
+                    function()
+                    {
+                         $(".project-dropdown").css("display", "block");
+                    },
+                    function()
+                    {
+                         $(".project-dropdown").css("display", "none");
+                    }
+               );
+          }
      });
 }
 
