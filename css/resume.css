@@ -13,6 +13,8 @@ h1
     width: 100%;
     text-align: center;
     float: left;
+    position: relative;
+    z-index: 100;
 }
 
 #pdf-img a
