@@ -22,10 +22,11 @@ function getProjectFromURL()
 
 function displayProject()
 {
+     var hideLoadingRingCallback = new BlockingCallback(hideLoadingRing);
      var project = getProjectFromURL();
      document.title = project.Title;
      $(".title").html(project.Title);
-     appendImage("#project-icon", "icon.png")
+     appendImage("#project-icon", "icon.png", hideLoadingRingCallback);
      appendListInline("#project-role", project.Roles, "Role");
      appendInline("#project-org", project.Organization, "Organization");
      appendInline("#project-team-size", project.TeamSize, "Team Size");
@@ -36,17 +37,23 @@ function displayProject()
      appendList("#project-contributions", project.Contributions);
      for(var i = 0; i < links.length; i++)
      {
-          var image = links[i].toLowerCase().replace(".", "")
-          + ".png";
+          var image = links[i].toLowerCase().replace(".", "") + ".png";
           appendSociaLink("#project-links", image, project[links[i]]);
      }
-     appendImageList("#project-pictures", project.Pictures);
+     appendImageList("#project-pictures",
+          project.Pictures,
+          hideLoadingRingCallback);
      if(project.Video)
      {
           appendYouTubeVideo("#project-video", project.Video);
      }
      $("#project-title").css("display", "block");
      $("#project-display").css("display", "block");
+     hideLoadingRingCallback.run();
+}
+
+function hideLoadingRing()
+{
      $(".loader").css("display", "none");
 }
 

@@ -43,19 +43,26 @@ function appendInline(target, content, label)
      $(target).append(html);
 }
 
-function appendImage(target, image)
+function appendImage(target, imageSource, blockingCallback)
 {
-     var html = "<img src ='" +
-     image +
-     "'/>";
+     var id = imageSource.split(".")[0];
+     var image = new Image();
+     image.src = imageSource;
+     blockingCallback.addFlag(imageSource);
+     var html = "<img id ='" + id + "'/>";
      $(target).append(html);
+     image.onload = function()
+     {
+          blockingCallback.removeFlag(imageSource);
+          $("#" + id).attr("src", imageSource);
+     };
 }
 
-function appendImageList(target, images)
+function appendImageList(target, images, blockingCallback)
 {
      for(var i = 0; i < images.length; i++)
      {
-          appendImage(target, images[i]);
+          appendImage(target, images[i], blockingCallback);
      }
 }
 
@@ -82,5 +89,4 @@ function appendSociaLink(target, image, url)
      image +
      "' /></a>";
      $(target).append(html);
-
 }
