@@ -258,3 +258,15 @@ ul
           width: 10vw;
      }
 }
+
+@media(max-width: 1000px) and (min-width: 810px)
+{
+     #word-padding
+     {
+          margin: 0;
+          float: right;
+          display: block;
+          width: 1.6em;
+          height: 1em;
+     }
+}
