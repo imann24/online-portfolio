@@ -30,7 +30,7 @@ function createProjects(columnCount)
 
 function getCell(project)
 {
-     return "<div><a href = '" +
+     return "<div class = 'proj-wrapper'><a href = '" +
      project["Key"] +
      "'><img class = 'proj-cell' src ='" +
      project["Key"] +
