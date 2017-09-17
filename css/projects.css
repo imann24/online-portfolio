@@ -14,11 +14,6 @@ body
      margin: auto;
 }
 
-.col-sm-2
-{
-     margin: 2vw;
-}
-
 .proj-cell
 {
      float: left;
@@ -30,8 +25,26 @@ img.proj-cell
      border-radius: 4em;
 }
 
-@media(max-width: 1000px)
+@media(max-width: 736px)
 {
+     .col-sm-2
+     {
+          margin: inherit;
+     }
+
+     .proj-cell
+     {
+          width: 50%;
+     }
+}
+
+@media(max-width: 1024px)
+{
+     .col-sm-2
+     {
+          margin: 2vw;
+     }
+     
      img.proj-cell
      {
           border-radius: 2em;
