@@ -4,16 +4,11 @@
 // header on that server.
 var url = "../assets/Mann_Resume.pdf";
 
-// Disable workers to avoid yet another cross-origin issue (workers need
-// the URL of the script to be loaded, and dynamically loading a cross-origin
-// script does not work).
-// PDFJS.disableWorker = true;
-
 // The workerSrc property shall be specified.
-PDFJS.workerSrc = "//mozilla.github.io/pdf.js/build/pdf.worker.js";
+pdfjsLib.workerSrc = "//mozilla.github.io/pdf.js/build/pdf.worker.js";
 
 // Asynchronous download of PDF
-var loadingTask = PDFJS.getDocument(url);
+var loadingTask = pdfjsLib.getDocument(url);
 loadingTask.promise.then(function(pdf) {
   // Fetch the first page
   var pageNumber = 1;
