@@ -249,6 +249,21 @@ ul
 {
      margin: 0.25em;
      width: 5vw;
+     border-radius: 50%;
+     border: 0.3vw solid white;
+     -webkit-transition : border 2s;
+     -moz-transition : border 2s;
+     -o-transition : border 2s;
+     transition : border 2s;
+}
+
+#social-icons img:hover
+{
+     border: 0.3vw solid #394284;
+     -webkit-transition : border 2s;
+     -moz-transition : border 2s;
+     -o-transition : border 2s;
+     transition : border 2s;
 }
 
 @media(max-width: 480px)
