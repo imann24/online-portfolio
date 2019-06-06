@@ -120,6 +120,19 @@ ul
     transition: width 0.5s;
 }
 
+#projects-scroll-down-icon
+{
+     display: none;
+     position: relative;
+     background-image: url('../assets/down_arrow.png');
+     background-size: contain;
+     height: 4em;
+     width: 4em;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: -5em;
+}
+
 .title
 {
      font-size: 7.5vw;
