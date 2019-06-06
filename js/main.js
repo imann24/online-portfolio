@@ -48,6 +48,7 @@ function addProjectDropdown(pageLevel, projectButton)
           $("#" + projectButton.getId()).append(projectDropdown.getHTML());
           if(!isMobile())
           {
+               $('#Projects').append('<div id="projects-scroll-down-icon"/>');
                $("#Projects").hover(
                     function()
                     {
@@ -60,7 +61,6 @@ function addProjectDropdown(pageLevel, projectButton)
                          $("#projects-scroll-down-icon").css("display", "none");
                     }
                );
-               $('#Projects').append('<div id="projects-scroll-down-icon"/>');
                $(".project-dropdown").scroll(
                     function()
                     {
