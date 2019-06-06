@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+const projectListingScrollTolerance = 50;
+
 function navBar(pageLevel)
 {
      var bar = new HTMLGroup
@@ -50,10 +52,32 @@ function addProjectDropdown(pageLevel, projectButton)
                     function()
                     {
                          $(".project-dropdown").css("display", "block");
+                         $("#projects-scroll-down-icon").css("display", "block");
                     },
                     function()
                     {
                          $(".project-dropdown").css("display", "none");
+                         $("#projects-scroll-down-icon").css("display", "none");
+                    }
+               );
+               $('#Projects').append('<div id="projects-scroll-down-icon"/>');
+               $(".project-dropdown").scroll(
+                    function()
+                    {
+                         let dropdown = $(".project-dropdown");
+                         let trueDivHeight = dropdown.prop("scrollHeight");
+                         let divHeight = dropdown.height();
+                         let scrollLeft = trueDivHeight - divHeight;
+                         let scrolled = dropdown.scrollTop();
+                         let scrollDifference = Math.abs(scrollLeft - scrolled);
+                         if (scrollDifference < projectListingScrollTolerance)
+                         {
+                              $("#projects-scroll-down-icon").css("display", "none");
+                         }
+                         else
+                         {
+                              $("#projects-scroll-down-icon").css("display", "block");
+                         }
                     }
                );
           }
