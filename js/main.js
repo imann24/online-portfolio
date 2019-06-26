@@ -42,7 +42,7 @@ function addProjectDropdown(pageLevel, projectButton)
           projectDropdown.addInnerContentToAll("p", titles);
           var formatter = new LinkFormatter();
           var links = formatter.addDirectory("projects", keys);
-          lins = formatter.setDirectoryLevel(pageLevel, links);
+          links = formatter.setDirectoryLevel(pageLevel, links);
           projectDropdown.addLinkToAll(links);
           projectButton.addInnerElement(projectDropdown);
           $("#" + projectButton.getId()).append(projectDropdown.getHTML());
