@@ -5,10 +5,10 @@ function isMobile()
     		       'BlackBerry|Windows Phone|'  +
     		       'Opera Mini|IEMobile|Mobile' ,
     		      'i');
-      if (exp.test(navigator.userAgent))
-      {
-           return true;
-      }
+     if (exp.test(navigator.userAgent))
+     {
+          return true;
+     }
      else
      {
           return false;

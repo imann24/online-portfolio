@@ -20,13 +20,11 @@ BlockingCallback.prototype.run = function()
 BlockingCallback.prototype.addFlag = function(flag)
 {
      this.flags.push(flag);
-     console.log(this.flags);
 };
 
 BlockingCallback.prototype.removeFlag = function(flag)
 {
      this.flags.splice(this.flags.indexOf(flag), 1);
-     console.log(this.flags);
      this.checkToRunCallback();
 };
 
