@@ -4,7 +4,30 @@
  * and open the template in the editor.
  */
 
-const projectListingScrollTolerance = 50;
+const PROJECT_LISTING_SCROLL_TOLERANCE = 50;
+const ANALYTICS_ENABLED = true;
+
+async function startAnalytics()
+{
+    const analytics = document.createElement("script");
+    analytics.src = "https://www.googletagmanager.com/gtag/js?id=UA-64996883-1"
+    return new Promise((resolve, reject) =>
+    {
+        analytics.onreadystatechange = function()
+        {
+            if(analytics.readyState === "loaded" || analytics.readyState === "complete")
+            {
+                analytics.onreadystatechange = null;
+                resolve(true);
+            }
+        };
+        document.getElementsByTagName("head")[0].appendChild(analytics);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-64996883-1');
+    });
+}
 
 function navBar(pageLevel)
 {
@@ -74,7 +97,7 @@ function checkToShowProjectsScrollDown()
      let scrollLeft = trueDivHeight - divHeight;
      let scrolled = dropdown.scrollTop();
      let scrollDifference = Math.abs(scrollLeft - scrolled);
-     if (scrollDifference < projectListingScrollTolerance)
+     if (scrollDifference < PROJECT_LISTING_SCROLL_TOLERANCE)
      {
           $("#projects-scroll-down-icon").css("display", "none");
      }
@@ -122,6 +145,10 @@ function initialize ()
          highlightActivePage(PAGE_ID);
     }
     addSocialLinks(PAGE_LEVEL);
+    if(ANALYTICS_ENABLED)
+    {
+        startAnalytics();
+    }
 }
 
 $(document).ready(initialize);
