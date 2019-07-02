@@ -1,0 +1,57 @@
+imann24
+==================================================================
+https://keybase.io/imann24
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://isaiahmann.com
+  * I am imann24 (https://keybase.io/imann24) on keybase.
+  * I have a public key ASDWME_h74m46Z1DqrRBKpP0TpfYjhDrNGnEtoNG3XXhgAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d6304fe1ef89b8e99d43aab4412a93f44e97d88e10eb3469c4b68346dd75e1800a",
+      "host": "keybase.io",
+      "kid": "0120d6304fe1ef89b8e99d43aab4412a93f44e97d88e10eb3469c4b68346dd75e1800a",
+      "uid": "0a40901a94e7378169716547ddd8fe19",
+      "username": "imann24"
+    },
+    "merkle_root": {
+      "ctime": 1562035542,
+      "hash": "3b18c67f7ea81b860535883f47590b06a1a06ab53b19a353c279855e030fd4908311501dcdd12916154719067d2816d06b2bdfb8a72d942e1e6c5cc3838a8e33",
+      "hash_meta": "9b5158d4292759a13ea810c5f6f13dcc28d7bbe523f3071cf7e1ff8311c408af",
+      "seqno": 5677062
+    },
+    "service": {
+      "entropy": "U+woHaqaJRg8ctV8Qzz4Xw1I",
+      "hostname": "isaiahmann.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1562035551,
+  "expire_in": 504576000,
+  "prev": "318e5dbe15e861e0d8b1632521c323fa3e0a179b63a66f378229553d1341c363",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1jBP4e+JuOmdQ6q0QSqT9E6X2I4Q6zRpxLaDRt114YAKp3BheWxvYWTESpcCBsQgMY5dvhXoYeDYsWMlIcMj+j4KF5tjpm83gilVPRNBw2PEIMUGAHqxMHvyNnlreOYyWNZVNs6PqWumMD2avfQK+YixAgHCo3NpZ8RAOLdRWwb9ghxhdTIV9pWgkaKCVnLRvBUcRVLMDJLqLe5QVzPXzzoc7xUjVY75UzDyPY5R+UuXDhJJMKQRtmqbBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIItTFtaHuoHN5pafPY902WG3gQs2hFHTQu6KuD48SCI4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/imann24
+
+==================================================================
