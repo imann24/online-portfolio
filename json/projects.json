@@ -1,1071 +1,1115 @@
 {
-     "Projects": [{
-               "Key": "glowlime",
-               "Title": "GlowLime Games",
-               "Roles": [
-                    "Executive Director",
-                    "Technical Director"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 12,
-               "Description": "A student game development organization",
-               "Contributions": [
-                    "Co-founded the organization",
-                    "Created the organizational structure",
-                    "Provided development opportunities for 50 students per semester"
-               ],
-               "StartDate": "2015-10-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2017-05-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/FXEoPLax5MA",
-               "Website": "http://glowlime.com/",
-               "Facebook": "https://www.facebook.com/GlowLime/",
-               "Twitter": "https://twitter.com/GlowLimeGames",
-               "GitHub": "https://github.com/GlowLimeGames/",
-               "AppStore": null,
-               "GooglePlay": "https://play.google.com/store/apps/developer?id=GlowLime+Games",
-               "itch.io": "https://glowlime-games.itch.io/",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "N/A"
-               ],
-               "Languages": [
-                    "N/A"
-               ],
-               "SortPriority": 1
-          },
-          {
-               "Key": "word-snack",
-               "Title": "Word Snack",
-               "Roles": [
-                    "Programmer"
-               ],
-               "Organization": "Hampshire College",
-               "TeamSize": 32,
-               "Description": "A word game set in space.",
-               "Contributions": [
-                    "Programmed major segments of gameplay logic",
-                    "Worked on a team of 11 programmers",
-                    "Published game within a semester"
-               ],
-               "StartDate": "2014-09-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2014-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/DcpZ1Ph1ugo",
-               "Website": "http://wordsnack.net/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/HampshireCollegeCompSci/WordSnack",
-               "AppStore": "https://itunes.apple.com/us/app/word-snack-hd/id950400461",
-               "GooglePlay": "https://play.google.com/store/apps/details?id=net.wordsnack.wordsnack",
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "defenders-light",
-               "Title": "Defender's Light",
-               "Roles": [
-                    "Creative Director",
-                    "Lead Programmer"
-               ],
-               "Organization": "GlowLime Games",
-               "TeamSize": 14,
-               "Description": "A tower defense title where illumination is key",
-               "Contributions": [
-                    "Designed game from concept to execution",
-                    "Programmed core gameplay systems",
-                    "Lead team of developers"
-               ],
-               "StartDate": "2016-05-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/ckg6HLtkhIA",
-               "Website": "http://glowlime.com/games/defenders-light/",
-               "Facebook": "https://www.facebook.com/DefendersLight",
-               "Twitter": "https://twitter.com/Defenders_Light",
-               "GitHub": "https://github.com/GlowLimeGames/DefendersLight",
-               "AppStore": null,
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.glowlime.defenders",
-               "itch.io": "https://glowlime-games.itch.io/defenders-light",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android",
-                    "Mac",
-                    "Windows",
-                    "Linux",
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 1
-          },
-          {
-               "Key": "fusion-galaxy",
-               "Title": "Fusion Galaxy",
-               "Roles": [
-                    "Producer",
-                    "Programmer"
-               ],
-               "Organization": "MassDiGI",
-               "TeamSize": 8,
-               "Description": "A game which combines crafting and gathering elements into new combinations",
-               "Contributions": [
-                    "Lead development team",
-                    "Programmed core game logic",
-                    "Implemented crafting user interface"
-               ],
-               "StartDate": "2015-05-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-07-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/JhS2W1aMUxM",
-               "Website": null,
-               "Facebook": "https://www.facebook.com/FusionGalaxyTheGame/",
-               "Twitter": "https://twitter.com/fusiongalaxy_",
-               "GitHub": "https://github.com/imann24/fusion-galaxy",
-               "AppStore": "https://itunes.apple.com/us/app/fusion-galaxy/id999077925?ls=1&mt=8",
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.massdigi.crafting",
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 1
-          },
-          {
-               "Key": "pirate-squabbles",
-               "Title": "Pirate Squabbles",
-               "Roles": [
-                    "Lead Programmer"
-               ],
-               "Organization": "Hampshire College",
-               "TeamSize": 20,
-               "Description": "A mobile point-and-click adventure featuring whimsical characters and creative puzzle solving.",
-               "Contributions": [
-                    "Coordinated the efforts of the programming team",
-                    "Bug fixes and adding core functionality",
-                    "Assigned and monitored tasks assigned to each programmer"
-               ],
-               "StartDate": "2016-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-05-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/NjP8GHs0cwk",
-               "Website": "https://www.piratesquabbles.com/",
-               "Facebook": "https://www.facebook.com/PirateSquabbles/",
-               "Twitter": "https://twitter.com/PirateSquabbles",
-               "GitHub": "https://github.com/HampshireCollegeCompSci/PirateSquabbles",
-               "AppStore": "https://itunes.apple.com/us/app/pirate-squabbles/id1099953176",
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.woodpenny.piratesquabbles",
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "eternal-flopnation",
-               "Title": "Eternal Flopnation",
-               "Roles": [
-                    "Programmer"
-               ],
-               "Organization": "3 Person Dimensions",
-               "TeamSize": 6,
-               "Description": "A mobile game where a fish hops their way to victory",
-               "Contributions": [
-                    "Implemented core gameplay elements",
-                    "Built achievement system",
-                    "Coded high score logic"
-               ],
-               "StartDate": "2016-03-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-07-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/HXRcJij-PDA",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": null,
-               "AppStore": "https://itunes.apple.com/us/app/eternal-flopnation/id1029639968?mt=8",
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.PD.FishGame",
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "mind-the-arrow",
-               "Title": "Mind the Arrow",
-               "Roles": [
-                    "Programming Intern"
-               ],
-               "Organization": "Petricore, Inc",
-               "TeamSize": 12,
-               "Description": "A pattern tracing game with a clever twist",
-               "Contributions": [
-                    "Updated user interface layout",
-                    "Improved integrated advertisement behaviour",
-                    "Worked closely with a team of fellow engineers and artists"
-               ],
-               "StartDate": "2015-10-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2015-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/ez8xvOUlOa8",
-               "Website": "http://petricoregames.com/games/mind-the-arrow/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": null,
-               "AppStore": "https://itunes.apple.com/us/app/mind-the-arrow-match-the-dots/id1003871458?mt=8",
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.thumbspire.mta&hl=en",
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "letters-to-reid",
-               "Title": "Letters to Reid",
-               "Roles": [
-                    "Lead Programmer"
-               ],
-               "Organization": "GlowLime Games",
-               "TeamSize": 17,
-               "Description": "A narrative-driven PC game dealing with grief and loss. It uses a 2D cave exploration system to embody the grieving process.",
-               "Contributions": [
-                    "Setup Unity Cloud Build",
-                    "GitHub",
-                    "and Tuning Variable systems",
-                    "Managed a team of five programmers",
-                    "Coordinated closely w/ other development departments"
-               ],
-               "StartDate": "2017-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2017-05-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/76BR8zh-UrY",
-               "Website": "http://glowlime.com/games/letters-to-reid/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/GlowLimeGames/LettersToReid",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": "https://glowlime-games.itch.io/letters-to-reid",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "PC",
-                    "Mac",
-                    "Linux"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "pickup-pup",
-               "Title": "Pickup Pup",
-               "Roles": [
-                    "Lead Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 7,
-               "Description": "A mobile dog collecting game",
-               "Contributions": [
-                    "Built the core infastructure of the game",
-                    "Implemented JSON system to provide tunable variables",
-                    "Conducted thorough code review process"
-               ],
-               "StartDate": "2017-01-01T08:00:00.000Z",
-               "IsOngoing": true,
-               "EndDate": null,
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/aFBmv4X6eOE",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/PickupPup/Pickup-Pup",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 1
-          },
-          {
-               "Key": "lucid",
-               "Title": "Lucid",
-               "Roles": [
-                    "Lead Programmer"
-               ],
-               "Organization": "GlowLime Games",
-               "TeamSize": 15,
-               "Description": "Explore an alternate reality through the cellphone of the main character",
-               "Contributions": [
-                    "Built the core infastructure",
-                    "Lead a team of five programmers",
-                    "Created a texting simulation system"
-               ],
-               "StartDate": "2016-09-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/nm70-dXpzJU",
-               "Website": "http://glowlime.com/games/lucid/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "http://github.com/GlowLimeGames/Lucid",
-               "AppStore": null,
-               "GooglePlay": "https://play.google.com/store/apps/details?id=com.glowlime.lucid",
-               "itch.io": null,
-               "PlayOnline": "http://glowlimegames.github.io/Lucid/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android",
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "object-factory",
-               "Title": "Object Factory",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A series of Unity programming assignments designed to teach basic programming concepts",
-               "Contributions": [
-                    "Designed assignments around basic programming concepts",
-                    "Built visual environment to emphasize concepts",
-                    "Engineered system support incresaingly complex assignments while remaining accessible"
-               ],
-               "StartDate": "2016-07-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-11-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png"
-               ],
-               "Video": "https://www.youtube.com/embed/u0LnHlj4fBQ",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/ObjectFactory",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Unity Editor"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "lex-the-wizard",
-               "Title": "Lex The Wizard",
-               "Roles": [
-                    "Producer"
-               ],
-               "Organization": "GlowLime Games",
-               "TeamSize": 20,
-               "Description": "A digital card game set in a fantastical world",
-               "Contributions": [
-                    "Lead team using agile methodologies",
-                    "Attended MassDiGI Games Challenge pitch competition",
-                    "Coordinated efforts between all departments"
-               ],
-               "StartDate": "2016-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": null,
-               "Website": "http://glowlime.com/games/lex-the-wizard/",
-               "Facebook": "https://www.facebook.com/LexTheWizard/",
-               "Twitter": "https://twitter.com/LexTheWizard",
-               "GitHub": "https://github.com/GlowLimeGames/LexTheWizard",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "the-fall",
-               "Title": "The Fall",
-               "Roles": [
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 5,
-               "Description": "A puzzle-platformer where gravity is your best ally",
-               "Contributions": [
-                    "Build custom audio system with JSON parsing",
-                    "Designed UI for menu screens",
-                    "Added in level switching logic"
-               ],
-               "StartDate": "2016-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-01-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": null,
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": null,
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": "https://imann.itch.io/the-fall",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "pongbreaker",
-               "Title": "PongBreaker",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A hybrid of Pong and BrickBreaker",
-               "Contributions": [
-                    "Programming game logic and physics",
-                    "Designed visuals and animations",
-                    "Implemented multi-touch for mobile"
-               ],
-               "StartDate": "2016-05-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-05-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": null,
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/PongBreaker",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": "https://imann.itch.io/pongbreaker",
-               "PlayOnline": "https://imann24.github.io/PongBreaker/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC",
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "inside",
-               "Title": "Inside",
-               "Roles": [
-                    "Producer",
-                    "Programmer"
-               ],
-               "Organization": "Hampshire College",
-               "TeamSize": 5,
-               "Description": "A dark, exploratory game",
-               "Contributions": [
-                    "Lead team using agile development",
-                    "Programmed gameplay",
-                    "Integrated visuals and physics"
-               ],
-               "StartDate": "2015-09-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2015-09-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/68nl3F31VpU",
-               "Website": "https://imann24.github.io/hampshire-server-archive/Inside/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/Inside",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://imann24.github.io/hampshire-server-archive/Inside/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "procedural-maze",
-               "Title": "Procedural Maze",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A simple, cubic maze which is procedurally generated",
-               "Contributions": [
-                    "Designed algorithm to create endless maze",
-                    "Added simple game logic",
-                    "Wrote load on demand logic"
-               ],
-               "StartDate": "2016-03-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-03-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": null,
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/maze",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": "https://imann.itch.io/procedural-maze",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "maze-escape",
-               "Title": "Maze Escape",
-               "Roles": [
-                    "Producer",
-                    "Programmer"
-               ],
-               "Organization": "Hampshire College",
-               "TeamSize": 5,
-               "Description": "A digital board game built for the Oculus Rift",
-               "Contributions": [
-                    "Wrote CSV parsing system to create mazes",
-                    "Integrated search algorithm to determine maze paths",
-                    "Programmed physics into maze environment"
-               ],
-               "StartDate": "2015-10-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2015-11-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/5yiJp8ZNXOw",
-               "Website": "https://imann24.github.io/hampshire-server-archive/VR/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/VR",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": "https://imann.itch.io/maze-escape",
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC",
-                    "Oculus Rift"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "apartments",
-               "Title": "Apartments",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A small, simple simulation of an apartment building",
-               "Contributions": [
-                    "Created two dimensional world using Procressing",
-                    "Designed logic for zooming and panning",
-                    "Wrote basic AI to interact in the environment"
-               ],
-               "StartDate": "2014-10-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2014-11-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/jCTQ65lCnI0",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Apartments/",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC",
-                    "Linux"
-               ],
-               "Languages": [
-                    "Java",
-                    "Processing"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "mining",
-               "Title": "Mining",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "Inspired by \"Motherload.\" The player drills for gold while collecting oil to power their vehicle.",
-               "Contributions": [
-                    "Programmed collision physics",
-                    "Designed gameplay logic",
-                    "Developed animations and aesthetics"
-               ],
-               "StartDate": "2014-10-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2014-10-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/xG9dI6BoEMo",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Mining",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC",
-                    "Linux"
-               ],
-               "Languages": [
-                    "Java",
-                    "Processing"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "hatter",
-               "Title": "Hatter",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A 2D shooter game built in HTML5 Canvas",
-               "Contributions": [
-                    "Programmed combat logic",
-                    "Designed weapons and visuals",
-                    "Built website with information on the game"
-               ],
-               "StartDate": "2014-03-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2014-05-01T07:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/lY3Y6aFx-yc",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/Hatter",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://imann24.github.io/hampshire-server-archive/Web%20Dev%20Final/Homepage.html",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Web"
-               ],
-               "Languages": [
-                    "JavaScript"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "progress-or-die",
-               "Title": "Progress or Die",
-               "Roles": [
-                    "Producer",
-                    "Lead Programmer"
-               ],
-               "Organization": "GlowLime Games",
-               "TeamSize": 15,
-               "Description": "An turn-based, tactical RPG built in Unity",
-               "Contributions": [
-                    "Created a January workshop for students to build the game in three weeks",
-                    "Programmed core systems and logic",
-                    "Wrote a parsing system to generate maps and enemies at runtime"
-               ],
-               "StartDate": "2017-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2017-01-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/xEmUKz6WWZQ",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/GlowLimeGames/ProgressOrDie",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://glowlimegames.github.io/ProgressOrDie/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "centron",
-               "Title": "Centron",
-               "Roles": [
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 6,
-               "Description": "Built for Global Game Jam 2016, defend the earth from alien invaders.",
-               "Contributions": [
-                    "Implemented events based gameplay system",
-                    "Designed user interface",
-                    "Created tuning variables design system"
-               ],
-               "StartDate": "2017-01-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2017-01-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/56Fr3ijdOGE",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/PVGameDevs/centron",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://pvgamedevs.github.io/centron/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 2
-          },
-          {
-               "Key": "green-fields",
-               "Title": "Green Fields",
-               "Roles": [
-                    "Designer",
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "A simple farming game programmed in WebGL, using three.js",
-               "Contributions": [
-                    "Built hiearchical character model using three.js",
-                    "Modeled player and tools in Blender",
-                    "Designed user interface"
-               ],
-               "StartDate": "2016-12-01T08:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2016-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png"
-               ],
-               "Video": null,
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/GreenFields",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://imann24.github.io/GreenFields/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Web"
-               ],
-               "Languages": [
-                    "JavaScript"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "peace-superheroes",
-               "Title": "Peace Superheroes",
-               "Roles": [
-                    "Assistant Producer",
-                    "Programmer"
-               ],
-               "Organization": "Hampshire College",
-               "TeamSize": 10,
-               "Description": "A game designed to teach confict resolution through respectful communication",
-               "Contributions": [
-                    "Built in support for input from touchscreens and keyboards",
-                    "Added parsing support for phrases",
-                    "Programmed thorough tutorial"
-               ],
-               "StartDate": "2015-11-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2015-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/gd5ljGqnq_I",
-               "Website": "http://stout.hampshire.edu/~ibm13/PeaceSuperheroes/",
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/peace-superheroes",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": "https://imann24.github.io/peace-superheroes/",
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "iOS",
-                    "Android",
-                    "Web"
-               ],
-               "Languages": [
-                    "C#"
-               ],
-               "SortPriority": 3
-          },
-          {
-               "Key": "puck-wars",
-               "Title": "Puck Wars",
-               "Roles": [
-                    "Programmer"
-               ],
-               "Organization": "N/A",
-               "TeamSize": 1,
-               "Description": "Artificial intelligence combat implemented in Lee Spector's Pucks environment",
-               "Contributions": [
-                    "Coded simple AI agents to fight against each other",
-                    "Wrote AI logic in Clojure",
-                    "Setup custom battleground for agents to fight in"
-               ],
-               "StartDate": "2015-11-01T07:00:00.000Z",
-               "IsOngoing": false,
-               "EndDate": "2015-12-01T08:00:00.000Z",
-               "Pictures": [
-                    "screen1.png",
-                    "screen2.png",
-                    "screen3.png",
-                    "screen4.png"
-               ],
-               "Video": "https://www.youtube.com/embed/80x9-HsBGWs",
-               "Website": null,
-               "Facebook": null,
-               "Twitter": null,
-               "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Puck-Wars",
-               "AppStore": null,
-               "GooglePlay": null,
-               "itch.io": null,
-               "PlayOnline": null,
-               "ShouldDisplay": true,
-               "Platforms": [
-                    "Mac",
-                    "PC"
-               ],
-               "Languages": [
-                    "Clojure"
-               ],
-               "SortPriority": 3
-          }
-     ]
+  "Projects": [
+    {
+      "Key": "glowlime",
+      "Title": "GlowLime Games",
+      "Roles": [
+        "Executive Director",
+        "Technical Director"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 12,
+      "Description": "A student game development organization",
+      "Contributions": [
+        "Co-founded the organization",
+        "Created the organizational structure",
+        "Provided development opportunities for 50 students per semester"
+      ],
+      "StartDate": "2015-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2017-05-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/FXEoPLax5MA",
+      "Website": "http://glowlime.com/",
+      "Facebook": "https://www.facebook.com/GlowLime/",
+      "Twitter": "https://twitter.com/GlowLimeGames",
+      "GitHub": "https://github.com/GlowLimeGames/",
+      "AppStore": null,
+      "GooglePlay": "https://play.google.com/store/apps/developer?id=GlowLime+Games",
+      "itch.io": "https://glowlime-games.itch.io/",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "N/A"
+      ],
+      "Languages": [
+        "N/A"
+      ],
+      "SortPriority": 1
+    },
+    {
+      "Key": "word-snack",
+      "Title": "Word Snack",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": "Hampshire College",
+      "TeamSize": 32,
+      "Description": "A word game set in space.",
+      "Contributions": [
+        "Programmed major segments of gameplay logic",
+        "Worked on a team of 11 programmers",
+        "Published game within a semester"
+      ],
+      "StartDate": "2014-09-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2014-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/DcpZ1Ph1ugo",
+      "Website": "http://wordsnack.net/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/HampshireCollegeCompSci/WordSnack",
+      "AppStore": "https://itunes.apple.com/us/app/word-snack-hd/id950400461",
+      "GooglePlay": "https://play.google.com/store/apps/details?id=net.wordsnack.wordsnack",
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "defenders-light",
+      "Title": "Defender's Light",
+      "Roles": [
+        "Creative Director",
+        "Lead Programmer"
+      ],
+      "Organization": "GlowLime Games",
+      "TeamSize": 14,
+      "Description": "A tower defense title where illumination is key",
+      "Contributions": [
+        "Designed game from concept to execution",
+        "Programmed core gameplay systems",
+        "Lead team of developers"
+      ],
+      "StartDate": "2016-05-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/ckg6HLtkhIA",
+      "Website": "http://glowlime.com/games/defenders-light/",
+      "Facebook": "https://www.facebook.com/DefendersLight",
+      "Twitter": "https://twitter.com/Defenders_Light",
+      "GitHub": "https://github.com/GlowLimeGames/DefendersLight",
+      "AppStore": null,
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.glowlime.defenders",
+      "itch.io": "https://glowlime-games.itch.io/defenders-light",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android",
+        "Mac",
+        "Windows",
+        "Linux",
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 1
+    },
+    {
+      "Key": "fusion-galaxy",
+      "Title": "Fusion Galaxy",
+      "Roles": [
+        "Producer",
+        "Programmer"
+      ],
+      "Organization": "MassDiGI",
+      "TeamSize": 8,
+      "Description": "A game which combines crafting and gathering elements into new combinations",
+      "Contributions": [
+        "Lead development team",
+        "Programmed core game logic",
+        "Implemented crafting user interface"
+      ],
+      "StartDate": "2015-05-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-07-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/JhS2W1aMUxM",
+      "Website": null,
+      "Facebook": "https://www.facebook.com/FusionGalaxyTheGame/",
+      "Twitter": "https://twitter.com/fusiongalaxy_",
+      "GitHub": "https://github.com/imann24/fusion-galaxy",
+      "AppStore": "https://itunes.apple.com/us/app/fusion-galaxy/id999077925?ls=1&mt=8",
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.massdigi.crafting",
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 1
+    },
+    {
+      "Key": "pirate-squabbles",
+      "Title": "Pirate Squabbles",
+      "Roles": [
+        "Lead Programmer"
+      ],
+      "Organization": "Hampshire College",
+      "TeamSize": 20,
+      "Description": "A mobile point-and-click adventure featuring whimsical characters and creative puzzle solving.",
+      "Contributions": [
+        "Coordinated the efforts of the programming team",
+        "Bug fixes and adding core functionality",
+        "Assigned and monitored tasks assigned to each programmer"
+      ],
+      "StartDate": "2016-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-05-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/NjP8GHs0cwk",
+      "Website": "https://www.piratesquabbles.com/",
+      "Facebook": "https://www.facebook.com/PirateSquabbles/",
+      "Twitter": "https://twitter.com/PirateSquabbles",
+      "GitHub": "https://github.com/HampshireCollegeCompSci/PirateSquabbles",
+      "AppStore": "https://itunes.apple.com/us/app/pirate-squabbles/id1099953176",
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.woodpenny.piratesquabbles",
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "eternal-flopnation",
+      "Title": "Eternal Flopnation",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": "3 Person Dimensions",
+      "TeamSize": 6,
+      "Description": "A mobile game where a fish hops their way to victory",
+      "Contributions": [
+        "Implemented core gameplay elements",
+        "Built achievement system",
+        "Coded high score logic"
+      ],
+      "StartDate": "2016-03-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-07-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/HXRcJij-PDA",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": null,
+      "AppStore": "https://itunes.apple.com/us/app/eternal-flopnation/id1029639968?mt=8",
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.PD.FishGame",
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "mind-the-arrow",
+      "Title": "Mind the Arrow",
+      "Roles": [
+        "Programming Intern"
+      ],
+      "Organization": "Petricore, Inc",
+      "TeamSize": 12,
+      "Description": "A pattern tracing game with a clever twist",
+      "Contributions": [
+        "Updated user interface layout",
+        "Improved integrated advertisement behaviour",
+        "Worked closely with a team of fellow engineers and artists"
+      ],
+      "StartDate": "2015-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2015-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/ez8xvOUlOa8",
+      "Website": "http://petricoregames.com/games/mind-the-arrow/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": null,
+      "AppStore": "https://itunes.apple.com/us/app/mind-the-arrow-match-the-dots/id1003871458?mt=8",
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.thumbspire.mta&hl=en",
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "letters-to-reid",
+      "Title": "Letters to Reid",
+      "Roles": [
+        "Lead Programmer"
+      ],
+      "Organization": "GlowLime Games",
+      "TeamSize": 17,
+      "Description": "A narrative-driven PC game dealing with grief and loss. It uses a 2D cave exploration system to embody the grieving process.",
+      "Contributions": [
+        "Setup Unity Cloud Build",
+        "GitHub",
+        "and Tuning Variable systems",
+        "Managed a team of five programmers",
+        "Coordinated closely w/ other development departments"
+      ],
+      "StartDate": "2017-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2017-05-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/76BR8zh-UrY",
+      "Website": "http://glowlime.com/games/letters-to-reid/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/GlowLimeGames/LettersToReid",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://glowlime-games.itch.io/letters-to-reid",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "PC",
+        "Mac",
+        "Linux"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "pickup-pup",
+      "Title": "Pickup Pup",
+      "Roles": [
+        "Lead Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 7,
+      "Description": "A mobile dog collecting game",
+      "Contributions": [
+        "Built the core infastructure of the game",
+        "Implemented JSON system to provide tunable variables",
+        "Conducted thorough code review process"
+      ],
+      "StartDate": "2017-01-01T08:00:00.000Z",
+      "IsOngoing": true,
+      "EndDate": null,
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/aFBmv4X6eOE",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/PickupPup/Pickup-Pup",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 1
+    },
+    {
+      "Key": "lucid",
+      "Title": "Lucid",
+      "Roles": [
+        "Lead Programmer"
+      ],
+      "Organization": "GlowLime Games",
+      "TeamSize": 15,
+      "Description": "Explore an alternate reality through the cellphone of the main character",
+      "Contributions": [
+        "Built the core infastructure",
+        "Lead a team of five programmers",
+        "Created a texting simulation system"
+      ],
+      "StartDate": "2016-09-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/nm70-dXpzJU",
+      "Website": "http://glowlime.com/games/lucid/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "http://github.com/GlowLimeGames/Lucid",
+      "AppStore": null,
+      "GooglePlay": "https://play.google.com/store/apps/details?id=com.glowlime.lucid",
+      "itch.io": null,
+      "PlayOnline": "http://glowlimegames.github.io/Lucid/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "object-factory",
+      "Title": "Object Factory",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A series of Unity programming assignments designed to teach basic programming concepts",
+      "Contributions": [
+        "Designed assignments around basic programming concepts",
+        "Built visual environment to emphasize concepts",
+        "Engineered system support incresaingly complex assignments while remaining accessible"
+      ],
+      "StartDate": "2016-07-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-11-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png"
+      ],
+      "Video": "https://www.youtube.com/embed/u0LnHlj4fBQ",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/ObjectFactory",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Unity Editor"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "lex-the-wizard",
+      "Title": "Lex The Wizard",
+      "Roles": [
+        "Producer"
+      ],
+      "Organization": "GlowLime Games",
+      "TeamSize": 20,
+      "Description": "A digital card game set in a fantastical world",
+      "Contributions": [
+        "Lead team using agile methodologies",
+        "Attended MassDiGI Games Challenge pitch competition",
+        "Coordinated efforts between all departments"
+      ],
+      "StartDate": "2016-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": null,
+      "Website": "http://glowlime.com/games/lex-the-wizard/",
+      "Facebook": "https://www.facebook.com/LexTheWizard/",
+      "Twitter": "https://twitter.com/LexTheWizard",
+      "GitHub": "https://github.com/GlowLimeGames/LexTheWizard",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "the-fall",
+      "Title": "The Fall",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 5,
+      "Description": "A puzzle-platformer where gravity is your best ally",
+      "Contributions": [
+        "Build custom audio system with JSON parsing",
+        "Designed UI for menu screens",
+        "Added in level switching logic"
+      ],
+      "StartDate": "2016-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-01-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": null,
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": null,
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://imann.itch.io/the-fall",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "pongbreaker",
+      "Title": "PongBreaker",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A hybrid of Pong and BrickBreaker",
+      "Contributions": [
+        "Programming game logic and physics",
+        "Designed visuals and animations",
+        "Implemented multi-touch for mobile"
+      ],
+      "StartDate": "2016-05-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-05-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": null,
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/PongBreaker",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://imann.itch.io/pongbreaker",
+      "PlayOnline": "https://imann24.github.io/PongBreaker/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC",
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "inside",
+      "Title": "Inside",
+      "Roles": [
+        "Producer",
+        "Programmer"
+      ],
+      "Organization": "Hampshire College",
+      "TeamSize": 5,
+      "Description": "A dark, exploratory game",
+      "Contributions": [
+        "Lead team using agile development",
+        "Programmed gameplay",
+        "Integrated visuals and physics"
+      ],
+      "StartDate": "2015-09-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2015-09-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/68nl3F31VpU",
+      "Website": "https://imann24.github.io/hampshire-server-archive/Inside/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/Inside",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://imann24.github.io/hampshire-server-archive/Inside/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "procedural-maze",
+      "Title": "Procedural Maze",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A simple, cubic maze which is procedurally generated",
+      "Contributions": [
+        "Designed algorithm to create endless maze",
+        "Added simple game logic",
+        "Wrote load on demand logic"
+      ],
+      "StartDate": "2016-03-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-03-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": null,
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/maze",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://imann.itch.io/procedural-maze",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "maze-escape",
+      "Title": "Maze Escape",
+      "Roles": [
+        "Producer",
+        "Programmer"
+      ],
+      "Organization": "Hampshire College",
+      "TeamSize": 5,
+      "Description": "A digital board game built for the Oculus Rift",
+      "Contributions": [
+        "Wrote CSV parsing system to create mazes",
+        "Integrated search algorithm to determine maze paths",
+        "Programmed physics into maze environment"
+      ],
+      "StartDate": "2015-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2015-11-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/5yiJp8ZNXOw",
+      "Website": "https://imann24.github.io/hampshire-server-archive/VR/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/VR",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://imann.itch.io/maze-escape",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC",
+        "Oculus Rift"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "apartments",
+      "Title": "Apartments",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A small, simple simulation of an apartment building",
+      "Contributions": [
+        "Created two dimensional world using Procressing",
+        "Designed logic for zooming and panning",
+        "Wrote basic AI to interact in the environment"
+      ],
+      "StartDate": "2014-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2014-11-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/jCTQ65lCnI0",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Apartments/",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC",
+        "Linux"
+      ],
+      "Languages": [
+        "Java",
+        "Processing"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "mining",
+      "Title": "Mining",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "Inspired by \"Motherload.\" The player drills for gold while collecting oil to power their vehicle.",
+      "Contributions": [
+        "Programmed collision physics",
+        "Designed gameplay logic",
+        "Developed animations and aesthetics"
+      ],
+      "StartDate": "2014-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2014-10-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/xG9dI6BoEMo",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Mining",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC",
+        "Linux"
+      ],
+      "Languages": [
+        "Java",
+        "Processing"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "hatter",
+      "Title": "Hatter",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A 2D shooter game built in HTML5 Canvas",
+      "Contributions": [
+        "Programmed combat logic",
+        "Designed weapons and visuals",
+        "Built website with information on the game"
+      ],
+      "StartDate": "2014-03-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2014-05-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/lY3Y6aFx-yc",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/Hatter",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://imann24.github.io/hampshire-server-archive/Web%20Dev%20Final/Homepage.html",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "JavaScript"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "progress-or-die",
+      "Title": "Progress or Die",
+      "Roles": [
+        "Producer",
+        "Lead Programmer"
+      ],
+      "Organization": "GlowLime Games",
+      "TeamSize": 15,
+      "Description": "An turn-based, tactical RPG built in Unity",
+      "Contributions": [
+        "Created a January workshop for students to build the game in three weeks",
+        "Programmed core systems and logic",
+        "Wrote a parsing system to generate maps and enemies at runtime"
+      ],
+      "StartDate": "2017-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2017-01-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/xEmUKz6WWZQ",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/GlowLimeGames/ProgressOrDie",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://glowlimegames.github.io/ProgressOrDie/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "centron",
+      "Title": "Centron",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 6,
+      "Description": "Built for Global Game Jam 2016, defend the earth from alien invaders.",
+      "Contributions": [
+        "Implemented events based gameplay system",
+        "Designed user interface",
+        "Created tuning variables design system"
+      ],
+      "StartDate": "2017-01-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2017-01-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/56Fr3ijdOGE",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/PVGameDevs/centron",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://pvgamedevs.github.io/centron/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "green-fields",
+      "Title": "Green Fields",
+      "Roles": [
+        "Designer",
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "A simple farming game programmed in WebGL, using three.js",
+      "Contributions": [
+        "Built hiearchical character model using three.js",
+        "Modeled player and tools in Blender",
+        "Designed user interface"
+      ],
+      "StartDate": "2016-12-01T08:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2016-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png"
+      ],
+      "Video": null,
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/GreenFields",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://imann24.github.io/GreenFields/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "JavaScript"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "peace-superheroes",
+      "Title": "Peace Superheroes",
+      "Roles": [
+        "Assistant Producer",
+        "Programmer"
+      ],
+      "Organization": "Hampshire College",
+      "TeamSize": 10,
+      "Description": "A game designed to teach confict resolution through respectful communication",
+      "Contributions": [
+        "Built in support for input from touchscreens and keyboards",
+        "Added parsing support for phrases",
+        "Programmed thorough tutorial"
+      ],
+      "StartDate": "2015-11-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2015-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/gd5ljGqnq_I",
+      "Website": "http://stout.hampshire.edu/~ibm13/PeaceSuperheroes/",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/peace-superheroes",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "https://imann24.github.io/peace-superheroes/",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "puck-wars",
+      "Title": "Puck Wars",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": "N/A",
+      "TeamSize": 1,
+      "Description": "Artificial intelligence combat implemented in Lee Spector's Pucks environment",
+      "Contributions": [
+        "Coded simple AI agents to fight against each other",
+        "Wrote AI logic in Clojure",
+        "Setup custom battleground for agents to fight in"
+      ],
+      "StartDate": "2015-11-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2015-12-01T08:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/80x9-HsBGWs",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/Original_Coding_Portfolio/tree/master/Puck-Wars",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC"
+      ],
+      "Languages": [
+        "Clojure"
+      ],
+      "SortPriority": 3
+    },
+    {
+      "Key": "donk-fly",
+      "Title": "Donk Fly",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": null,
+      "TeamSize": 3,
+      "Description": "A mobile web game utilizing the Phaser game engine",
+      "Contributions": [
+        "Built responsive experience across iOS and Android",
+        "Implemented game logic and physics",
+        "Integrated with Phaser library"
+      ],
+      "StartDate": "2019-07-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2019-07-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/MjBO1SV4lVM",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/gishwhes-2019",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": "http://imann24.github.io/gishwhes-2019",
+      "ShouldDisplay": true,
+      "Platforms": [
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "Languages": [
+        "JavaScript"
+      ],
+      "SortPriority": 2
+    }
+  ]
 }

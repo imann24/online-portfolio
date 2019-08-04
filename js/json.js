@@ -19,6 +19,7 @@ function loadProjects()
      $.getJSON(subDirectory + "json/projects.json", function(json)
      {
           projects = json["Projects"];
+          projects.sort((proj1, proj2) => (proj1["SortPriority"] - proj2["SortPriority"]));
           triggerCallbacks();
      });
 }
