@@ -15,7 +15,7 @@ function createProjects(columnCount)
      var projs = allProjects();
      for(var i = 0; i < projs.length > 0; i += 2)
      {
-          var html = "<div class = 'col-sm-2'>";
+          var html = "<div class = 'row-sm-2'>";
           html += getCell(projs[i]);
           if(i + 1 < projs.length)
           {
