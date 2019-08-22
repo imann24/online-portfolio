@@ -11,7 +11,6 @@
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,700|Roboto:700" rel="stylesheet">
         <link type = "text/css" href = "../css/main.css" rel = "stylesheet">
         <link type = "text/css" href = "../css/resume.css" rel = "stylesheet">
-        <link type = "text/css" href = "../css/loading.css" rel = "stylesheet">
 
         <!-- FAVICON -->
         <link rel='shortcut icon' type='image/x-icon' href="../images/favicon/favicon.png">
@@ -28,7 +27,11 @@
         <script src = "../js/json.js"></script>
         <script src = "../js/responsive.js"></script>
         <script src = "../js/main.js"></script>
-        <script src = "../js/resume.js"></script>
+        <script type="text/javascript">
+            function resizeIframe(iframe) {
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+            }
+        </script>
     </head>
     <body>
            <center>
@@ -41,8 +44,7 @@
                      </a>
                  </div>
                  <div id = "navbar-wrapper"></div>
-                 <div class = "loader"></div>
-                 <canvas id = "pdf-canvas"></canvas>
+                 <iframe id="resume-view" src="resume.html" scrolling="no" onload="resizeIframe(this);"/>
           </center>
         </div>
     </body>
