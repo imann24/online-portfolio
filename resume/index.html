@@ -28,8 +28,27 @@
         <script src = "../js/responsive.js"></script>
         <script src = "../js/main.js"></script>
         <script type="text/javascript">
-            function resizeIframe(iframe) {
+            function adjustIframeStyle(iframe) {
                 iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+                // Override CSS attributes in iframe:
+                $('iframe').contents().find("head").append($(`
+                    <style type='text/css'>
+                        @media screen {
+                            #resume {
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        h2.section-title {
+                            color: #5D68BB;
+                        }
+
+                        #references .item {
+                            border-left: 5px solid #5D68BB;
+                        }
+                    </style>
+                `));
             }
         </script>
     </head>
@@ -44,7 +63,7 @@
                      </a>
                  </div>
                  <div id = "navbar-wrapper"></div>
-                 <iframe id="resume-view" src="resume.html" scrolling="no" onload="resizeIframe(this);"/>
+                 <iframe id="resume-view" src="resume.html" scrolling="no" onload="adjustIframeStyle(this);"/>
           </center>
         </div>
     </body>

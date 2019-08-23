@@ -294,7 +294,7 @@ h2.section-title {
     display: inline-block;
     background: #fff;
     padding: 0 1em 0.3em 0;
-    color: #5D68BB;
+    color: #ff6d1f;
     text-transform: uppercase;
     font-weight: 600;
     border: none;
@@ -564,7 +564,7 @@ ul.courses li:hover {
 
 #references .item {
     padding-left: .5em;
-    border-left: 5px solid #5D68BB;
+    border-left: 5px solid #ff6d1f;
 }
 
 .toggle-item {
@@ -595,10 +595,81 @@ ul.courses li:hover {
 *		TABLET
 ****************/
 
-@media screen {
+@media screen and (min-width: 602px) {
     #resume {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
     }
 }
 
@@ -700,19 +771,19 @@ ul.courses li:hover {
 }
 
   </style>
-
+  
   </head>
   <body>
-
+  
   <div id="resume">
     	<header id="header" class="clear">
     		<div>
     			<h1 class="name">Isaiah Mann</h1>
     			<h2 class="label">Software Engineer</h2>
     		</div>
-
-
-
+    		
+    		
+    
     		<div id="contact">
     			<div class="website">
     				<span class="fa fa-external-link"></span>
@@ -727,14 +798,14 @@ ul.courses li:hover {
     				<a href="tel:(802) 343-5254">(802) 343-5254</a>
     			</div>
     		</div>
-
+    
     		<div id="profiles">
     			<div class="item">
     				<div class="username">
     					<span class="fa fa-linkedin linkedin social"></span>
     					<span class="url">
     						<a target="_blank" href="https://www.linkedin.com/in/isaiahmann">isaiahmann</a>
-    					</span>
+    					</span> 
     				</div>
     			</div>
     			<div class="item">
@@ -742,13 +813,13 @@ ul.courses li:hover {
     					<span class="fa fa-github github social"></span>
     					<span class="url">
     						<a target="_blank" href="https://github.com/imann24">imann24</a>
-    					</span>
+    					</span> 
     				</div>
     			</div>
     		</div>
     	</header>
-
-
+    
+    
     <section class="section margin1">
     	<header>
     		<h2 class='section-title'>Skills</h2>
@@ -812,42 +883,42 @@ ul.courses li:hover {
       <header>
         <h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
       </header>
-
+    
       <section id="work">
         <section class="work-item">
-
+    
             <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
             <label for="work-item-0"></label>
-
+    
     			<header>
     				<div class="position">Software Engineer</div>
     				<div class="company">true[X]</div>
     				<div class="date">
-    				  <span class="startDate">September 2018</span>
+    				  <span class="startDate">September 2018</span> 
     					<span class="endDate">- Current</span>
     				</div>
     			</header>
-
+    			
          	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Developed new ad capabilities. Built ad renderers for Connected TV devices.</p></p>
+              <p><p>Built ad renderers for Android TV, tvOS, and Roku devices. Spearheaded industry-first Multi-Device capability. Improved team's development workflow via continuous integration</p></p>
             </div>
         	</div>
         </section>
         <section class="work-item">
-
+    
             <input id="work-item-1" type="checkbox" class="toggle-item" />
             <label for="work-item-1"></label>
-
+    
     			<header>
     				<div class="position">Software Development Engineer</div>
     				<div class="company">Amazon</div>
     				<div class="date">
-    				  <span class="startDate">July 2017</span>
-    					<span class="endDate">- September 2018</span>
+    				  <span class="startDate">July 2017</span> 
+    					<span class="endDate">- September 2018</span> 
     				</div>
     			</header>
-
+    			
          	<div class="item" id="work-item">
             <div class="summary">
               <p><p>Worked on Device Analytics and Services team. Developed client libraries for mobile devices. Implemented features and performed DevOps on live, distributed microservices. Built end-to-end automated testing solution.</p></p>
@@ -855,19 +926,19 @@ ul.courses li:hover {
         	</div>
         </section>
         <section class="work-item">
-
+    
             <input id="work-item-2" type="checkbox" class="toggle-item" />
             <label for="work-item-2"></label>
-
+    
     			<header>
     				<div class="position">Games Engineering Intern</div>
     				<div class="company">Nickelodeon</div>
     				<div class="date">
-    				  <span class="startDate">June 2016</span>
-    					<span class="endDate">- August 2016</span>
+    				  <span class="startDate">June 2016</span> 
+    					<span class="endDate">- August 2016</span> 
     				</div>
     			</header>
-
+    			
          	<div class="item" id="work-item">
             <div class="summary">
               <p><p>Programmed interactive media application using Unity 3D and Xcode (iOS). Created data-driven behavior modules. Implemented dynamically linked objects and properties. Participated in Scrum, pull requests, and used JIRA.</p></p>
@@ -875,19 +946,19 @@ ul.courses li:hover {
         	</div>
         </section>
         <section class="work-item">
-
+    
             <input id="work-item-3" type="checkbox" class="toggle-item" />
             <label for="work-item-3"></label>
-
+    
     			<header>
     				<div class="position">Lead Engineer</div>
     				<div class="company">Fay Games</div>
     				<div class="date">
-    				  <span class="startDate">January 2016</span>
-    					<span class="endDate">- May 2017</span>
+    				  <span class="startDate">January 2016</span> 
+    					<span class="endDate">- May 2017</span> 
     				</div>
     			</header>
-
+    			
          	<div class="item" id="work-item">
             <div class="summary">
               <p><p>Implemented analytics, in-app purchases, and JSON tunable variables. Maintained object-oriented codebase in Unity 3D. Onboarded engineers.</p></p>
@@ -895,19 +966,19 @@ ul.courses li:hover {
         	</div>
         </section>
         <section class="work-item">
-
+    
             <input id="work-item-4" type="checkbox" class="toggle-item" />
             <label for="work-item-4"></label>
-
+    
     			<header>
     				<div class="position">Producer and Game Programmer</div>
     				<div class="company">MassDiGI</div>
     				<div class="date">
-    				  <span class="startDate">May 2015</span>
-    					<span class="endDate">- August 2015</span>
+    				  <span class="startDate">May 2015</span> 
+    					<span class="endDate">- August 2015</span> 
     				</div>
     			</header>
-
+    			
          	<div class="item" id="work-item">
             <div class="summary">
               <p><p>Managed programmers, artists, and audio designers. Delivered builds using Xcode, TestFlight, and Unity 3D. Integrated SDK to communicate with Bluetooth devices. Engineered core system and game-wide user interface.</p></p>
@@ -922,10 +993,10 @@ ul.courses li:hover {
       </header>
       <section id="volunteer">
         <section class="volunteer-item">
-
+    
             <input id="volunteer-item-0" type="checkbox" class="toggle-item" checked="checked" />
             <label for="volunteer-item-0"></label>
-
+    
           <header>
             <div class="header-left">
               <div class="position">
@@ -946,15 +1017,15 @@ ul.courses li:hover {
           </header>
           <div class="item">
             <div class="summary">
-              <p><p>Implemented analytics, in-app purchases, and JSON tunable variables. Maintained object-oriented codebase in Unity 3D. Onboarded engineers.</p></p>
+              <p><p>Founded for-education game development initiative in the Five College Consortium. Built diverse management team. Obtained funding. Designed structure. Engaged over 100 students.</p></p>
             </div>
           </div>
         </section>
         <section class="volunteer-item">
-
+    
             <input id="volunteer-item-1" type="checkbox" class="toggle-item" />
             <label for="volunteer-item-1"></label>
-
+    
           <header>
             <div class="header-left">
               <div class="position">
@@ -980,10 +1051,10 @@ ul.courses li:hover {
           </div>
         </section>
         <section class="volunteer-item">
-
+    
             <input id="volunteer-item-2" type="checkbox" class="toggle-item" />
             <label for="volunteer-item-2"></label>
-
+    
           <header>
             <div class="header-left">
               <div class="position">
@@ -1014,13 +1085,13 @@ ul.courses li:hover {
       <header>
         <h2 class='section-title'>Education <span class="item-count">(1)</span></h2>
       </header>
-
+    
       <section id="education">
         <section class="education-item">
           <header>
             <div class="header-left">
               <div class="studyType">
-                Bachelor
+                Bachelor&#x27;s Degree
               </div>
               <div class="area">
                 Computer Science
@@ -1038,9 +1109,9 @@ ul.courses li:hover {
               </span>
             </div>
           </header>
-
-
-
+    
+    
+    
           <div class="item">
           </div>
         </section>
