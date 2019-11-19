@@ -25,7 +25,7 @@
         "screen4.png"
       ],
       "Video": "https://www.youtube.com/embed/FXEoPLax5MA",
-      "Website": "http://glowlime.com/",
+      "Website": null,
       "Facebook": "https://www.facebook.com/GlowLime/",
       "Twitter": "https://twitter.com/GlowLimeGames",
       "GitHub": "https://github.com/GlowLimeGames/",
@@ -109,7 +109,7 @@
         "screen4.png"
       ],
       "Video": "https://www.youtube.com/embed/ckg6HLtkhIA",
-      "Website": "http://glowlime.com/games/defenders-light/",
+      "Website": "https://glowlimegames.github.io/DefendersSite",
       "Facebook": "https://www.facebook.com/DefendersLight",
       "Twitter": "https://twitter.com/Defenders_Light",
       "GitHub": "https://github.com/GlowLimeGames/DefendersLight",
@@ -198,7 +198,7 @@
         "screen4.png"
       ],
       "Video": "https://www.youtube.com/embed/NjP8GHs0cwk",
-      "Website": "https://www.piratesquabbles.com/",
+      "Website": null,
       "Facebook": "https://www.facebook.com/PirateSquabbles/",
       "Twitter": "https://twitter.com/PirateSquabbles",
       "GitHub": "https://github.com/HampshireCollegeCompSci/PirateSquabbles",
@@ -326,7 +326,7 @@
         "screen4.png"
       ],
       "Video": "https://www.youtube.com/embed/76BR8zh-UrY",
-      "Website": "http://glowlime.com/games/letters-to-reid/",
+      "Website": null,
       "Facebook": null,
       "Twitter": null,
       "GitHub": "https://github.com/GlowLimeGames/LettersToReid",
@@ -411,7 +411,7 @@
         "screen4.png"
       ],
       "Video": "https://www.youtube.com/embed/nm70-dXpzJU",
-      "Website": "http://glowlime.com/games/lucid/",
+      "Website": "https://glowlimegames.github.io/LucidSite",
       "Facebook": null,
       "Twitter": null,
       "GitHub": "http://github.com/GlowLimeGames/Lucid",
@@ -494,7 +494,7 @@
         "screen4.png"
       ],
       "Video": null,
-      "Website": "http://glowlime.com/games/lex-the-wizard/",
+      "Website": "https://glowlimegames.github.io/LexSite",
       "Facebook": "https://www.facebook.com/LexTheWizard/",
       "Twitter": "https://twitter.com/LexTheWizard",
       "GitHub": "https://github.com/GlowLimeGames/LexTheWizard",
