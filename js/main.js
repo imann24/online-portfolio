@@ -114,13 +114,16 @@ function highlightActivePage(pageId)
 
 function addSocialLinks(pageLevel)
 {
-    var socialImages = ["linkedin.png", "github.png", "twitter.png"];
-    var links = [
+    let socialImages = ["linkedin.png",
+                        "github.png",
+                        "twitter.png",
+                        "medium.png"];
+    const links = [
         "https://www.linkedin.com/in/isaiahmann",
         "https://github.com/imann24/",
         "https://twitter.com/isaiah_the_mann",
-    ];
-    var formatter = new LinkFormatter();
+        "https://medium.com/@isaiahmann"];
+    const formatter = new LinkFormatter();
     socialImages = formatter.setDirectoryLevel(
             pageLevel,
             formatter.addDirectory(
@@ -128,10 +131,7 @@ function addSocialLinks(pageLevel)
                 formatter.addDirectory(
                     "social-icons",
                     socialImages)));
-    var images = new ImageGroup(
-        socialImages,
-        "social-icon"
-    );
+    const images = new ImageGroup(socialImages, "social-icon");
     images.addAttribute(new Attribute("id", "social-icons"));
     images.addLinkToAll(links);
     $("body").prepend(images.getHTML());

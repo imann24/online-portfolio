@@ -1,0 +1,15 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Isaiah Mann's portfolio site",
+    "main": "index.html",
+    "repository": "git@github.com:imann24/online-portfolio.git",
+    "author": "Isaiah Mann <isaiahbmann@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "http-server"
+    },
+    "devDependencies": {
+        "http-server": "^0.12.1"
+    }
+}
