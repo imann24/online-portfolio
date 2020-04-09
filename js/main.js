@@ -117,12 +117,14 @@ function addSocialLinks(pageLevel)
     let socialImages = ["linkedin.png",
                         "github.png",
                         "twitter.png",
-                        "medium.png"];
+                        "medium.png",
+                        "linktree.png"];
     const links = [
         "https://www.linkedin.com/in/isaiahmann",
         "https://github.com/imann24/",
         "https://twitter.com/isaiah_the_mann",
-        "https://medium.com/@isaiahmann"];
+        "https://medium.com/@isaiahmann",
+        "https://linktr.ee/isaiahm"];
     const formatter = new LinkFormatter();
     socialImages = formatter.setDirectoryLevel(
             pageLevel,
