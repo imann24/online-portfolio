@@ -1110,6 +1110,48 @@
         "JavaScript"
       ],
       "SortPriority": 2
+    },
+    {
+      "Key": "propertygeist",
+      "Title": "Propertygeist",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": null,
+      "TeamSize": 4,
+      "Description": "A PC game for Ludum Dare 47 for the theme \"stuck in a loop.\"",
+      "Contributions": [
+        "Implemented timer and score logic",
+        "Programmed semi-random AI navigation",
+        "Integrated sprite-based animations"
+      ],
+      "StartDate": "2020-10-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2020-10-01T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": "https://www.youtube.com/embed/1C1vW1XUtDk",
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/ghost-team-games/jam-boo",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://mhollister.itch.io/propertygeist",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Mac",
+        "PC"
+      ],
+      "Languages": [
+        "C#"
+      ],
+      "SortPriority": 2
     }
   ]
 }
