@@ -42,6 +42,8 @@ function navBar(pageLevel)
         "h1",
         ["Me", "Resume", "Projects", "Contact"]
     );
+    bar.addAttributeToAll("role", ["navigation", "navigation", "navigation", "navigation"]);
+    bar.addAttributeToAll("aria-label", ["Home", "Resume", "Projects", "Contact"]);
     var links = ["", "resume", "projects", "contact"];
     var formatter = new LinkFormatter();
     links = formatter.setDirectoryLevel(

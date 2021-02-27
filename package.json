@@ -7,9 +7,11 @@
     "author": "Isaiah Mann <isaiahbmann@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "http-server"
+        "dev": "http-server",
+        "accessibility": "a11y http://localhost:8080/projects"
     },
     "devDependencies": {
+        "a11y": "^0.5.1",
         "http-server": "^0.12.1"
     }
 }
