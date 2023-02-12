@@ -10,7 +10,8 @@ const ANALYTICS_ENABLED = true;
 async function startAnalytics()
 {
     const analytics = document.createElement("script");
-    analytics.src = "https://www.googletagmanager.com/gtag/js?id=UA-64996883-1"
+    analytics.src = "https://www.googletagmanager.com/gtag/js?id=G-VWLRJPSKE3"
+    analytics.async = true
     return new Promise((resolve, reject) =>
     {
         analytics.onreadystatechange = function()
@@ -25,7 +26,7 @@ async function startAnalytics()
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-64996883-1');
+        gtag('config', 'G-VWLRJPSKE3');
     });
 }
 
