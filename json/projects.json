@@ -1152,6 +1152,42 @@
         "C#"
       ],
       "SortPriority": 2
+    },
+    {
+      "Key": "extract",
+      "Title": "Extract Your House",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": null,
+      "TeamSize": 2,
+      "Description": "A multiplayer web game using Phaser, socket.io, and express",
+      "Contributions": [
+        "Wrote netcode",
+        "Build game world in Phaser",
+        "Coded state management"
+      ],
+      "StartDate": "2023-11-01T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2023-11-01T07:00:00.000Z",
+      "Pictures": [],
+      "Video": null,
+      "Website": null,
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/extract-your-house",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": "https://mac4coops.itch.io/extract-your-house",
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "JavaScript"
+      ],
+      "SortPriority": 3
     }
   ]
 }
