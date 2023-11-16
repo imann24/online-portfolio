@@ -62,7 +62,10 @@ function addProjectDropdown(pageLevel, projectButton)
           var keys = projects.map(function(project) {return project.Key;});
           var titles = projects.map(function(project) {return project.Title;});
           var projectDropdown = new HTMLGroup(
-               "project-listing", keys, "project-dropdown");
+               "project-listing",
+               keys,
+               "project-dropdown"
+          );
           projectDropdown.addInnerContentToAll("p", titles);
           var formatter = new LinkFormatter();
           var links = formatter.addDirectory("projects", keys);
@@ -76,6 +79,11 @@ function addProjectDropdown(pageLevel, projectButton)
                $("#Projects").hover(
                     function()
                     {
+                         // when Contact is below Projects, don't expand
+                         if(window.innerWidth <= 600)
+                         {
+                              return
+                         }
                          $(".project-dropdown").css("display", "block");
                          checkToShowProjectsScrollDown();
                     },

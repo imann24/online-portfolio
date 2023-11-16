@@ -8,6 +8,14 @@
      padding-left: 14%;
 }
 
+@media (max-width:600px)
+{
+     #contact-info
+     {
+          margin-top: 6.5rem;
+     }
+}
+
 @media screen and (max-width: 450px)
 {
      #contact-info

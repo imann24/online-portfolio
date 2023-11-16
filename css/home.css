@@ -1,16 +1,33 @@
 #about-me
 {
+     margin-top: 2.5rem;
      font-size: 1.75em;
      text-align: justify;
      padding-left: 15vw;
      padding-right: 18vw;
 }
 
-@media (max-width: 800px)
+@media (max-width:800px)
 {
      #about-me
      {
           text-align: left;
+     }
+}
+
+@media (max-width:600px)
+{
+     #about-me
+     {
+          margin-top: 6.5rem;
+     }
+}
+
+@media (max-width:400px)
+{
+     #about-me
+     {
+          margin-top: 2.5rem;
      }
 }
 

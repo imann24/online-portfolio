@@ -5,11 +5,29 @@ h1
 
 #resume-view
 {
+    margin-top: 5rem;
     max-width: 80%;
     min-width: 60%;
     border: none;
     overflow: visible;
 }
+
+@media(max-width:800px)
+{
+     #resume-view
+     {
+          margin-top: 7.5rem;
+     }
+}
+
+@media(max-width:500px)
+{
+     #resume-view
+     {
+          margin-top: 7rem;
+     }
+}
+
 
 #pdf-img
 {
@@ -30,13 +48,22 @@ h1
 
 #pdf-img img
 {
-    width: 4em;
+     margin-bottom: -2rem;
+     width: 4em;
 }
 
 #pdf-img img:hover
 {
     -webkit-filter: grayscale(25%);
     filter: grayscale(25%);
+}
+
+@media(max-width:800px)
+{
+     .navbar
+     {
+          padding-top: 2rem;
+     }
 }
 
 #Resume
@@ -56,6 +83,14 @@ h1
 		radial-gradient(circle at 0 100%, rgba(27, 38, 121, 0) 0px, #1b2679 0px);
 }
 
+@media(max-width:800px)
+{
+     #Resume
+     {
+          background: #1b2679;          
+     }
+}
+
 #Projects
 {
      background: #5D68BB; /* fallback */
@@ -73,6 +108,15 @@ h1
           radial-gradient(circle at 0 100%, rgba(93, 104, 187, 0) 0px, #5D68BB 0px);
 }
 
+
+@media(max-width:800px)
+{
+     #Projects
+     {
+          background: #5D68BB;
+     }
+}
+
 #Resume:hover, #Projects:hover
 {
      background: #394284; /* fallback */
@@ -83,6 +127,14 @@ h1
           linear-gradient(45deg,  transparent 1vw, #394284 0) bottom left;
      background-size: 55% 55%;
      background-repeat: no-repeat;
+}
+
+@media(max-width:800px)
+{
+     #Resume:hover, #Projects:hover
+     {
+          background: #394284;
+     }
 }
 
 #Resume:hover

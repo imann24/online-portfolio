@@ -12,6 +12,14 @@
      display: none;
 }
 
+@media (max-width:600px)
+{
+     #project-display
+     {
+          margin-top: 6.5rem;
+     }
+}
+
 #project-display ul
 {
      list-style-type: circle;
