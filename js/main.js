@@ -36,7 +36,7 @@ function navBar(pageLevel)
      (
         "LinkButton",
         ["Me", "Resume", "Projects", "Contact"],
-        "navbar"
+        "site-navbar"
     );
     bar.addInnerContentToAll
     (

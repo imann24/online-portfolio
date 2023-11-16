@@ -60,7 +60,7 @@ h1
 
 @media(max-width:800px)
 {
-     .navbar
+     .site-navbar
      {
           padding-top: 2rem;
      }
