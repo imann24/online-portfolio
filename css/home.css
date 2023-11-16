@@ -39,6 +39,14 @@
      width: 10vw;
 }
 
+@media (max-width: 800px)
+{
+     #profile-pic
+     {
+          display: none;
+     }
+}
+
 h2
 {
      color: #696969;
