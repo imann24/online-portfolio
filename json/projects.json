@@ -1188,6 +1188,46 @@
         "JavaScript"
       ],
       "SortPriority": 3
+    },
+    {
+      "Key": "kind-cloud",
+      "Title": "Kind Cloud",
+      "Roles": [
+        "Creator",
+        "Programmer"
+      ],
+      "Organization": null,
+      "TeamSize": 1,
+      "Description": "An app for sharing anonymous kind words",
+      "Contributions": [
+        "Built app with Python Django",
+        "Deployed to fly.io",
+        "Integrated with sentiment analysis API"
+      ],
+      "StartDate": "2023-12-23T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2023-12-25T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png"
+      ],
+      "Video": null,
+      "Website": "https://kind-cloud.fly.dev",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/kind_cloud",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "Python"
+      ],
+      "SortPriority": 1
     }
   ]
 }
