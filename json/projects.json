@@ -1228,6 +1228,50 @@
         "Python"
       ],
       "SortPriority": 1
+    },
+    {
+      "Key": "plan-together",
+      "Title": "PlanTogether",
+      "Roles": [
+        "Programmer"
+      ],
+      "Organization": null,
+      "TeamSize": 2,
+      "Description": "An AI app for planning events with friends",
+      "Contributions": [
+        "Integrated with OpenAI API to generate event ideas",
+        "Built in the Next.js framework",
+        "Added Google Maps API to add location links",
+        "Persisted event data to Supabase",
+        "Used Redis cache to speed up loading public pages",
+        "Secured user data with Auth0 login"
+      ],
+      "StartDate": "2023-12-25T07:00:00.000Z",
+      "IsOngoing": false,
+      "EndDate": "2023-12-29T07:00:00.000Z",
+      "Pictures": [
+        "screen1.png",
+        "screen2.png",
+        "screen3.png",
+        "screen4.png"
+      ],
+      "Video": null,
+      "Website": "https://plan-together.fly.dev",
+      "Facebook": null,
+      "Twitter": null,
+      "GitHub": "https://github.com/imann24/plan-together",
+      "AppStore": null,
+      "GooglePlay": null,
+      "itch.io": null,
+      "PlayOnline": null,
+      "ShouldDisplay": true,
+      "Platforms": [
+        "Web"
+      ],
+      "Languages": [
+        "TypeScript"
+      ],
+      "SortPriority": 1
     }
   ]
 }
