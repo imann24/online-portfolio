@@ -1,69 +1,443 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Project</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project — Isaiah Mann</title>
+    <meta name="description" content="A project by Isaiah Mann.">
 
-    <!-- STYLESHEETS -->
-    <link type = "text/css"
-          href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          rel = "stylesheet">
-    <link type = "text/css"
-          href = "https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,700|Roboto:700" rel="stylesheet">
-    <link type = "text/css" href = "../../css/main.css" rel = "stylesheet">
-    <link type = "text/css" href = "../../css/home.css" rel = "stylesheet">
-    <link type = "text/css" href = "../../css/display-project.css" rel = "stylesheet">
-    <link type = "text/css" href = "../../css/display-project.css" rel = "stylesheet">
-    <link type = "text/css" href = "../../css/loading.css" rel = "stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/modern.css">
+    <style>
+        .proj-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            color: var(--ink-mute);
+            font-family: var(--font-mono);
+            margin-bottom: 28px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .proj-back:hover { color: var(--accent-deep); }
 
-    <!-- FAVICON -->
-    <link rel='shortcut icon' type='image/x-icon' href="../../images/favicon/favicon.png">
+        .proj-hero {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 28px;
+            align-items: center;
+            margin-bottom: 36px;
+        }
+        .proj-icon {
+            width: 96px;
+            height: 96px;
+            border-radius: 22px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--hairline);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            flex-shrink: 0;
+        }
+        .proj-icon img { width: 100%; height: 100%; object-fit: cover; }
+        .proj-hero h1 {
+            font-size: clamp(2.4rem, 5vw, 3.6rem);
+            margin: 0;
+        }
+        @media (max-width: 560px) {
+            .proj-hero { grid-template-columns: 1fr; gap: 16px; }
+            .proj-icon { width: 72px; height: 72px; border-radius: 18px; }
+        }
 
-    <!-- SCRIPTS -->
-    <script>
-         PAGE_LEVEL = 2;
-         PAGE_ID = "Projects";
-    </script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src = "../../js/constants.js"></script>
-    <script src = "../../js/util.js"></script>
-    <script src = "../../js/async.js"></script>
-    <script src = "../../js/date.js"></script>
-    <script src = "../../js/html.js"></script>
-    <script src = "../../js/json.js"></script>
-    <script src = "../../js/responsive.js"></script>
-    <script src = "../../js/main.js"></script>
-    <script src = "../../js/jquery-util.js"></script>
-    <script src = "../../js/display-project.js"></script>
+        .proj-lede {
+            font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+            line-height: 1.5;
+            color: var(--ink-soft);
+            max-width: 60ch;
+            margin: 0 0 28px;
+        }
+
+        .proj-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            margin: 36px 0 8px;
+            padding: 22px 0;
+            border-top: 1px solid var(--hairline);
+            border-bottom: 1px solid var(--hairline);
+        }
+        .proj-meta-cell .label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-mute);
+            display: block;
+            margin-bottom: 6px;
+        }
+        .proj-meta-cell .value {
+            font-size: 15px;
+            color: var(--ink);
+        }
+
+        .proj-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 28px 0 0;
+        }
+        .proj-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: var(--radius-pill);
+            background: var(--bg-elevated);
+            border: 1px solid var(--hairline-strong);
+            color: var(--ink) !important;
+            font-size: 13.5px;
+            font-weight: 500;
+            transition: transform 0.15s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+        .proj-link:hover {
+            transform: translateY(-1px);
+            border-color: var(--ink);
+            background: #fff;
+        }
+        .proj-link.is-primary {
+            background: var(--ink);
+            border-color: var(--ink);
+            color: #fff !important;
+        }
+        .proj-link.is-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+
+        .proj-section { margin-top: 56px; }
+        .proj-section h2 {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--ink-mute);
+            margin: 0 0 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--hairline);
+            font-weight: 500;
+        }
+        .proj-contributions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 12px;
+        }
+        .proj-contributions li {
+            position: relative;
+            padding-left: 22px;
+            color: var(--ink-soft);
+            line-height: 1.55;
+        }
+        .proj-contributions li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.65em;
+            width: 8px;
+            height: 1.5px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .proj-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+        }
+        .proj-gallery img {
+            width: 100%;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--hairline);
+            background: var(--bg-muted);
+            cursor: zoom-in;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .proj-gallery img:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .proj-video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: #000;
+            border: 1px solid var(--hairline);
+        }
+        .proj-video iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .proj-loading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--ink-mute);
+            font-size: 14px;
+            font-family: var(--font-mono);
+        }
+        .proj-loading .spinner {
+            width: 14px;
+            height: 14px;
+            border: 2px solid var(--hairline-strong);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 34, 56, 0.92);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: 5vw;
+            cursor: zoom-out;
+        }
+        .lightbox.is-open { display: flex; }
+        .lightbox img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+        }
+    </style>
 </head>
-
 <body>
-     <center>
-          <div id = "content">
-               <h1 class = "title" id = "project-title">Project</h1>
-               <div id = "navbar-wrapper"></div>
-               <div class = "loader"></div>
-               <div id = "project-display">
-                    <div id = "project-icon"></div>
-                    <div id = "project-role"></div>
-                    <div id = "project-org"></div>
-                    <div id = "project-team-size"></div>
-                    <div id = "project-timeline"></div>
-                    <div id = "project-plat"></div>
-                    <div id = "project-lang"></div>
-                    <p id = "project-description">
-                         <b>Description:</b>
-                    </p>
-                    <div id = "project-contributions">
-                         <b>Contributions:</b>
+
+<header class="nav">
+    <div class="container nav-inner">
+        <a href="/" class="nav-brand">
+            <img class="nav-brand-avatar" src="../../images/photos/isaiah.png" alt="Isaiah Mann">
+            <span>Isaiah Mann</span>
+        </a>
+        <nav class="nav-links">
+            <a href="/#work" class="nav-link-hide-sm">Work</a>
+            <a href="/#about" class="nav-link-hide-sm">About</a>
+            <a href="../" class="is-active">Projects</a>
+            <a href="../../resume/">Resume</a>
+            <a href="https://heynaru.com/" target="_blank" rel="noopener" class="nav-cta">
+                Naru <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<section class="section" style="padding-top: clamp(40px, 6vw, 80px);">
+    <div class="container" style="max-width: 880px;">
+        <a href="../" class="proj-back">
+            <span aria-hidden="true">←</span> All projects
+        </a>
+        <div id="proj-loading" class="proj-loading">
+            <span class="spinner"></span>
+            <span>Loading project…</span>
+        </div>
+        <div id="proj-content" hidden></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div>© <span id="year">2026</span> Isaiah Mann · Seattle</div>
+        <div><a href="../" style="color: var(--ink-mute);">← Back to projects</a></div>
+    </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image preview">
+    <img id="lightbox-img" alt="">
+</div>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const SOCIAL_LINKS = [
+        { key: 'Website',    label: 'Website',     primary: true },
+        { key: 'PlayOnline', label: 'Play Online', primary: true },
+        { key: 'AppStore',   label: 'App Store' },
+        { key: 'GooglePlay', label: 'Google Play' },
+        { key: 'itch.io',    label: 'itch.io' },
+        { key: 'GitHub',     label: 'GitHub' },
+        { key: 'Facebook',   label: 'Facebook' },
+        { key: 'Twitter',    label: 'Twitter' },
+    ];
+
+    function getSlugFromURL() {
+        const parts = location.pathname.replace(/\/$/, '').split('/');
+        return parts[parts.length - 1] || parts[parts.length - 2];
+    }
+
+    function fmtList(value) {
+        if (!value) return null;
+        if (Array.isArray(value)) {
+            const filtered = value.filter(v => v && v !== 'N/A');
+            return filtered.length ? filtered.join(', ') : null;
+        }
+        return value === 'N/A' ? null : String(value);
+    }
+
+    function fmtTimeline(p) {
+        if (!p.StartDate) return null;
+        const start = new Date(p.StartDate);
+        const startStr = start.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+        if (p.IsOngoing) return `${startStr} — Present`;
+        if (p.EndDate) {
+            const end = new Date(p.EndDate);
+            const endStr = end.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+            return startStr === endStr ? startStr : `${startStr} — ${endStr}`;
+        }
+        return startStr;
+    }
+
+    function escapeHTML(s) {
+        return String(s ?? '').replace(/[&<>"']/g, c => (
+            { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+        ));
+    }
+
+    function renderProject(p) {
+        document.title = `${p.Title} — Isaiah Mann`;
+
+        const meta = [
+            { label: 'Role',       value: fmtList(p.Roles) },
+            { label: 'Team',       value: p.TeamSize ? `${p.TeamSize} ${p.TeamSize === 1 ? 'person' : 'people'}` : null },
+            { label: 'Organization', value: fmtList(p.Organization) },
+            { label: 'Timeline',   value: fmtTimeline(p) },
+            { label: 'Platforms',  value: fmtList(p.Platforms) },
+            { label: 'Languages',  value: fmtList(p.Languages) },
+        ].filter(m => m.value);
+
+        const links = SOCIAL_LINKS
+            .map(l => ({ ...l, href: p[l.key] }))
+            .filter(l => l.href);
+
+        const contributions = (p.Contributions || []).filter(Boolean);
+        const pictures = (p.Pictures || []);
+
+        const html = `
+            <div class="proj-hero">
+                <div class="proj-icon"><img src="icon.png" alt="${escapeHTML(p.Title)} icon" loading="eager"></div>
+                <div>
+                    <p class="eyebrow" style="margin-bottom: 10px;"><span class="dot"></span>Project</p>
+                    <h1>${escapeHTML(p.Title)}</h1>
+                </div>
+            </div>
+
+            ${p.Description ? `<p class="proj-lede">${escapeHTML(p.Description)}</p>` : ''}
+
+            ${links.length ? `
+                <div class="proj-links">
+                    ${links.map(l => `
+                        <a class="proj-link ${l.primary ? 'is-primary' : ''}" href="${escapeHTML(l.href)}" target="_blank" rel="noopener">
+                            ${escapeHTML(l.label)}
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${meta.length ? `
+                <div class="proj-meta-grid">
+                    ${meta.map(m => `
+                        <div class="proj-meta-cell">
+                            <span class="label">${m.label}</span>
+                            <span class="value">${escapeHTML(m.value)}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${contributions.length ? `
+                <section class="proj-section">
+                    <h2>Contributions</h2>
+                    <ul class="proj-contributions">
+                        ${contributions.map(c => `<li>${escapeHTML(c)}</li>`).join('')}
+                    </ul>
+                </section>
+            ` : ''}
+
+            ${p.Video ? `
+                <section class="proj-section">
+                    <h2>Video</h2>
+                    <div class="proj-video">
+                        <iframe src="${escapeHTML(p.Video)}" title="${escapeHTML(p.Title)} video" allowfullscreen></iframe>
                     </div>
-                    <center>
-                         <div id = "project-links"></div>
-                    </center>
-                    <div id = "project-pictures"></div>
-                    <div id = "project-video"></div>
-               </div>
-          </div>
-     </center>
+                </section>
+            ` : ''}
+
+            ${pictures.length ? `
+                <section class="proj-section">
+                    <h2>Screenshots</h2>
+                    <div class="proj-gallery">
+                        ${pictures.map(pic => `<img src="${escapeHTML(pic)}" alt="${escapeHTML(p.Title)} screenshot" loading="lazy">`).join('')}
+                    </div>
+                </section>
+            ` : ''}
+        `;
+
+        const content = document.getElementById('proj-content');
+        content.innerHTML = html;
+        document.getElementById('proj-loading').hidden = true;
+        content.hidden = false;
+
+        // Lightbox bindings for screenshots
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        document.querySelectorAll('.proj-gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                lbImg.src = img.src;
+                lb.classList.add('is-open');
+            });
+        });
+        lb.addEventListener('click', () => lb.classList.remove('is-open'));
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') lb.classList.remove('is-open');
+        });
+    }
+
+    fetch('../../json/projects.json')
+        .then(r => r.json())
+        .then(data => {
+            const slug = getSlugFromURL();
+            const project = (data.Projects || []).find(p => p.Key === slug);
+            if (!project) {
+                document.getElementById('proj-loading').textContent = 'Project not found.';
+                return;
+            }
+            renderProject(project);
+        })
+        .catch(err => {
+            document.getElementById('proj-loading').textContent = 'Could not load project.';
+            console.error(err);
+        });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWLRJPSKE3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VWLRJPSKE3');
+</script>
+
 </body>
+</html>
