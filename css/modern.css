@@ -4,6 +4,8 @@
  */
 
 :root {
+    color-scheme: light;
+
     --bg: #faf6ef;
     --bg-elevated: #ffffff;
     --bg-muted: #f1ebe0;
@@ -17,6 +19,15 @@
     --shadow-sm: 0 1px 2px rgba(26, 34, 56, 0.06);
     --shadow-md: 0 12px 32px -16px rgba(26, 34, 56, 0.25);
     --shadow-lg: 0 30px 70px -30px rgba(26, 34, 56, 0.35);
+
+    /* Semantic surfaces (theme-aware) */
+    --nav-bg: rgba(250, 246, 239, 0.82);
+    --row-hover: rgba(255, 255, 255, 0.6);
+    --invert-bg: var(--ink);          /* dark panels (CTA) — stays dark in both themes */
+    --solid: var(--ink);              /* primary button fill */
+    --solid-hover: var(--accent-deep);
+    --solid-ink: #ffffff;
+
     --radius-sm: 8px;
     --radius-md: 14px;
     --radius-lg: 22px;
@@ -26,6 +37,65 @@
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     --container: 1120px;
     --gutter: clamp(20px, 5vw, 48px);
+}
+
+/* ─────────────  Dark theme  ─────────────
+ * Tokens are redefined here; components below consume them, so the whole
+ * site re-themes from this one block. Applied two ways:
+ *   1. [data-theme="dark"] — explicit user choice (set by js/theme.js).
+ *   2. prefers-color-scheme: dark — automatic fallback when no choice is
+ *      stored and JS hasn't run (progressive enhancement / no-JS).
+ */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --bg: #0f1115;
+    --bg-elevated: #181b22;
+    --bg-muted: #1d2129;
+    --ink: #f3efe7;
+    --ink-soft: #d4d0c6;
+    --ink-mute: #9aa0ad;
+    --accent: #e2784a;
+    --accent-deep: #ef9266;      /* lighter than base so links/hover stay legible on dark */
+    --hairline: rgba(243, 239, 231, 0.12);
+    --hairline-strong: rgba(243, 239, 231, 0.24);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+    --shadow-lg: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+
+    --nav-bg: rgba(15, 17, 21, 0.72);
+    --row-hover: rgba(255, 255, 255, 0.045);
+    --invert-bg: #181b22;
+    --solid: var(--accent);
+    --solid-hover: #ef9b73;
+    --solid-ink: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        color-scheme: dark;
+
+        --bg: #0f1115;
+        --bg-elevated: #181b22;
+        --bg-muted: #1d2129;
+        --ink: #f3efe7;
+        --ink-soft: #d4d0c6;
+        --ink-mute: #9aa0ad;
+        --accent: #e2784a;
+        --accent-deep: #ef9266;
+        --hairline: rgba(243, 239, 231, 0.12);
+        --hairline-strong: rgba(243, 239, 231, 0.24);
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+        --shadow-md: 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+        --shadow-lg: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+
+        --nav-bg: rgba(15, 17, 21, 0.72);
+        --row-hover: rgba(255, 255, 255, 0.045);
+        --invert-bg: #181b22;
+        --solid: var(--accent);
+        --solid-hover: #ef9b73;
+        --solid-ink: #ffffff;
+    }
 }
 
 * {
@@ -42,6 +112,7 @@ html, body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -134,10 +205,11 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(250, 246, 239, 0.82);
+    background: var(--nav-bg);
     backdrop-filter: saturate(160%) blur(14px);
     -webkit-backdrop-filter: saturate(160%) blur(14px);
     border-bottom: 1px solid var(--hairline);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-inner {
@@ -196,14 +268,14 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     gap: 6px;
     padding: 8px 14px;
     border-radius: var(--radius-pill);
-    background: var(--ink);
-    color: #fff !important;
+    background: var(--solid);
+    color: var(--solid-ink) !important;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: -0.005em;
 }
 
-.nav-cta:hover { background: var(--accent-deep); color: #fff !important; }
+.nav-cta:hover { background: var(--solid-hover); color: var(--solid-ink) !important; }
 
 @media (max-width: 640px) {
     .nav-links { gap: 16px; }
@@ -296,10 +368,10 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .btn:hover { transform: translateY(-1px); }
 
 .btn-primary {
-    background: var(--ink);
-    color: #fff !important;
+    background: var(--solid);
+    color: var(--solid-ink) !important;
 }
-.btn-primary:hover { background: var(--accent-deep); }
+.btn-primary:hover { background: var(--solid-hover); }
 
 .btn-ghost {
     background: transparent;
@@ -388,7 +460,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     aspect-ratio: 1 / 1;
     border-radius: var(--radius-md);
     overflow: hidden;
-    background: #f5efe2;
+    background: var(--bg-muted);
     border: 1px solid var(--hairline);
 }
 
@@ -472,7 +544,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     transition: background 0.2s ease;
 }
 
-.experience-row:hover { background: rgba(255, 255, 255, 0.6); }
+.experience-row:hover { background: var(--row-hover); }
 
 .experience-row .when {
     font-family: var(--font-mono);
@@ -535,7 +607,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 /* ─────────────  CTA / contact  ───────────── */
 
 .cta {
-    background: var(--ink);
+    background: var(--invert-bg);
     color: #fff;
     border-radius: var(--radius-lg);
     padding: clamp(36px, 6vw, 64px);
@@ -567,7 +639,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     background: var(--accent);
     color: #fff !important;
 }
-.cta .btn-primary:hover { background: #fff; color: var(--ink) !important; }
+/* CTA sits on a dark panel in both themes, so hover text must stay dark. */
+.cta .btn-primary:hover { background: #fff; color: #14181f !important; }
 
 .cta .btn-ghost {
     color: #fff !important;
@@ -625,4 +698,143 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .reveal.in {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ─────────────  Theme toggle switch  ─────────────
+ * Injected into every .nav-links by js/theme.js. A pill-shaped track with a
+ * sliding knob that carries the active icon (sun in light, moon in dark). */
+.theme-toggle {
+    position: relative;
+    flex-shrink: 0;
+    width: 54px;
+    height: 28px;
+    padding: 0;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--hairline-strong);
+    background: var(--bg-muted);
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle:hover { border-color: var(--accent); }
+
+.theme-toggle:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 106, 61, 0.35);
+}
+
+/* Sliding knob */
+.theme-toggle::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+    z-index: 1;
+}
+
+.theme-toggle:active::before { width: 25px; }
+
+/* Icons ride along with the knob and crossfade */
+.theme-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    width: 12px;
+    height: 12px;
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.theme-toggle .icon-sun { color: var(--accent); opacity: 1; }
+.theme-toggle .icon-moon { color: var(--ink-soft); opacity: 0; }
+
+/* Dark state — knob slides right, track warms toward the accent */
+:root[data-theme="dark"] .theme-toggle {
+    background: rgba(226, 120, 74, 0.2);
+    border-color: rgba(226, 120, 74, 0.45);
+}
+:root[data-theme="dark"] .theme-toggle::before {
+    transform: translateX(26px);
+    background: var(--accent);
+}
+:root[data-theme="dark"] .theme-toggle svg {
+    transform: translateY(-50%) translateX(26px);
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { opacity: 0; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { opacity: 1; color: #fff; }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .theme-toggle {
+        background: rgba(226, 120, 74, 0.2);
+        border-color: rgba(226, 120, 74, 0.45);
+    }
+    :root:not([data-theme="light"]) .theme-toggle::before {
+        transform: translateX(26px);
+        background: var(--accent);
+    }
+    :root:not([data-theme="light"]) .theme-toggle svg {
+        transform: translateY(-50%) translateX(26px);
+    }
+    :root:not([data-theme="light"]) .theme-toggle .icon-sun { opacity: 0; }
+    :root:not([data-theme="light"]) .theme-toggle .icon-moon { opacity: 1; color: #fff; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle::before,
+    .theme-toggle svg { transition: none; }
+}
+
+/* ─────────────  Dark-mode fixes for per-page component styles  ─────────────
+ * These components hardcode light colors in page-level <style> blocks. The
+ * [data-theme="dark"] prefix raises specificity so these win regardless of
+ * stylesheet order; the prefers-color-scheme block covers the no-JS path. */
+:root[data-theme="dark"] .project-card.is-featured {
+    background: linear-gradient(180deg, var(--bg-elevated) 0%, rgba(226, 120, 74, 0.08) 100%);
+    border-color: rgba(226, 120, 74, 0.4);
+}
+:root[data-theme="dark"] .project-card.is-featured .project-card-thumb { background: var(--bg-elevated); }
+
+:root[data-theme="dark"] .proj-link:hover { background: var(--bg-muted); }
+:root[data-theme="dark"] .proj-link.is-primary {
+    background: var(--solid);
+    border-color: var(--solid);
+    color: var(--solid-ink) !important;
+}
+:root[data-theme="dark"] .proj-link.is-primary:hover {
+    background: var(--solid-hover);
+    border-color: var(--solid-hover);
+}
+
+:root[data-theme="dark"] .resume-download { background: var(--solid); }
+:root[data-theme="dark"] .resume-download:hover { background: var(--solid-hover); }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .project-card.is-featured {
+        background: linear-gradient(180deg, var(--bg-elevated) 0%, rgba(226, 120, 74, 0.08) 100%);
+        border-color: rgba(226, 120, 74, 0.4);
+    }
+    :root:not([data-theme="light"]) .project-card.is-featured .project-card-thumb { background: var(--bg-elevated); }
+
+    :root:not([data-theme="light"]) .proj-link:hover { background: var(--bg-muted); }
+    :root:not([data-theme="light"]) .proj-link.is-primary {
+        background: var(--solid);
+        border-color: var(--solid);
+        color: var(--solid-ink) !important;
+    }
+    :root:not([data-theme="light"]) .proj-link.is-primary:hover {
+        background: var(--solid-hover);
+        border-color: var(--solid-hover);
+    }
+
+    :root:not([data-theme="light"]) .resume-download { background: var(--solid); }
+    :root:not([data-theme="light"]) .resume-download:hover { background: var(--solid-hover); }
 }
