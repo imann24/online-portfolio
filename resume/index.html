@@ -190,6 +190,10 @@
             @page { margin: 0; size: Letter; }
 
             html, body {
+                color-scheme: light;
+                --ink: #1a1a1a;
+                --ink-soft: #333;
+                --accent-deep: #b8512a;
                 background: #fff !important;
                 color: #1a1a1a !important;
                 font-size: 9.3pt;
@@ -247,7 +251,7 @@
             .resume-contacts svg { display: none; }
 
             /* ── Sections ── */
-            .resume-section { margin-top: 10pt !important; }
+            .resume-section { margin-top: 8pt !important; }
             .resume-section:first-of-type { margin-top: 8pt !important; }
             .resume-section-title {
                 font-size: 8pt;
@@ -262,58 +266,65 @@
             .resume-section > p { font-size: 9.5pt !important; line-height: 1.4 !important; margin: 0 !important; }
 
             /* ── Experience ── */
+            /* Full-width summaries and inline headings keep every role on one page. */
             .resume-job {
-                padding: 4pt 0;
-                gap: 10pt;
-                grid-template-columns: 88px 1fr;
+                display: block;
+                padding: 3pt 0;
                 border-color: #ececec;
-                page-break-inside: avoid;
+                break-inside: avoid;
             }
             .resume-job .when {
+                float: right;
+                margin-left: 10pt;
                 font-size: 7.8pt;
                 color: #666 !important;
                 padding-top: 1pt;
                 letter-spacing: 0.02em;
             }
-            .resume-job .pos { font-size: 9.8pt; margin-bottom: 0; }
+            .resume-job .pos { display: inline; font-size: 9.8pt; margin-bottom: 0; }
             .resume-job .company {
+                display: inline;
                 color: #b8512a !important;
                 font-size: 9pt;
-                margin-bottom: 2pt;
+                margin-bottom: 0;
             }
+            .resume-job .company::before { content: " · "; }
             .resume-job .summary {
-                font-size: 9pt;
+                clear: both;
+                margin-top: 2pt;
+                font-size: 9.5pt;
                 color: #1a1a1a !important;
-                line-height: 1.38;
+                line-height: 1.32;
             }
 
             /* ── Skills ── */
             .skills-grid {
-                gap: 8pt 16pt;
-                grid-template-columns: repeat(2, 1fr) !important;
-                page-break-inside: avoid;
+                gap: 6pt 12pt;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                break-inside: avoid;
             }
             .skill-group h3 {
                 font-size: 8pt;
                 margin: 0 0 3pt;
                 letter-spacing: 0.05em;
             }
-            .skill-chips { gap: 3pt; }
+            .skill-chips { display: block; line-height: 1.35; }
             .skill-chips li {
-                font-size: 8.2pt;
-                padding: 1pt 5pt;
-                background: #f3f3f3 !important;
-                border-color: #dcdcdc !important;
+                display: inline;
+                font-size: 8.5pt;
+                padding: 0;
+                background: none !important;
+                border: 0;
                 color: #222 !important;
             }
+            .skill-chips li:not(:last-child)::after { content: ", "; }
             .skill-chips li.is-primary {
-                background: #fdeee4 !important;
-                border-color: #e8c2ac !important;
+                background: none !important;
                 color: #8a3e1c !important;
             }
 
             /* ── Education ── */
-            .education-item { grid-template-columns: 88px 1fr; gap: 10pt; }
+            .education-item { grid-template-columns: 88px 1fr; gap: 10pt; break-inside: avoid; }
             .education-item .when { font-size: 7.8pt; color: #666 !important; }
             .education-item .degree { font-size: 9.8pt; }
             .education-item .school { color: #b8512a !important; font-size: 9pt; }
@@ -321,8 +332,6 @@
             /* No browser link annotations */
             a[href]::after { content: none !important; }
 
-            /* Entries we don't want printed (older internships) */
-            .print-hide { display: none !important; }
         }
     </style>
     <script src="/js/theme.js"></script>
