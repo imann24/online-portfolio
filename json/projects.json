@@ -1276,7 +1276,7 @@
     {
       "Key": "kinarium",
       "Title": "Kinarium",
-      "Description": "A social simulation sandbox for gently influencing a shared house of residents with personalities, memories, and evolving relationships.",
+      "Description": "A social simulation sandbox of a shared house of residents with personalities, memories, and evolving relationships.",
       "ExternalLink": "https://kinarium.space/",
       "IconOverride": "kinarium/icon.svg",
       "ShouldDisplay": true,
