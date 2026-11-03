@@ -16,8 +16,8 @@
     var STORAGE_KEY = "theme";
     var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
 
-    // Keep these in sync with --bg in css/modern.css.
-    var THEME_COLORS = { light: "#faf6ef", dark: "#0f1115" };
+    // Keep these in sync with --page in css/site.css.
+    var THEME_COLORS = { light: "#b5dbf5", dark: "#0d1e33" };
 
     function storedTheme() {
         try {
@@ -53,6 +53,14 @@
 
     // Apply immediately (runs before <body> when loaded in <head>) to avoid FOUC.
     apply(resolveTheme());
+
+    // Flag that motion is welcome, so bricks may start raised and seat themselves.
+    // Without this class (no JS, or reduced motion) every piece renders in place.
+    try {
+        if (!window.matchMedia || !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.classList.add("motion");
+        }
+    } catch (e) {}
 
     function toggle() {
         var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";

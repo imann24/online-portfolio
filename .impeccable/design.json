@@ -1,0 +1,1098 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T06:36:39+00:00",
+  "title": "Design System: Isaiah Mann",
+  "extensions": {
+    "colorMeta": {
+      "sky-page": {
+        "role": "neutral",
+        "displayName": "Booklet Sky",
+        "canonical": "#b5dbf5",
+        "tonalRamp": [
+          "#040c13",
+          "#172732",
+          "#2e4555",
+          "#486579",
+          "#64879f",
+          "#8baabf",
+          "#b3cddf",
+          "#dff2fe"
+        ]
+      },
+      "sky-band": {
+        "role": "neutral",
+        "displayName": "Sky Band",
+        "canonical": "#a5d2f1",
+        "tonalRamp": [
+          "#030c14",
+          "#132835",
+          "#2a4658",
+          "#42667e",
+          "#5e88a5",
+          "#86abc4",
+          "#afcee4",
+          "#e0f1fe"
+        ]
+      },
+      "sky-panel": {
+        "role": "neutral",
+        "displayName": "Sky Panel",
+        "canonical": "rgba(255, 255, 255, 0.38)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "callout-white": {
+        "role": "neutral",
+        "displayName": "Call-out White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "stud-dot": {
+        "role": "neutral",
+        "displayName": "Stud Dot",
+        "canonical": "rgba(16, 20, 24, 0.13)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6aa",
+          "#c6cace",
+          "#eceff2"
+        ]
+      },
+      "keyline-ink": {
+        "role": "neutral",
+        "displayName": "Keyline Ink",
+        "canonical": "#101418",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6aa",
+          "#c6cace",
+          "#eceff2"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "canonical": "#222c37",
+        "tonalRamp": [
+          "#080b0f",
+          "#20262c",
+          "#3b434b",
+          "#58626d",
+          "#788491",
+          "#9ca6b2",
+          "#c1cad4",
+          "#e8eff7"
+        ]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Ink Tertiary",
+        "canonical": "#33404d",
+        "tonalRamp": [
+          "#080c10",
+          "#1f262d",
+          "#3a434d",
+          "#57636f",
+          "#768493",
+          "#9aa7b4",
+          "#c0cbd6",
+          "#e7f0f9"
+        ]
+      },
+      "keyline-soft": {
+        "role": "neutral",
+        "displayName": "Soft Keyline",
+        "canonical": "rgba(16, 20, 24, 0.2)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6aa",
+          "#c6cace",
+          "#eceff2"
+        ]
+      },
+      "action-blue": {
+        "role": "primary",
+        "displayName": "Instruction Blue",
+        "canonical": "#1660c4",
+        "tonalRamp": [
+          "#000a21",
+          "#012253",
+          "#0e3f82",
+          "#225eb4",
+          "#3a80e6",
+          "#70a6f7",
+          "#aacbfd",
+          "#e5efff"
+        ]
+      },
+      "action-blue-deep": {
+        "role": "primary",
+        "displayName": "Deep Instruction Blue",
+        "canonical": "#0f4fa6",
+        "tonalRamp": [
+          "#000923",
+          "#06234e",
+          "#17407c",
+          "#2c5fac",
+          "#4481dc",
+          "#70a6f6",
+          "#aacbfd",
+          "#e5efff"
+        ]
+      },
+      "action-ink": {
+        "role": "primary",
+        "displayName": "Action Ink",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "brick-red": {
+        "role": "secondary",
+        "displayName": "Brick Red",
+        "canonical": "#ef4135",
+        "tonalRamp": [
+          "#1e0100",
+          "#4d0001",
+          "#800203",
+          "#b21c17",
+          "#e5382e",
+          "#fa7868",
+          "#feb4a9",
+          "#fee9e6"
+        ]
+      },
+      "brick-red-long": {
+        "role": "secondary",
+        "displayName": "Brick Red, Long Face",
+        "canonical": "#d0281e",
+        "tonalRamp": [
+          "#1f0000",
+          "#4c0302",
+          "#7e0a06",
+          "#b0231a",
+          "#e23e31",
+          "#f87a6a",
+          "#fcb5a9",
+          "#ffe9e5"
+        ]
+      },
+      "brick-red-short": {
+        "role": "secondary",
+        "displayName": "Brick Red, Short Face",
+        "canonical": "#a51c14",
+        "tonalRamp": [
+          "#1e0100",
+          "#4a0704",
+          "#771d15",
+          "#a6352a",
+          "#d54f41",
+          "#f37d6e",
+          "#feb4a8",
+          "#fee9e5"
+        ]
+      },
+      "brick-yellow": {
+        "role": "secondary",
+        "displayName": "Brick Yellow",
+        "canonical": "#ffd21f",
+        "tonalRamp": [
+          "#100b00",
+          "#2e2401",
+          "#504005",
+          "#755f03",
+          "#9a8020",
+          "#c3a22c",
+          "#e5c764",
+          "#ffeeba"
+        ]
+      },
+      "brick-yellow-long": {
+        "role": "secondary",
+        "displayName": "Brick Yellow, Long Face",
+        "canonical": "#f0b800",
+        "tonalRamp": [
+          "#110a00",
+          "#302304",
+          "#533f0b",
+          "#795d10",
+          "#a27c11",
+          "#cc9e1b",
+          "#ebc46b",
+          "#feedc7"
+        ]
+      },
+      "brick-yellow-short": {
+        "role": "secondary",
+        "displayName": "Brick Yellow, Short Face",
+        "canonical": "#c49200",
+        "tonalRamp": [
+          "#110a00",
+          "#312202",
+          "#553e05",
+          "#7c5b04",
+          "#a27c20",
+          "#c99e41",
+          "#e8c47c",
+          "#ffecc9"
+        ]
+      },
+      "brick-blue": {
+        "role": "secondary",
+        "displayName": "Brick Blue",
+        "canonical": "#2d7fe0",
+        "tonalRamp": [
+          "#000a20",
+          "#02244d",
+          "#054180",
+          "#1a60b1",
+          "#3182e2",
+          "#64a7fc",
+          "#a8ccfb",
+          "#e5f0fe"
+        ]
+      },
+      "brick-blue-long": {
+        "role": "secondary",
+        "displayName": "Brick Blue, Long Face",
+        "canonical": "#1a63c0",
+        "tonalRamp": [
+          "#010a1f",
+          "#012350",
+          "#10407f",
+          "#2460af",
+          "#3c81e0",
+          "#6aa6fa",
+          "#aaccfa",
+          "#e5effe"
+        ]
+      },
+      "brick-blue-short": {
+        "role": "secondary",
+        "displayName": "Brick Blue, Short Face",
+        "canonical": "#134c96",
+        "tonalRamp": [
+          "#000a20",
+          "#092449",
+          "#1c4175",
+          "#3261a2",
+          "#4b83d1",
+          "#76a7ec",
+          "#aacbfb",
+          "#e5effe"
+        ]
+      },
+      "brick-green": {
+        "role": "secondary",
+        "displayName": "Brick Green",
+        "canonical": "#25a660",
+        "tonalRamp": [
+          "#000f05",
+          "#042d16",
+          "#0d4f2b",
+          "#137440",
+          "#139b56",
+          "#5cbc7f",
+          "#91dea9",
+          "#c9fed8"
+        ]
+      },
+      "brick-green-long": {
+        "role": "secondary",
+        "displayName": "Brick Green, Long Face",
+        "canonical": "#178447",
+        "tonalRamp": [
+          "#010f04",
+          "#012e14",
+          "#045027",
+          "#1b7340",
+          "#35985a",
+          "#6aba82",
+          "#9adbac",
+          "#cbfdd8"
+        ]
+      },
+      "brick-green-short": {
+        "role": "secondary",
+        "displayName": "Brick Green, Short Face",
+        "canonical": "#0f6435",
+        "tonalRamp": [
+          "#010f04",
+          "#062d16",
+          "#1a4e2d",
+          "#307047",
+          "#4a9563",
+          "#77b689",
+          "#a4d8b2",
+          "#d2fbdc"
+        ]
+      },
+      "brick-white": {
+        "role": "secondary",
+        "displayName": "Brick White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "brick-white-long": {
+        "role": "secondary",
+        "displayName": "Brick White, Long Face",
+        "canonical": "#e4e7ea",
+        "tonalRamp": [
+          "#090b0d",
+          "#232527",
+          "#404245",
+          "#5f6164",
+          "#808385",
+          "#a2a5a8",
+          "#c6c9cc",
+          "#eceff2"
+        ]
+      },
+      "brick-white-short": {
+        "role": "secondary",
+        "displayName": "Brick White, Short Face",
+        "canonical": "#c5cad0",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6266",
+          "#7e8388",
+          "#a1a5aa",
+          "#c6c9ce",
+          "#eceff2"
+        ]
+      },
+      "plate-grey": {
+        "role": "secondary",
+        "displayName": "Plate Grey",
+        "canonical": "#dfe3e7",
+        "tonalRamp": [
+          "#090b0e",
+          "#222528",
+          "#3f4246",
+          "#5e6265",
+          "#7f8386",
+          "#a2a5a9",
+          "#c6cacd",
+          "#ebeff3"
+        ]
+      },
+      "plate-grey-long": {
+        "role": "secondary",
+        "displayName": "Plate Grey, Long Face",
+        "canonical": "#c2c8cf",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4247",
+          "#5d6267",
+          "#7d8389",
+          "#a1a6ab",
+          "#c5cace",
+          "#ebeff3"
+        ]
+      },
+      "plate-grey-short": {
+        "role": "secondary",
+        "displayName": "Plate Grey, Short Face",
+        "canonical": "#a3abb4",
+        "tonalRamp": [
+          "#090b0e",
+          "#222529",
+          "#3e4348",
+          "#5c6269",
+          "#7c838c",
+          "#9fa6ad",
+          "#c4cad0",
+          "#eaeff4"
+        ]
+      },
+      "ghost-top": {
+        "role": "secondary",
+        "displayName": "Ghost Top",
+        "canonical": "#dcebf6",
+        "tonalRamp": [
+          "#080c0e",
+          "#20262b",
+          "#3b434a",
+          "#58636b",
+          "#77848e",
+          "#9ba7b0",
+          "#c0cbd2",
+          "#e8f0f6"
+        ]
+      },
+      "ghost-long": {
+        "role": "secondary",
+        "displayName": "Ghost Long Face",
+        "canonical": "#c9dfee",
+        "tonalRamp": [
+          "#070c10",
+          "#1d262d",
+          "#37444d",
+          "#53646f",
+          "#718693",
+          "#96a8b4",
+          "#bcccd6",
+          "#e4f0f9"
+        ]
+      },
+      "ghost-short": {
+        "role": "secondary",
+        "displayName": "Ghost Short Face",
+        "canonical": "#b6d1e4",
+        "tonalRamp": [
+          "#060c11",
+          "#1b272f",
+          "#344450",
+          "#4f6473",
+          "#6d8697",
+          "#92a9b8",
+          "#b9ccda",
+          "#e2f1fc"
+        ]
+      },
+      "ghost-line": {
+        "role": "secondary",
+        "displayName": "Ghost Line",
+        "canonical": "rgba(16, 20, 24, 0.32)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5d6266",
+          "#7e8388",
+          "#a1a6aa",
+          "#c6cace",
+          "#eceff2"
+        ]
+      },
+      "night-page": {
+        "role": "neutral",
+        "displayName": "Night Page",
+        "canonical": "#0d1e33",
+        "tonalRamp": [
+          "#060c13",
+          "#1c2632",
+          "#364354",
+          "#526378",
+          "#70849e",
+          "#94a7be",
+          "#bbcbdf",
+          "#e4f0fe"
+        ],
+        "theme": "dark"
+      },
+      "night-band": {
+        "role": "neutral",
+        "displayName": "Night Band",
+        "canonical": "#0a182a",
+        "tonalRamp": [
+          "#070b12",
+          "#1e2630",
+          "#384352",
+          "#546276",
+          "#72849b",
+          "#97a7bb",
+          "#bdcadc",
+          "#e5f0fe"
+        ],
+        "theme": "dark"
+      },
+      "night-panel": {
+        "role": "neutral",
+        "displayName": "Night Panel",
+        "canonical": "rgba(255, 255, 255, 0.04)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ],
+        "theme": "dark"
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "canonical": "#132a46",
+        "tonalRamp": [
+          "#050c15",
+          "#1a2635",
+          "#324359",
+          "#4d637f",
+          "#6a84a6",
+          "#90a7c5",
+          "#b7cbe5",
+          "#e4f0ff"
+        ],
+        "theme": "dark"
+      },
+      "night-stud-dot": {
+        "role": "neutral",
+        "displayName": "Night Stud Dot",
+        "canonical": "rgba(219, 231, 243, 0.1)",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c434a",
+          "#59626b",
+          "#79848e",
+          "#9da6b0",
+          "#c2cad2",
+          "#e9eff6"
+        ],
+        "theme": "dark"
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#eef4fb",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5d6267",
+          "#7e8389",
+          "#a1a6ab",
+          "#c5cace",
+          "#eceff3"
+        ],
+        "theme": "dark"
+      },
+      "night-ink-secondary": {
+        "role": "neutral",
+        "displayName": "Night Ink Secondary",
+        "canonical": "#cfdbe8",
+        "tonalRamp": [
+          "#090b0f",
+          "#21262b",
+          "#3c434a",
+          "#59626c",
+          "#79848f",
+          "#9ca6b1",
+          "#c2cad3",
+          "#e9eff6"
+        ],
+        "theme": "dark"
+      },
+      "night-ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Night Ink Tertiary",
+        "canonical": "#b3c3d4",
+        "tonalRamp": [
+          "#080c10",
+          "#1f262d",
+          "#39434d",
+          "#566370",
+          "#758494",
+          "#99a7b5",
+          "#bfcbd7",
+          "#e7f0f9"
+        ],
+        "theme": "dark"
+      },
+      "night-keyline": {
+        "role": "neutral",
+        "displayName": "Night Keyline",
+        "canonical": "#dbe7f3",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c434a",
+          "#59626b",
+          "#79848e",
+          "#9da6b0",
+          "#c2cad2",
+          "#e9eff6"
+        ],
+        "theme": "dark"
+      },
+      "night-keyline-soft": {
+        "role": "neutral",
+        "displayName": "Night Keyline Soft",
+        "canonical": "rgba(219, 231, 243, 0.24)",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c434a",
+          "#59626b",
+          "#79848e",
+          "#9da6b0",
+          "#c2cad2",
+          "#e9eff6"
+        ],
+        "theme": "dark"
+      },
+      "night-action": {
+        "role": "primary",
+        "displayName": "Night Action",
+        "canonical": "#4a9bff",
+        "tonalRamp": [
+          "#010b1e",
+          "#01244d",
+          "#044180",
+          "#1960b1",
+          "#3182e3",
+          "#64a7fd",
+          "#a8ccfc",
+          "#e4f0fe"
+        ],
+        "theme": "dark"
+      },
+      "night-action-hover": {
+        "role": "primary",
+        "displayName": "Night Action Hover",
+        "canonical": "#7ab6ff",
+        "tonalRamp": [
+          "#000b1e",
+          "#092545",
+          "#1c4370",
+          "#32639c",
+          "#4b85c9",
+          "#76a8e6",
+          "#a6ccfc",
+          "#e4f0fe"
+        ],
+        "theme": "dark"
+      },
+      "night-action-ink": {
+        "role": "primary",
+        "displayName": "Night Action Ink",
+        "canonical": "#06121f",
+        "tonalRamp": [
+          "#070c10",
+          "#1f262e",
+          "#39434e",
+          "#566371",
+          "#748495",
+          "#99a7b6",
+          "#bfcbd8",
+          "#e6f0fa"
+        ],
+        "theme": "dark"
+      },
+      "night-focus": {
+        "role": "primary",
+        "displayName": "Night Focus",
+        "canonical": "#ffd21f",
+        "tonalRamp": [
+          "#100b00",
+          "#2e2401",
+          "#504005",
+          "#755f03",
+          "#9a8020",
+          "#c3a22c",
+          "#e5c764",
+          "#ffeeba"
+        ],
+        "theme": "dark"
+      },
+      "night-brick-line": {
+        "role": "neutral",
+        "displayName": "Night Brick Line",
+        "canonical": "#070b10",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232529",
+          "#3e4247",
+          "#5d6268",
+          "#7d838a",
+          "#a0a6ac",
+          "#c5cacf",
+          "#ebeff3"
+        ],
+        "theme": "dark"
+      },
+      "night-ghost-top": {
+        "role": "neutral",
+        "displayName": "Night Ghost Top",
+        "canonical": "#24426a",
+        "tonalRamp": [
+          "#040b17",
+          "#16263a",
+          "#2e4360",
+          "#476388",
+          "#6484b0",
+          "#8aa7cf",
+          "#b2cbed",
+          "#e5f0fe"
+        ],
+        "theme": "dark"
+      },
+      "night-ghost-long": {
+        "role": "neutral",
+        "displayName": "Night Ghost Long",
+        "canonical": "#1d375a",
+        "tonalRamp": [
+          "#050b16",
+          "#182638",
+          "#30435d",
+          "#4a6384",
+          "#6784ac",
+          "#8da7cb",
+          "#b5cbea",
+          "#e5effe"
+        ],
+        "theme": "dark"
+      },
+      "night-ghost-short": {
+        "role": "neutral",
+        "displayName": "Night Ghost Short",
+        "canonical": "#172d4b",
+        "tonalRamp": [
+          "#050b15",
+          "#1a2636",
+          "#32435a",
+          "#4d6380",
+          "#6b84a7",
+          "#90a7c6",
+          "#b7cbe6",
+          "#e5effe"
+        ],
+        "theme": "dark"
+      },
+      "night-ghost-line": {
+        "role": "neutral",
+        "displayName": "Night Ghost Line",
+        "canonical": "rgba(219, 231, 243, 0.3)",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c434a",
+          "#59626b",
+          "#79848e",
+          "#9da6b0",
+          "#c2cad2",
+          "#e9eff6"
+        ],
+        "theme": "dark"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Cover name and each page's main heading."
+      },
+      "step-numeral": {
+        "displayName": "Step Numeral",
+        "purpose": "Huge 900-weight step number pinned to each step's model."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section and archive group headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Part names, row titles and sub-heads."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The one first-person line under a display heading, max 34ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy in Ink Secondary, max 68ch, tabular numerals."
+      },
+      "label": {
+        "displayName": "Box Title",
+        "purpose": "Uppercase titles inside call-outs and field labels; never an eyebrow above a heading."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "Buttons, tabs, chips, tags, filters and metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 8px 16px -6px rgba(16, 20, 24, 0.35)",
+        "purpose": "Soft offset shadow paired with a 2px rise on hover."
+      },
+      {
+        "name": "lift-night",
+        "value": "0 10px 20px -8px rgba(0, 0, 0, 0.7)",
+        "purpose": "Lift in the night build."
+      },
+      {
+        "name": "press",
+        "value": "0 1px 2px rgba(16, 20, 24, 0.3)",
+        "purpose": "Paired with a 1px drop on active."
+      },
+      {
+        "name": "press-night",
+        "value": "0 1px 2px rgba(0, 0, 0, 0.6)",
+        "purpose": "Press in the night build."
+      },
+      {
+        "name": "brick-face",
+        "value": "inset 0 -4px 0 <darker brick tone>",
+        "purpose": "Draws a brick's lower face on the theme-toggle knob and project-page brick bullets; not an elevation shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Lift, press, toggle slide and brick seating."
+      },
+      {
+        "name": "lift-duration",
+        "value": "0.18s",
+        "purpose": "Transform and shadow on hover and active."
+      },
+      {
+        "name": "fill-duration",
+        "value": "0.15s ease",
+        "purpose": "Background fills on tabs, rows and button hover."
+      },
+      {
+        "name": "theme-duration",
+        "value": "0.3s ease",
+        "purpose": "Page background and ink cross-fade on theme change."
+      },
+      {
+        "name": "toggle-slide",
+        "value": "0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Theme-toggle knob sliding between day and night."
+      },
+      {
+        "name": "seat",
+        "value": "0.75s cubic-bezier(0.16, 1, 0.3, 1); translateY -40px, 1.5px, -0.5px, 0",
+        "purpose": "The new brick drops along its arrow and clicks flush; only under html.motion, never under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "480px"
+      },
+      {
+        "name": "compact-model",
+        "value": "600px"
+      },
+      {
+        "name": "bar-unstick",
+        "value": "640px"
+      },
+      {
+        "name": "parts-list",
+        "value": "720px"
+      },
+      {
+        "name": "stack",
+        "value": "860px"
+      },
+      {
+        "name": "cover-stack",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action colour; lifts 2px on hover and presses 1px on active.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">See the build</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border: 3px solid var(--line, #101418); border-radius: 6px; background: var(--action, #1660c4); color: var(--action-ink, #ffffff); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); font-size: 17px; font-weight: 700; line-height: 1.2; cursor: pointer; transition: transform 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), background-color 0.15s ease; } .ds-btn-primary:hover { background: var(--action-hover, #0f4fa6); transform: translateY(-2px); box-shadow: var(--lift, 0 8px 16px -6px rgba(16, 20, 24, 0.35)); } .ds-btn-primary:active { transform: translateY(1px); box-shadow: var(--press, 0 1px 2px rgba(16, 20, 24, 0.3)); } .ds-btn-primary:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White keylined button for the second action, such as email.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Email me</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 12px 24px; border: 3px solid var(--line, #101418); border-radius: 6px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); font-size: 17px; font-weight: 700; line-height: 1.2; cursor: pointer; transition: transform 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-secondary:hover { transform: translateY(-2px); box-shadow: var(--lift, 0 8px 16px -6px rgba(16, 20, 24, 0.35)); } .ds-btn-secondary:active { transform: translateY(1px); box-shadow: var(--press, 0 1px 2px rgba(16, 20, 24, 0.3)); } .ds-btn-secondary:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Tab Navigation",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Segmented tab strip in one 3px keyline; the current page fills Instruction Blue.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Projects</a><a href=\"#\">Resume</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-tabs { display: inline-flex; border: 3px solid var(--line, #101418); border-radius: 6px; background: var(--paper, #ffffff); overflow: hidden; font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); } .ds-tabs a { padding: 9px 16px; font-size: 15px; font-weight: 600; color: var(--ink, #101418); text-decoration: none; transition: background-color 0.15s ease, color 0.15s ease; } .ds-tabs a + a { border-left: 2px solid var(--line, #101418); } .ds-tabs a:hover { background: var(--page-band, #a5d2f1); } .ds-tabs a[aria-current=\"page\"] { background: var(--action, #1660c4); color: var(--action-ink, #ffffff); } .ds-tabs a:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: -6px; }"
+    },
+    {
+      "name": "Era Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Static 2px-keyline chip with a round era swatch; used in parts call-outs and skills.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\"><i style=\"background:#ffd21f\"></i>Unity games</li><li class=\"ds-chip\"><i style=\"background:#25a660\"></i>Ed-tech</li><li class=\"ds-chip\"><i style=\"background:#ef4135\"></i>AI agents</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); } .ds-chip { display: inline-flex; align-items: center; gap: 8px; padding: 5px 10px 5px 6px; border: 2px solid var(--line, #101418); border-radius: 6px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-size: 14px; font-weight: 600; line-height: 1.2; white-space: nowrap; } .ds-chip i { width: 14px; height: 14px; border: 2px solid var(--brick-line, #101418); border-radius: 50%; flex-shrink: 0; }"
+    },
+    {
+      "name": "Link Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "2px-keyline link piece with an inline arrow; lifts on hover.",
+      "html": "<a class=\"ds-tag\" href=\"#\">Qualtrics<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 16 16 8M9 8h7v7\"/></svg></a>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 2px solid var(--line, #101418); border-radius: 6px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); font-size: 14px; font-weight: 600; text-decoration: none; transition: transform 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-tag svg { width: 12px; height: 12px; } .ds-tag:hover { transform: translateY(-2px); box-shadow: var(--lift, 0 8px 16px -6px rgba(16, 20, 24, 0.35)); } .ds-tag:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Era Filter",
+      "kind": "button",
+      "refersTo": "filter",
+      "description": "Archive toggle with an era dot and a count; pressed fills Instruction Blue.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\"><i style=\"background:#dfe3e7\"></i>All <span>31</span></button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\"><i style=\"background:#ffd21f\"></i>2014–17 <span>18</span></button></div>",
+      "css": ".ds-filters { display: flex; flex-wrap: wrap; gap: 8px; } .ds-filter { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 14px 8px 10px; border: 3px solid var(--line, #101418); border-radius: 6px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); font-size: 15px; font-weight: 600; cursor: pointer; } .ds-filter i { width: 14px; height: 14px; border: 2px solid var(--brick-line, #101418); border-radius: 50%; } .ds-filter span { font-weight: 500; opacity: 0.8; } .ds-filter[aria-pressed=\"true\"] { background: var(--action, #1660c4); color: var(--action-ink, #ffffff); } .ds-filter:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Call-out Box",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "White 3px-keyline box headed by an uppercase box title, the instruction-booklet call-out.",
+      "html": "<div class=\"ds-callout\"><p class=\"ds-box-title\">Parts in this build</p><p class=\"ds-callout-body\">Games, enterprise platforms, interactive ads, ed-tech and AI builds.</p></div>",
+      "css": ".ds-callout { max-width: 360px; padding: 16px 18px; border: 3px solid var(--line, #101418); border-radius: 10px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); } .ds-box-title { margin: 0 0 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; } .ds-callout-body { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-2, #222c37); }"
+    },
+    {
+      "name": "Parts Piece",
+      "kind": "card",
+      "refersTo": "piece",
+      "description": "Keylined parts row with a brick, a name and caption, and a count; lifts when it links.",
+      "html": "<a class=\"ds-piece\" href=\"#\"><span class=\"ds-piece-art\"><svg viewBox=\"0 0 40 34\" aria-hidden=\"true\"><polygon points=\"4,14 20,22 20,32 4,24\" fill=\"#d0281e\" stroke=\"#101418\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"20,22 36,14 36,24 20,32\" fill=\"#a51c14\" stroke=\"#101418\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"4,14 20,6 36,14 20,22\" fill=\"#ef4135\" stroke=\"#101418\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg></span><span class=\"ds-piece-text\"><strong>Agents</strong><span>Tool design down to the database</span></span><span class=\"ds-piece-count\">1x</span></a>",
+      "css": ".ds-piece { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; gap: 14px; max-width: 380px; padding: 12px 14px; border: 3px solid var(--line, #101418); border-radius: 10px; background: var(--paper, #ffffff); color: var(--ink, #101418); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); text-decoration: none; transition: transform 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-piece:hover { transform: translateY(-2px); box-shadow: var(--lift, 0 8px 16px -6px rgba(16, 20, 24, 0.35)); } .ds-piece:focus-visible { outline: 3px dashed var(--focus, #1660c4); outline-offset: 4px; } .ds-piece-art svg { width: 56px; height: auto; display: block; } .ds-piece-text { display: grid; gap: 2px; min-width: 0; } .ds-piece-text strong { font-size: 16px; } .ds-piece-text span { font-size: 14px; color: var(--ink-2, #222c37); } .ds-piece-count { align-self: start; font-size: 18px; font-weight: 800; }"
+    },
+    {
+      "name": "Empty-Seat Status",
+      "kind": "custom",
+      "refersTo": "status",
+      "description": "Loading and error state as a 3px dashed box, the empty seat in component form.",
+      "html": "<div class=\"ds-status\" role=\"status\">Loading the parts list…</div>",
+      "css": ".ds-status { display: flex; align-items: center; gap: 16px; padding: 20px; border: 3px dashed var(--line, #101418); border-radius: 10px; color: var(--ink-2, #222c37); font-family: var(--font, 'Rubik', ui-rounded, 'Segoe UI', system-ui, sans-serif); font-weight: 600; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Build Instructions",
+    "overview": "Every page is a spread from one toy-brick building-instruction booklet. The page is sky blue and ruled by a faint stud-dot grid on an 8px stud; every piece, box and button carries a black keyline; white call-out boxes hold the detail; isometric bricks, drawn in code from `tools/bricks.py`, are the only illustration. The language is generic brick-manual language: numbered steps with huge heavy numerals, ghosted earlier assembly, dashed arrows to a dashed empty seat, 1:1 call-outs and a parts inventory. It is never a toy brand's name, logo or look.\n\nDensity is that of an instruction booklet: generous sky around a few firmly outlined boxes, one heavy rounded grotesk at every size, colour carried by the bricks rather than by surfaces. Components are quietly tactile: they sit flat on their keylines at rest, lift 2px with a soft offset shadow on hover and press down 1px on active, like a piece being picked up and clicked home.\n\nThe dark theme is a night build: the same booklet on a deep navy page with pale keylines, where the bricks keep their colours and the focus ring turns brick yellow.",
+    "keyCharacteristics": [
+      "Sky-blue page with a stud-dot grid on a 32px pitch (four studs).",
+      "One keyline system: 3px on boxes and buttons, 2px on chips, tags and internal dividers.",
+      "Isometric bricks in three tones per colour (top, long face, short face), coloured by career era.",
+      "One typeface, Rubik, from 400 body to 900 step numerals.",
+      "Flat at rest; a 2px lift on hover and a 1px press on active.",
+      "Dashed lines mean \"where a piece goes\": arrows, empty seats, focus rings, loading states."
+    ],
+    "rules": [
+      {
+        "name": "The Era Code Rule",
+        "body": "Brick colour means era and nothing else: games yellow, enterprise white, interactive ads blue, ed-tech green, independent and AI builds red, plate grey for baseplates and ghosted steps. Never use a brick colour decoratively or to rank one project above another.",
+        "section": "colors"
+      },
+      {
+        "name": "The Token-Only Rule",
+        "body": "Every colour is a custom property in `css/site.css`, redefined once for the dark theme under both `[data-theme=\"dark\"]` and `prefers-color-scheme`. Page `<style>` blocks reference tokens only; a new colour is a new token first.",
+        "section": "colors"
+      },
+      {
+        "name": "The Night Build Rule",
+        "body": "Dark theme changes the room, not the pieces: page, paper, ink, keylines, action and ghosts swap; brick colours stay.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Grotesk Rule",
+        "body": "Rubik at every size. Hierarchy comes from weight (400 to 900) and size, never from a second family or a system display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Box Title Rule",
+        "body": "Small uppercase labels live inside a box as its title or as a field label (\"Parts in this build\", \"New in this step\", \"1:1\"). Never set one above a heading as an eyebrow or kicker.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stud Rule",
+        "body": "Layout spacing (gaps between pieces, section rhythm, the dot grid) steps in whole and half studs of 8px. Only the tight internal padding of small pieces sits between studs.",
+        "section": "layout"
+      },
+      {
+        "name": "The Quietly Tactile Rule",
+        "body": "Flat at rest, 2px up with the soft Lift on hover, 1px down with Press on active, over 0.18s on the ease-out curve. No resting shadows and no hard offset shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Keyline Rule",
+        "body": "There is one keyline system: 3px on boxes and buttons, 2px on chips, tags, icon wells and internal dividers, soft 2px rules between list rows. A new surface picks one of these; it does not invent a weight.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Empty Seat Rule",
+        "body": "A dashed line always means \"a piece goes here\". Focus is a 3px dashed outline offset 4px (4.1:1 in light, 11.6:1 in night); loading and error states are 3px dashed boxes; models show the next brick's place as a dashed seat with a dashed arrow.",
+        "section": "shapes"
+      },
+      {
+        "name": "The In-Place Rule",
+        "body": "With no JS or with reduced motion, every brick is already seated. Motion is an enhancement that starts from the finished model, never a dependency.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** take every colour from a `css/site.css` token and define any new one there for both themes before using it in a page `<style>` block.",
+      "**Do** colour bricks by era only: games yellow, enterprise white, interactive ads blue, ed-tech green, independent and AI builds red, plate grey for baseplates and ghosted steps.",
+      "**Do** set keylines at 3px on boxes and buttons and 2px on chips, tags and dividers.",
+      "**Do** keep surfaces flat at rest, lifting 2px with the soft Lift on hover and pressing 1px on active.",
+      "**Do** use the 3px dashed outline, offset 4px, for focus, and dashed boxes for loading and error.",
+      "**Do** render bricks in place and start them raised only under `html.motion`.",
+      "**Do** give Naru the same piece, size and treatment as the other current projects.",
+      "**Do** draw new illustration as isometric bricks from `tools/bricks.py`."
+    ],
+    "donts": [
+      "**Don't** use a toy brand's name, logo or trade dress; keep to generic brick-manual language.",
+      "**Don't** give Naru hero placement, a badge or a highlight colour.",
+      "**Don't** set an eyebrow or kicker label above a heading; uppercase labels belong inside boxes as titles.",
+      "**Don't** add resting shadows or hard offset shadows to surfaces.",
+      "**Don't** hard-code colours in page styles or swap brick colours in the night build.",
+      "**Don't** introduce a second typeface or a system display face."
+    ]
+  }
+}
