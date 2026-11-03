@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "rubik",
+        "createdAt": "2026-11-03T06:06:23.947Z",
+        "reason": "Redesign approved by user (Build Instructions world); DESIGN.md is rewritten from the build at finish"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "css/site.css"
+        ],
+        "createdAt": "2026-11-03T06:16:19.683Z",
+        "reason": "Theme toggle knob's inset bottom edge draws the brick's side face in the Build Instructions world; not a card side stripe"
+      }
+    ]
+  }
+}
