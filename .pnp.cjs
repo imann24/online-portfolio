@@ -47,7 +47,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.18.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.2"],\
+          ["fast-uri", "npm:3.1.7"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -142,10 +142,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["brace-expansion", [\
-      ["npm:1.1.21", {\
-        "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.21-0c6e278ea9-6c0ed34107.zip/node_modules/brace-expansion/",\
+      ["npm:1.1.15", {\
+        "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.15-f6d8185c59-f2a950034e.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
-          ["brace-expansion", "npm:1.1.21"],\
+          ["brace-expansion", "npm:1.1.15"],\
           ["balanced-match", "npm:1.0.2"],\
           ["concat-map", "npm:0.0.1"]\
         ],\
@@ -393,10 +393,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-uri", [\
-      ["npm:3.1.2", {\
-        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.2-7ef4943d40-1dff04865b.zip/node_modules/fast-uri/",\
+      ["npm:3.1.7", {\
+        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.7-3de8444a6d-6d62ea8188.zip/node_modules/fast-uri/",\
         "packageDependencies": [\
-          ["fast-uri", "npm:3.1.2"]\
+          ["fast-uri", "npm:3.1.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -550,7 +550,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/minimatch-npm-3.1.5-86958baf50-b11a7ee577.zip/node_modules/minimatch/",\
         "packageDependencies": [\
           ["minimatch", "npm:3.1.5"],\
-          ["brace-expansion", "npm:1.1.21"]\
+          ["brace-expansion", "npm:1.1.15"]\
         ],\
         "linkType": "HARD"\
       }]\
