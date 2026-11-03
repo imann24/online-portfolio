@@ -143,6 +143,19 @@ body {
 
 img, svg { display: block; max-width: 100%; }
 
+/* These project assets supply their own frame on both home and archive pages. */
+:is(.piece-art, .row) img:is(
+    [src="/projects/kinarium/icon.svg"],
+    [src="/projects/eternal-flopnation/icon.png"],
+    [src="/projects/pirate-squabbles/icon.png"],
+    [src="/projects/progress-or-die/icon.png"]
+) {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    object-fit: contain;
+}
+
 a { color: inherit; }
 
 p { margin: 0 0 1em; color: var(--ink-2); max-width: 68ch; }

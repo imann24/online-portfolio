@@ -102,7 +102,7 @@
         .step-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-size: 15px; font-weight: 500; margin-bottom: 14px; }
         .step-body > p:not(.step-meta) { font-size: 17px; }
         .step-pieces { margin-top: 20px; }
-        .step-pieces-many { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+        .step-pieces-many { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; container: project-pieces / inline-size; }
         .step-pieces-many .box-title { grid-column: 1 / -1; margin-bottom: 0; }
 
         .piece {
@@ -127,15 +127,29 @@
         .piece-text strong svg { width: 13px; height: 13px; }
         .piece-text span { font-size: 14px; color: var(--ink-2); }
         .piece-count { font-size: 18px; font-weight: 800; align-self: start; }
-        .step-pieces-many .piece { grid-template-columns: 56px minmax(0, 1fr); }
+        .step-pieces-many .piece {
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: 56px 1fr;
+            align-items: start;
+            gap: 12px;
+            min-width: 0;
+        }
+        .step-pieces-many .piece-text { overflow-wrap: anywhere; }
+        .step-pieces-many .piece-text strong { display: block; }
+        .step-pieces-many .piece-text strong svg { display: inline-block; vertical-align: middle; }
         .step-pieces-many .piece-count { display: none; }
+
+        /* Reflow against the available project column, including the step's desktop split. */
+        @container project-pieces (min-width: 36rem) {
+            .step-pieces-many .piece { grid-template-columns: 56px minmax(0, 1fr); grid-template-rows: auto; align-items: center; }
+        }
+        @container project-pieces (max-width: 20rem) {
+            .step-pieces-many .piece { grid-column: 1 / -1; grid-template-columns: 56px minmax(0, 1fr); grid-template-rows: auto; align-items: center; }
+        }
 
         @media (max-width: 860px) {
             .step { grid-template-columns: 1fr; gap: 16px; }
             .step-art .model-step { max-width: 300px; margin-top: 40px; }
-        }
-        @media (max-width: 600px) {
-            .step-pieces-many { grid-template-columns: 1fr; }
         }
 
         .parts-list { list-style: none; margin: 0; padding: 0; border-top: var(--keyline) solid var(--line); }
@@ -273,7 +287,7 @@
                 <span class="piece-text"><strong>Multi-device ads</strong><span>Android TV, tvOS, Roku</span></span>
                 <span class="piece-count" aria-hidden="true">1×</span></div>
                 </div>
-                <div class="tags"><a class="tag" href="https://www.linkedin.com/company/truex/" target="_blank" rel="noopener">true[X]<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a></div>
+                <div class="tags"><a class="tag" href="https://x.com/trueX/" target="_blank" rel="noopener">true[X]<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a></div>
             </div>
         </li>
         <li class="step" id="step-4">
@@ -338,7 +352,7 @@
             <div class="step-body">
                 <h3><span class="visually-hidden">Step 7: </span>Independent projects</h3>
                 <p class="step-meta"><span class="chip"><i class="red"></i>2023 to present</span> Founder &amp; developer</p>
-                <p>I build my own apps from interface to database. My latest is naru, an AI accountability companion for mobile and web.</p>
+                <p>I build my own apps from interface to database. My latest is Naru, an AI accountability companion for mobile and web.</p>
                 <div class="step-pieces step-pieces-many">
                     <p class="box-title">Selected work</p>
                     <a class="piece" href="/projects/plan-together/"><span class="piece-art"><img src="/projects/plan-together/icon.png" alt="" width="56" height="56" loading="lazy"></span>
