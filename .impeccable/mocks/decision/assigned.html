@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Grid Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}body{width:1440px;height:900px;background:#f4f4f1;color:#111;font-family:Archivo,sans-serif;overflow:hidden;position:relative}
+.grid{position:absolute;inset:0 40px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:20px;pointer-events:none}
+.grid i{border-left:1px solid rgba(17,17,17,.08);font:500 10px Archivo;letter-spacing:.1em;padding:8px 4px;color:rgba(17,17,17,.4)}
+nav{position:absolute;top:28px;left:40px;right:40px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:20px;font-weight:600;font-size:15px}
+nav span:nth-child(1){grid-column:1/4}nav span{grid-column:span 1}
+h1{position:absolute;left:40px;top:110px;font-stretch:68%;font-weight:850;font-size:236px;line-height:.82;letter-spacing:-.03em}
+.lede{position:absolute;left:40px;top:540px;width:640px;font-size:30px;font-weight:450;line-height:1.2}
+.act{position:absolute;left:40px;bottom:56px;display:flex;gap:0}
+.act a{display:block;padding:22px 30px;font-weight:700;font-size:20px;color:#fff;background:#111;text-decoration:none}
+.act a+a{background:transparent;color:#111;border:2px solid #111}
+.field{position:absolute;top:0;right:0;width:600px;height:900px;background:#e3241b;color:#fff;padding:92px 40px 40px}
+.row{display:grid;grid-template-columns:150px 1fr;align-items:baseline;border-top:2px solid rgba(255,255,255,.9);padding:12px 0 18px}
+.row b{font-stretch:62%;font-weight:800;font-size:64px;line-height:.9}
+.row span{font-size:22px;font-weight:600}.row em{display:block;font-style:normal;font-size:15px;opacity:.85;font-weight:450}
+.bar{height:10px;background:#fff;margin-top:10px}
+.row.now{background:#111;margin:0 -40px;padding:12px 40px 18px;border-top:0}
+.era-b .bar{background:#1f3fbf}.era-y .bar{background:#f2c230}
+</style></head><body>
+<div class="grid"><i>01</i><i>02</i><i>03</i><i>04</i><i>05</i><i>06</i><i>07</i><i>08</i><i>09</i><i>10</i><i>11</i><i>12</i></div>
+<nav><span>Isaiah Mann</span><span>Work</span><span>Projects</span><span>Resume</span><span>Contact</span><span>◐</span></nav>
+<h1>Isaiah<br>Mann.</h1>
+<p class="lede">I design, build, and ship AI-native software. Ten years, four eras, one through-line: software that helps people.</p>
+<div class="act"><a>Now building: Naru →</a><a>isaiahbmann@gmail.com</a></div>
+<div class="field">
+<div class="row now"><b>2026</b><span>Naru<em>Founder &amp; engineer · AI accountability companion</em><div class="bar" style="width:12%"></div></span></div>
+<div class="row"><b>2022</b><span>Committee for Children<em>Senior Software Engineer II</em><div class="bar" style="width:52%"></div></span></div>
+<div class="row"><b>2021</b><span>Amazon<em>Software Development Engineer</em><div class="bar" style="width:14%"></div></span></div>
+<div class="row era-b"><b>2019</b><span>Qualtrics<em>Software Engineer</em><div class="bar" style="width:28%"></div></span></div>
+<div class="row era-b"><b>2017</b><span>true[X] / Infillion<em>Interactive ad experiences</em><div class="bar" style="width:28%"></div></span></div>
+<div class="row era-y"><b>2015</b><span>GlowLime Games<em>Co-founder &amp; technical director</em><div class="bar" style="width:22%"></div></span></div>
+</div></body></html>
