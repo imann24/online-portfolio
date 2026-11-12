@@ -72,7 +72,6 @@
         .row img { grid-row: span 2; width: 56px; height: 56px; border-radius: 10px; border: 2px solid var(--line); object-fit: cover; background: var(--white-1); }
         .row h3 { display: flex; align-items: center; gap: 6px; font-size: 1.1rem; font-weight: 700; }
         .row h3 svg { width: 13px; height: 13px; flex-shrink: 0; }
-        .row-count { font-size: 15px; font-weight: 800; white-space: nowrap; }
         .row p { grid-column: 2 / 4; margin: 0; font-size: 15px; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .row-meta { grid-column: 2 / 4; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; font-weight: 600; color: var(--ink-2); }
         .row-meta span { white-space: nowrap; }
@@ -194,7 +193,6 @@
         return `<li><a class="row" href="${href}"${ext}>
             <img src="${icon}" alt="" width="56" height="56" loading="lazy">
             <h3>${esc(p.Title)}${p.ExternalLink ? EXT : ''}</h3>
-            <span class="row-count" aria-hidden="true">1×</span>
             <p>${esc(p.Description)}</p>
             ${meta ? `<span class="row-meta">${meta}</span>` : ''}
         </a></li>`;
