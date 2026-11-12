@@ -145,7 +145,6 @@ img, svg { display: block; max-width: 100%; }
 
 /* These project assets supply their own frame on both home and archive pages. */
 :is(.piece-art, .row) img:is(
-    [src="/projects/kinarium/icon.svg"],
     [src="/projects/eternal-flopnation/icon.png"],
     [src="/projects/pirate-squabbles/icon.png"],
     [src="/projects/progress-or-die/icon.png"]
@@ -154,6 +153,13 @@ img, svg { display: block; max-width: 100%; }
     border-radius: 0;
     background: transparent;
     object-fit: contain;
+}
+
+/* Kinarium's icon is rounded on its own, so match the outline radius to it. */
+:is(.piece-art, .row) img[src="/projects/kinarium/icon.svg"] {
+    border-radius: 13px;
+    object-fit: contain;
+    background: transparent;
 }
 
 a { color: inherit; }

@@ -315,7 +315,12 @@ Loading and error messages sit in a 3px dashed box at 10px radius in Ink Seconda
 ### Instruction Model
 The signature component: an inline isometric SVG from `tools/bricks.py` with a plate, the bricks up to this step, earlier steps ghosted, the new brick, and on the hero a dashed arrow and labelled years. Bricks render in place by default. Only when `html.motion` is set (JS on, reduced motion off) does the new brick start 40px raised and seat with a 0.75s drop, a 1.5px overshoot and a settle, as its model scrolls into view.
 
+On the home hero, every brick and its year label link to that step. Pointing at either one brightens the brick and turns the label Instruction Blue with a solid leader line. Only the labels are focusable, and they show the dashed empty-seat ring; the bricks are pointer-only shortcuts.
+
 **The In-Place Rule.** With no JS or with reduced motion, every brick is already seated. Motion is an enhancement that starts from the finished model, never a dependency.
+
+### Build Tracker
+The home page's scroll cue: a white call-out (3px keyline, 10px radius, up to 600px wide) pinned 16px above the foot of the screen while the career steps scroll by. It's a small nav holding a row of seven 2x2 bricks, each a link to its own step that lifts 3px on hover (one per step, from `tools/bricks.py` as `track-<tone>` and `track-seat`), a "2014 … now" caption under the row, and a second link holding a "Step N of 7" box title, a "Next: name, year" line and a 44px Instruction Blue arrow piece that lifts on hover. Passed steps are placed bricks in their era colour; the next step is a dashed empty seat in ink, and later steps are seats in ghost line. It slides up once step 1 reaches mid-screen and away once step 7 comes into view. A brick placed while the tracker is showing drops in (under `html.motion`), and a click on the arrow or a brick glides to that step. Under 480px the text stacks above the bricks and the caption drops. It's built only by JS (`js/site.js`), so it ships `hidden`.
 
 ## Do's and Don'ts
 
