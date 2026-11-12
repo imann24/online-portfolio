@@ -307,9 +307,12 @@ html { scrollbar-color: var(--ink-3) var(--page-band); }
 @media (max-width: 640px) {
     .bar { position: static; }
     .bar-inner { flex-wrap: wrap; }
-    .nav-links { width: 100%; justify-content: space-between; }
-    .tabs { flex: 1; }
-    .tabs a { flex: 1; text-align: center; padding: 9px 6px; font-size: 14px; }
+    /* Dissolve the nav wrapper so the theme toggle sits beside the brand and
+       the tabs get the full row (four labels plus the toggle don't fit at 360-400px). */
+    .nav-links { display: contents; }
+    .theme-toggle { order: 1; margin-left: auto; }
+    .tabs { order: 2; flex: 1 0 100%; }
+    .tabs a { flex: 1 1 auto; text-align: center; padding: 9px 6px; font-size: 14px; white-space: nowrap; }
 }
 
 /* Theme toggle: a two-stud switch brick. Injected by js/theme.js. */
