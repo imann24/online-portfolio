@@ -85,8 +85,13 @@ def block(x0, y0, z0, length, depth, height, s, ox, oy, tone, studs_skip=None, s
     return body, [t[1] for t in back], [t[1] for t in front]
 
 
-def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=None):
-    """The baseplate plus BUILD[:upto]. Returns (svg_inner, width, height)."""
+def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=None, links=False):
+    """The baseplate plus BUILD[:upto]. Returns (svg_inner, width, height).
+
+    With links, each brick and its year label link to that step's section. The
+    bricks are pointer-only shortcuts; the labels carry the keyboard and
+    screen-reader links.
+    """
     bricks = BUILD[:upto]
     top_z = PLATE_H + BRICK_H * len(bricks) + STUD_H
     # Bounding box in projected space.
@@ -102,6 +107,13 @@ def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=No
     width = max(xs) - min(xs) + pad * 2
     height = max(ys) - min(ys) + pad * 2
 
+    def brick_link(b, inner):
+        # Pointer-only: the matching year label is the focusable link.
+        if not links:
+            return inner
+        return (f'<a class="b-link" href="#step-{b["step"]}" data-step="{b["step"]}" '
+                f'tabindex="-1" aria-hidden="true">{inner}</a>')
+
     layers = []
     below = PLATE
     level_z = 0.0
@@ -115,7 +127,7 @@ def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=No
         PLATE["x0"], 0, 0, PLATE["len"], PLATE["depth"], PLATE_H, s, ox, oy, "plate",
         studs_skip=under(first), studs_front_of=(first["x0"] + first["len"]) if first else None,
     )
-    pending_front = front
+    pending_front, front_owner = front, None
     layers.append(f'<g class="b-plate">{body}{"".join(back)}</g>')
     level_z = PLATE_H
     for idx, b in enumerate(bricks):
@@ -141,13 +153,15 @@ def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=No
                 f'<polygon points="{pts([(x0, y0, z1), (x1, y0, z1), (x1, y1, z1), (x0, y1, z1)], s, ox, oy)}"/></g>'
             )
         # Studs of the previous layer that sit in front of this brick draw after it.
-        layers.append(group)
+        layers.append(brick_link(b, group))
         if pending_front:
-            layers.append(f'<g class="b-front">{"".join(pending_front)}</g>')
-        pending_front = front
+            studs = f'<g class="b-front">{"".join(pending_front)}</g>'
+            layers.append(brick_link(front_owner, studs) if front_owner else studs)
+        pending_front, front_owner = front, b
         level_z += BRICK_H
     if pending_front:
-        layers.append(f'<g class="b-front">{"".join(pending_front)}</g>')
+        studs = f'<g class="b-front">{"".join(pending_front)}</g>'
+        layers.append(brick_link(front_owner, studs) if front_owner else studs)
 
     extra = ""
     if raise_last and bricks:
@@ -179,11 +193,18 @@ def model(upto, s, ghost_before=None, raise_last=False, labels=False, label_x=No
             placed.append((b, px, py, ly))
             prev = ly
         for b, px, py, ly in placed:
-            extra += (
+            label = (
                 f'<g class="b-label"><polyline points="{px + 4:.1f},{py:.1f} {lx - 34:.1f},{py:.1f} {lx - 10:.1f},{ly:.1f}"/>'
                 f'<text x="{lx:.1f}" y="{ly + 5:.1f}"><tspan class="b-label-year">{b["label"]}</tspan>'
                 f'<tspan x="{lx + 104:.1f}">{b["name"]}</tspan></text></g>'
             )
+            if links:
+                # A clear hit area over the whole row, so the gaps between words click too.
+                hit = f'<rect class="b-hit" x="{lx - 8:.1f}" y="{ly - 13:.1f}" width="{104 + 214:.0f}" height="26"/>'
+                name = f'Step {b["step"]}: {b["name"]}, {b["label"]}'
+                label = (f'<a class="b-link" href="#step-{b["step"]}" data-step="{b["step"]}" '
+                         f'aria-label="{name}">{hit}{label}</a>')
+            extra += label
         height = max(height, prev + 20)
         width = lx + 104 + 214
     return "".join(layers) + extra, width, height
@@ -208,6 +229,27 @@ def single(length, depth, tone, s, cls, label=None):
     body, back, front = block(0, 0, 0, length, depth, BRICK_H, s, ox, oy, tone)
     inner = body + "".join(back) + "".join(front)
     return svg(inner, max(xs) - min(xs) + pad * 2, max(ys) - min(ys) + pad * 2, cls, label)
+
+
+def seat_single(length, depth, s, cls):
+    """A dashed outline the exact size of single(length, depth, ...): an unplaced piece."""
+    xs, ys = [], []
+    for x in (0, length):
+        for y in (0, depth):
+            for z in (0, BRICK_H + STUD_H):
+                px, py = proj(x, y, z, s)
+                xs.append(px)
+                ys.append(py)
+    pad = 3
+    ox, oy = -min(xs) + pad, -min(ys) + pad
+    x1, y1, z1 = length, depth, BRICK_H
+    inner = (
+        f'<g class="b-seat">'
+        f'<polygon points="{pts([(0, y1, 0), (x1, y1, 0), (x1, y1, z1), (0, y1, z1)], s, ox, oy)}"/>'
+        f'<polygon points="{pts([(x1, 0, 0), (x1, y1, 0), (x1, y1, z1), (x1, 0, z1)], s, ox, oy)}"/>'
+        f'<polygon points="{pts([(0, 0, z1), (x1, 0, z1), (x1, y1, z1), (0, y1, z1)], s, ox, oy)}"/></g>'
+    )
+    return svg(inner, max(xs) - min(xs) + pad * 2, max(ys) - min(ys) + pad * 2, cls)
 
 
 def empty_seat(s, cls):
@@ -237,9 +279,11 @@ def empty_seat(s, cls):
 
 def blocks():
     out = {}
-    inner, w, h = model(len(BUILD), 30, raise_last=True, labels=True, label_x=None)
-    out["hero"] = svg(inner, w, h, "model model-hero")
-    inner, w, h = model(len(BUILD), 30, raise_last=True)
+    inner, w, h = model(len(BUILD), 30, raise_last=True, labels=True, label_x=None, links=True)
+    # Not aria-hidden: its year labels are real links to each step.
+    out["hero"] = (f'<svg class="model model-hero" viewBox="0 0 {w:.0f} {h:.0f}" '
+                   f'role="group" aria-label="My career, step by step">{inner}</svg>')
+    inner, w, h = model(len(BUILD), 30, raise_last=True, links=True)
     out["hero-compact"] = svg(inner, w, h, "model model-hero model-hero-compact")
     for b in BUILD:
         inner, w, h = model(b["step"], 28, ghost_before=b["step"], raise_last=True)
@@ -253,6 +297,10 @@ def blocks():
         out[name] = single(l, d, tone, 9, "part-piece")
     for tone in ("red", "blue", "white", "yellow", "green"):
         out[f"chip-{tone}"] = single(2, 2, tone, 5, "chip-piece")
+    # The home page's build tracker: one placed brick or empty seat per step.
+    for tone in ("red", "blue", "white", "yellow", "green"):
+        out[f"track-{tone}"] = single(2, 2, tone, 6, "track-piece")
+    out["track-seat"] = seat_single(2, 2, 6, "track-seat")
     out["group-ai"] = single(4, 2, "red", 9, "group-piece")
     out["group-platform"] = single(4, 2, "blue", 9, "group-piece")
     out["group-games"] = single(4, 2, "yellow", 9, "group-piece")
