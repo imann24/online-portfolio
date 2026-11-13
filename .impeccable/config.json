@@ -18,6 +18,15 @@
         ],
         "createdAt": "2026-11-03T06:16:19.683Z",
         "reason": "Theme toggle knob's inset bottom edge draws the brick's side face in the Build Instructions world; not a card side stripe"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "projects/index.html"
+        ],
+        "createdAt": "2026-11-13T06:07:41.712Z",
+        "reason": "Agent: both findings are inherited dark-theme theme-toggle::before inset bottom edges that draw a brick face. DESIGN.md explicitly documents this brick-face depth, and css/site.css already has the same intentional-design exception; these are not card accent borders."
       }
     ]
   }

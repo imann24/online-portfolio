@@ -1156,6 +1156,7 @@
     {
       "Key": "extract",
       "Title": "Extract Your House",
+      "Category": "platform",
       "Roles": [
         "Programmer"
       ],
@@ -1281,6 +1282,19 @@
       "Platforms": [
         "Web"
       ],
+      "SortPriority": 2
+    },
+    {
+      "Key": "botsbots",
+      "Title": "BotsBots",
+      "Description": "Explore ideas with nuance in a chat with multiple AI models.",
+      "ExternalLink": "https://botsbots.app/",
+      "IconOverride": "/images/projects/botsbots-icon.svg",
+      "Roles": ["Designer", "Developer"],
+      "TeamSize": 1,
+      "IsOngoing": true,
+      "ShouldDisplay": true,
+      "Platforms": ["Web"],
       "SortPriority": 2
     }
   ]
